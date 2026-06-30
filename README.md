@@ -1,6 +1,5 @@
-# Knowledge-Graph-Gated Defactualization (DSR)
+# Knowledge-Graph-Gated Defactualization (DSR) in Style-Controllable and Fact-Preserving Generation in Agentic Conversational AI
 
-**Style-Controllable and Fact-Preserving Generation in Agentic Conversational AI**
 
 [![Paper](https://img.shields.io/badge/IEEE%20TKDE-Special%20Issue-blue)](#citation)
 [![License](https://img.shields.io/badge/license-MIT-green)](#license)
