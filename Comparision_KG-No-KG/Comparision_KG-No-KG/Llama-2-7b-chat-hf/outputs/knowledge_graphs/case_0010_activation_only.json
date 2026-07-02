@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Can you tell me a bit more about what happened after you updated the drivers last week? Have there been any changes in usage patterns that could help us identify the root cause of the issue? We want to make sure we get this sorted out for you as soon as possible so you can focus on your important project without worrying about your laptop's performance. Please let me know if there's anything else you can share with me to help resolve this matter quickly.",
+    "defactualized_prompt": "I'm reaching out about my TechPro X200 Laptop, order number ORD-7751, which I purchased just three weeks ago for my freelance design work. Despite updating the drivers as suggested by your support team last week, the battery issue persists - it's still draining completely within 2 hours of a full charge. With a critical client deadline tomorrow, I urgently need a more permanent solution to this problem. Could you please advise on the next steps and provide a timeline for when this can be resolved?",
+    "raw_steered_output": "Can you tell me a bit more about what happened after you updated the drivers last week? Have there been any changes in usage patterns that could help us identify the root cause of the issue? We want to make sure we get this sorted out for you as soon as possible so you can focus on your important project without worrying about your laptop's performance. Please let me know if there's anything else you can share with me to help resolve this matter quickly.",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our technical team will conduct an investigation into the matter immediately, with priority given to addressing the battery drain issue affecting your TechPro X200 laptop. You may expect our response via email within the next 24 working hours regarding potential solutions and estimated timeframe for resolution.",
+    "defactualized_prompt": "I'm reaching out about my TechPro X200 Laptop, order number ORD-7751, which I purchased just three weeks ago for my freelance design work. Despite updating the drivers as suggested by your support team last week, the battery issue persists - it's still draining completely within 2 hours of a full charge. With a critical client deadline tomorrow, I urgently need a more permanent solution to this problem. Could you please advise on the next steps and provide a timeline for when this can be resolved?",
+    "raw_steered_output": "Our technical team will conduct an investigation into the matter immediately, with priority given to addressing the battery drain issue affecting your TechPro X200 laptop. You may expect our response via email within the next 24 working hours regarding potential solutions and estimated timeframe for resolution.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

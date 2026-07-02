@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "We value your business and want to make things right immediately. Can you please send us some more details such as your order number so we can investigate further and get back to you within the next hour regarding an expedited replacement process?",
+    "defactualized_prompt": "I'm reaching out for help with my order, ORD-4507, which was supposed to be the SmartHome Hub Pro that I purchased as a birthday gift for my wife. Unfortunately, when I opened the box in front of my family, I was shocked to find a coffee maker inside instead of the SmartHome Hub Pro. Please, could you help me resolve this issue as soon as possible, as her birthday is in just two days and I had paid for express shipping to ensure timely delivery? I would greatly appreciate it if you could look into this matter and provide a solution, thank you.",
+    "raw_steered_output": "We value your business and want to make things right immediately. Can you please send us some more details such as your order number so we can investigate further and get back to you within the next hour regarding an expedited replacement process?",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the discrepancy regarding the item received versus what was ordered (Smart Home Hub Pro vs Coffee Maker) within the next 2 working hours upon receiving this email. Once our investigation concludes, we shall proceed accordingly based on available options such as replacement or refund according to our return policy. You may expect an update via email once resolution steps have commenced; please feel free to reach back should any further questions arise before then.",
+    "defactualized_prompt": "I'm reaching out for help with my order, ORD-4507, which was supposed to be the SmartHome Hub Pro that I purchased as a birthday gift for my wife. Unfortunately, when I opened the box in front of my family, I was shocked to find a coffee maker inside instead of the SmartHome Hub Pro. Please, could you help me resolve this issue as soon as possible, as her birthday is in just two days and I had paid for express shipping to ensure timely delivery? I would greatly appreciate it if you could look into this matter and provide a solution, thank you.",
+    "raw_steered_output": "Our team will investigate the discrepancy regarding the item received versus what was ordered (Smart Home Hub Pro vs Coffee Maker) within the next 2 working hours upon receiving this email. Once our investigation concludes, we shall proceed accordingly based on available options such as replacement or refund according to our return policy. You may expect an update via email once resolution steps have commenced; please feel free to reach back should any further questions arise before then.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

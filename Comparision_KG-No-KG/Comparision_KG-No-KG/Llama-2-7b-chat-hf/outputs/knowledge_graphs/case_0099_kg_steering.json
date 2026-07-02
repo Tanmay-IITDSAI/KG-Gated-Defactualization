@@ -1,0 +1,93 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "the Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-8858",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "low",
+        "type": "URGENCY",
+        "salience": 0.55
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Ximena Flores",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      },
+      {
+        "value": "delivery now 3 weeks overdue with no update from courier",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "the Ergonomic Office Chair",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-8858",
+        "target": "the Ergonomic Office Chair",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Ergonomic Office Chair",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "ORD-8858",
+        "target": "Ergonomic Office Chair",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Ximena Flores",
+        "target": "ORD-8858",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "delivery now 3 weeks overdue with no update from courier",
+        "target": "low",
+        "relation": "has_urgency",
+        "weight": 0.358
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you please give us some more details regarding your order? We will do our best to assist you in resolving this issue as soon as possible.",
+    "defactualized_prompt": "I'm reaching out about my order, <ORDER_ID>, for <PRODUCT>, which is now three weeks past the expected delivery date. Unfortunately, I haven't received any updates from the courier, and I'm still working on the floor, waiting for my new chair to arrive. I would appreciate it if you could provide me with a clear timeline for when I can expect my chair to be delivered or offer a refund so I can explore alternative options locally. This would help me plan my work setup and avoid further inconvenience.",
+    "raw_steered_output": "Can you please give us some more details regarding your order? We will do our best to assist you in resolving this issue as soon as possible.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate this matter promptly and get back in touch with you as soon as possible regarding an update on your order status and estimated delivery timeframe. Please bear with us while we look into this issue; we value your patience during these proceedings.",
+    "defactualized_prompt": "I'm reaching out about my order, <ORDER_ID>, for <PRODUCT>, which is now three weeks past the expected delivery date. Unfortunately, I haven't received any updates from the courier, and I'm still working on the floor, waiting for my new chair to arrive. I would appreciate it if you could provide me with a clear timeline for when I can expect my chair to be delivered or offer a refund so I can explore alternative options locally. This would help me plan my work setup and avoid further inconvenience.",
+    "raw_steered_output": "Our team will investigate this matter promptly and get back in touch with you as soon as possible regarding an update on your order status and estimated delivery timeframe. Please bear with us while we look into this issue; we value your patience during these proceedings.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

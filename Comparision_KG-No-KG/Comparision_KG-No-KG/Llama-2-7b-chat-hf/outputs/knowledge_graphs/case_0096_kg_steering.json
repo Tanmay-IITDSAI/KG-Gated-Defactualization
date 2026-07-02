@@ -1,0 +1,93 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "the Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-8855",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.95
+      },
+      {
+        "value": "Miguel Castro",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      },
+      {
+        "value": "delivery now 3 weeks overdue with no update from courier",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "the Ergonomic Office Chair",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-8855",
+        "target": "the Ergonomic Office Chair",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Ergonomic Office Chair",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "ORD-8855",
+        "target": "Ergonomic Office Chair",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Miguel Castro",
+        "target": "ORD-8855",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "delivery now 3 weeks overdue with no update from courier",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.65
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you please give us some more details such as your full name, address, phone number, and email id associated with the order so we could investigate further and get back to you at earliest possible convenience ? We value our customers like family here in our company ,and it is unacceptable that there has not been adequate communication throughout this process .We will make sure to resolve this issue promptly by providing an update via email once we have gathered all necessary information required to assist you better",
+    "defactualized_prompt": "I'm reaching out for the second time regarding my overdue order, <ORDER_ID>, for <PRODUCT>, which was supposed to arrive three weeks ago. Unfortunately, I still haven't received any updates from the courier, and I'm getting <SENTIMENT> with the lack of communication. I've been working on the floor for weeks now, and I really need a clear timeline for delivery or a refund so I can consider alternative options locally. Could you please look into this matter urgently and provide me with a resolution today?",
+    "raw_steered_output": "Can you please give us some more details such as your full name, address, phone number, and email id associated with the order so we could investigate further and get back to you at earliest possible convenience ? We value our customers like family here in our company ,and it is unacceptable that there has not been adequate communication throughout this process .We will make sure to resolve this issue promptly by providing an update via email once we have gathered all necessary information required to assist you better",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team is actively investigating the issue concerning your delayed order (Order ID) and will do our best to resolve it as soon as possible. Please allow us some more time to gather information before we get back in touch with an update. Thank you for your patience during this period.",
+    "defactualized_prompt": "I'm reaching out for the second time regarding my overdue order, <ORDER_ID>, for <PRODUCT>, which was supposed to arrive three weeks ago. Unfortunately, I still haven't received any updates from the courier, and I'm getting <SENTIMENT> with the lack of communication. I've been working on the floor for weeks now, and I really need a clear timeline for delivery or a refund so I can consider alternative options locally. Could you please look into this matter urgently and provide me with a resolution today?",
+    "raw_steered_output": "Our team is actively investigating the issue concerning your delayed order (Order ID) and will do our best to resolve it as soon as possible. Please allow us some more time to gather information before we get back in touch with an update. Thank you for your patience during this period.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

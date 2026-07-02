@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Cancelling an order on such short notice may cause some inconvenience, however, our team will do everything they can to ensure your issue gets addressed promptly so please bear with us while we work towards finding a resolution. We appreciate your patience during these times!",
+    "defactualized_prompt": "I'm extremely frustrated with my recent order, ORD-4501, where I was supposed to receive the SmartHome Hub Pro, but instead, I got a coffee maker. This is not only the wrong item, but it's also a birthday gift for my wife, and her birthday is in just two days, which is why I paid extra for express shipping. I've already tried contacting support once and was advised to check the packaging again, but I've done that and there's no mistake - I really did receive a coffee maker. I'm reaching out again because I need this resolved today, and I hope we can find a solution to get the correct item to me as soon as possible.",
+    "raw_steered_output": "Cancelling an order on such short notice may cause some inconvenience, however, our team will do everything they can to ensure your issue gets addressed promptly so please bear with us while we work towards finding a resolution. We appreciate your patience during these times!",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will work diligently to resolve the issue promptly and ensure that you receive the correct product. Please allow us some time to investigate further and provide an update on our progress within the next few hours. Thank you for your patience and understanding during this process.",
+    "defactualized_prompt": "I'm extremely frustrated with my recent order, ORD-4501, where I was supposed to receive the SmartHome Hub Pro, but instead, I got a coffee maker. This is not only the wrong item, but it's also a birthday gift for my wife, and her birthday is in just two days, which is why I paid extra for express shipping. I've already tried contacting support once and was advised to check the packaging again, but I've done that and there's no mistake - I really did receive a coffee maker. I'm reaching out again because I need this resolved today, and I hope we can find a solution to get the correct item to me as soon as possible.",
+    "raw_steered_output": "Our team will work diligently to resolve the issue promptly and ensure that you receive the correct product. Please allow us some time to investigate further and provide an update on our progress within the next few hours. Thank you for your patience and understanding during this process.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

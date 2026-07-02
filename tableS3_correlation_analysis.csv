@@ -1,0 +1,8 @@
+Pair,Pearson r,Pearson p,Spearman ρ,Spearman p,Direction,Supports Decoupling
+Entity Cov ↔ Flesch Ease (Emp),-0.0212,0.603543,-0.0275,0.500933,near-zero,✓
+Entity Cov ↔ Style Disc Score,-0.0136,0.739325,0.0124,0.762049,near-zero,✓
+Entity Cov ↔ Empathy Score,0.0291,0.476829,-0.0003,0.9951,near-zero,✓
+Entity Cov ↔ Lexical Diversity,-0.0742,0.069349,-0.1123,0.005908,negative,✓
+Entity Cov ↔ ROUGE-1 (E–F divergence),0.0992,0.015101,0.1256,0.002049,positive,✓
+Proxy-HSI ↔ Proxy-TCI,0.0199,0.627089,0.006,0.883817,near-zero,✓
+Flesch Δ (E−F) ↔ Entity Cov,-0.0199,0.627089,-0.0059,0.884725,near-zero,✓

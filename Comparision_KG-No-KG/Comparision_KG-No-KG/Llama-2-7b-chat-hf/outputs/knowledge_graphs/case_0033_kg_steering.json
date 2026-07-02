@@ -1,0 +1,161 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "the SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "COMPLETELY",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "IMMEDIATELY",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-4500",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "COMPLETELY USELESS ITEM",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "FULL REFUND",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "FURIOUS right now",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "angry",
+        "type": "SENTIMENT",
+        "salience": 1.0
+      },
+      {
+        "value": "received completely wrong item — got a coffee maker instead",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "the SmartHome Hub Pro",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-4500",
+        "target": "the SmartHome Hub Pro",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "COMPLETELY",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-4500",
+        "target": "COMPLETELY",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "SmartHome Hub Pro",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-4500",
+        "target": "SmartHome Hub Pro",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "IMMEDIATELY",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-4500",
+        "target": "IMMEDIATELY",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "COMPLETELY USELESS ITEM",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "ORD-4500",
+        "target": "COMPLETELY USELESS ITEM",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "FULL REFUND",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "ORD-4500",
+        "target": "FULL REFUND",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "FURIOUS right now",
+        "target": "ORD-4500",
+        "relation": "placed_order",
+        "weight": 0.712
+      },
+      {
+        "source": "received completely wrong item — got a coffee maker instead",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.65
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "It sounds like there was an issue with your package that has caused inconvenience and disappointment. Please accept our sincerest apologies for any trouble we may have caused. We will do everything possible to make things right by providing you with a replacement coffee maker as soon as possible, along with expedited shipping at no additional cost to ensure it arrives before your wife's birthday. If there's anything else we can do to rectify the situation further, please don't hesitate to reach out to us directly.",
+    "defactualized_prompt": "I am <CUSTOMER_NAME>, I just opened the box for <PRODUCT>, order number <ORDER_ID>, in front of my family and IT'S A COFFEE MAKER INSIDE, CAN YOU BELIEVE THAT?! I paid for EXPRESS SHIPPING so I could get it on time for my wife's birthday, which is in TWO DAYS, and now I've been left with a <PRODUCT>. I demand to know what happened and I expect a <PRODUCT>, as well as a working <PRODUCT> to be shipped to me <PRODUCT>, or I'll be forced to take my business elsewhere and leave a scathing review. I want to speak to a MANAGER if necessary to get this RESOLVED NOW.",
+    "raw_steered_output": "It sounds like there was an issue with your package that has caused inconvenience and disappointment. Please accept our sincerest apologies for any trouble we may have caused. We will do everything possible to make things right by providing you with a replacement coffee maker as soon as possible, along with expedited shipping at no additional cost to ensure it arrives before your wife's birthday. If there's anything else we can do to rectify the situation further, please don't hesitate to reach out to us directly.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will conduct an investigation into the matter immediately and provide a resolution within the next 24 hours. In the meantime, we apologize for any inconvenience caused by the unexpected contents inside the package and assure you that we value our customers greatly. Please allow us some more time to resolve this issue satisfactorily before taking further action.",
+    "defactualized_prompt": "I am <CUSTOMER_NAME>, I just opened the box for <PRODUCT>, order number <ORDER_ID>, in front of my family and IT'S A COFFEE MAKER INSIDE, CAN YOU BELIEVE THAT?! I paid for EXPRESS SHIPPING so I could get it on time for my wife's birthday, which is in TWO DAYS, and now I've been left with a <PRODUCT>. I demand to know what happened and I expect a <PRODUCT>, as well as a working <PRODUCT> to be shipped to me <PRODUCT>, or I'll be forced to take my business elsewhere and leave a scathing review. I want to speak to a MANAGER if necessary to get this RESOLVED NOW.",
+    "raw_steered_output": "Our team will conduct an investigation into the matter immediately and provide a resolution within the next 24 hours. In the meantime, we apologize for any inconvenience caused by the unexpected contents inside the package and assure you that we value our customers greatly. Please allow us some more time to resolve this issue satisfactorily before taking further action.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

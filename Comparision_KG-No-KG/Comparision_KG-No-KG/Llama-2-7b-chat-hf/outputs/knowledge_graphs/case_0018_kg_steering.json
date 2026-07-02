@@ -1,0 +1,93 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7759",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "the battery draining completely within 2 hours of a full charge persists",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "as soon as possible",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Ivan Petrov",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "the battery draining completely within 2 hours of a full charge persists",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "as soon as possible",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7759",
+        "target": "TechPro X200 Laptop",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Ivan Petrov",
+        "target": "ORD-7759",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "the battery draining completely within 2 hours of a full charge persists",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      },
+      {
+        "source": "as soon as possible",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you tell me a bit more about what happened after you updated the drivers last week? Any additional details will help us better understand the situation and find an appropriate resolution for you. We value our customers like you and want nothing but the best experience for them; we'll do everything in our power to get things back up and running smoothly again ASAP!",
+    "defactualized_prompt": "I'm reaching out about my <PRODUCT>, which I purchased just three weeks ago with order number <ORDER_ID>. Despite updating the drivers as suggested by your support team last week, the issue with <ISSUE>. I'm a freelance designer and I have a critical deadline to meet tomorrow, so I urgently need a more permanent solution to this problem. Could you please advise on the next steps to resolve this issue <ISSUE>?",
+    "raw_steered_output": "Can you tell me a bit more about what happened after you updated the drivers last week? Any additional details will help us better understand the situation and find an appropriate resolution for you. We value our customers like you and want nothing but the best experience for them; we'll do everything in our power to get things back up and running smoothly again ASAP!",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our technical department is investigating the matter further and will provide an update within one business day regarding potential solutions to address the issue you are experiencing with your product. In the meantime, we recommend trying our troubleshooting guide available on our website under \"Troubleshoot\" section. Please let us know if there's anything else we can assist you in resolving this issue promptly.",
+    "defactualized_prompt": "I'm reaching out about my <PRODUCT>, which I purchased just three weeks ago with order number <ORDER_ID>. Despite updating the drivers as suggested by your support team last week, the issue with <ISSUE>. I'm a freelance designer and I have a critical deadline to meet tomorrow, so I urgently need a more permanent solution to this problem. Could you please advise on the next steps to resolve this issue <ISSUE>?",
+    "raw_steered_output": "Our technical department is investigating the matter further and will provide an update within one business day regarding potential solutions to address the issue you are experiencing with your product. In the meantime, we recommend trying our troubleshooting guide available on our website under \"Troubleshoot\" section. Please let us know if there's anything else we can assist you in resolving this issue promptly.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

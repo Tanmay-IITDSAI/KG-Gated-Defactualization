@@ -1,0 +1,81 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ORD-8849",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "the Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "low",
+        "type": "URGENCY",
+        "salience": 0.65
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7999999999999999
+      },
+      {
+        "value": "Finn Larsen",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      },
+      {
+        "value": "delivery now 3 weeks overdue with no update from courier",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "ORD-8849",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "the Ergonomic Office Chair",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "Ergonomic Office Chair",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "delivery now 3 weeks overdue with no update from courier",
+        "target": "low",
+        "relation": "has_urgency",
+        "weight": 0.423
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Our team will definitely do everything we can to assist you in getting your product as soon as possible. Can you kindly provide us with your order number so that we may investigate further and give you an update on when you should expect its arrival?",
+    "defactualized_prompt": "I'm reaching out for some help with my order, <PRODUCT>, which was supposed to be delivered a few weeks ago. I ordered <PRODUCT> for my home office and I've been working on the floor for three weeks now, so I'm really eager to get it sorted. Could you please look into this and provide me with an updated delivery timeline or let me know if there's an option for a refund so I can explore other options locally? I'd really appreciate your help with this, thank you.",
+    "raw_steered_output": "Our team will definitely do everything we can to assist you in getting your product as soon as possible. Can you kindly provide us with your order number so that we may investigate further and give you an update on when you should expect its arrival?",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team is currently investigating the matter regarding the delay in delivering your product. Please allow us time to process your request as we work towards providing you with either an update on when your item will arrive or alternative solutions such as offering a full refund within the next 24-72 hours. Thank you for choosing our store!",
+    "defactualized_prompt": "I'm reaching out for some help with my order, <PRODUCT>, which was supposed to be delivered a few weeks ago. I ordered <PRODUCT> for my home office and I've been working on the floor for three weeks now, so I'm really eager to get it sorted. Could you please look into this and provide me with an updated delivery timeline or let me know if there's an option for a refund so I can explore other options locally? I'd really appreciate your help with this, thank you.",
+    "raw_steered_output": "Our team is currently investigating the matter regarding the delay in delivering your product. Please allow us time to process your request as we work towards providing you with either an update on when your item will arrive or alternative solutions such as offering a full refund within the next 24-72 hours. Thank you for choosing our store!",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

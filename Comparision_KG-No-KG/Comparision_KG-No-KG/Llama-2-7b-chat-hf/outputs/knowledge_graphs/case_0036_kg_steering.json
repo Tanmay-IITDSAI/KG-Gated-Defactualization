@@ -1,0 +1,81 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ORD-4503",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "the SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7999999999999999
+      },
+      {
+        "value": "Zara Ahmed",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      },
+      {
+        "value": "received completely wrong item — got a coffee maker instead",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "ORD-4503",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "the SmartHome Hub Pro",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "SmartHome Hub Pro",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "received completely wrong item — got a coffee maker instead",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.585
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "We value our customers greatly here at Our Company Name, and we will do everything within our power to make sure that you receive the product you ordered on time. Can you please provide us with more details such as your order number and delivery address so that we can investigate further and resolve this issue promptly?",
+    "defactualized_prompt": "I'm reaching out for some help with my order, <PRODUCT>, which was supposed to be <PRODUCT>, but unfortunately, when I opened the box in front of my family, I was surprised to find a coffee maker instead. I had paid for express shipping because it's a birthday gift for my wife, and her birthday is just two days away, so I'm getting a bit worried. Please, could you kindly look into this and help me get the correct item as soon as possible? Thank you so much for your time and assistance.",
+    "raw_steered_output": "We value our customers greatly here at Our Company Name, and we will do everything within our power to make sure that you receive the product you ordered on time. Can you please provide us with more details such as your order number and delivery address so that we can investigate further and resolve this issue promptly?",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate promptly and work towards resolving the issue as quickly as possible. You can expect an update on our progress within the next 24 hours. In the meantime, please accept our sincere apologies for any inconvenience caused by this unfortunate mix-up.",
+    "defactualized_prompt": "I'm reaching out for some help with my order, <PRODUCT>, which was supposed to be <PRODUCT>, but unfortunately, when I opened the box in front of my family, I was surprised to find a coffee maker instead. I had paid for express shipping because it's a birthday gift for my wife, and her birthday is just two days away, so I'm getting a bit worried. Please, could you kindly look into this and help me get the correct item as soon as possible? Thank you so much for your time and assistance.",
+    "raw_steered_output": "Our team will investigate promptly and work towards resolving the issue as quickly as possible. You can expect an update on our progress within the next 24 hours. In the meantime, please accept our sincere apologies for any inconvenience caused by this unfortunate mix-up.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

@@ -1,0 +1,25 @@
+Factor,Metric,F-stat,p-value,Partial η²,Interpretation,Sig
+Host Model,Avg Entity Coverage,4.973,0.00018,0.0402,small,***
+Host Model,Style Discrimination Score,11.549,0.0,0.0886,medium,***
+Host Model,Readability Δ (Emp−Frm),35.606,0.0,0.2306,large,***
+Host Model,KG Graph Density,0.125,0.986839,0.001,negligible,n.s.
+Scenario Type,Avg Entity Coverage,11.183,0.0,0.0533,small,***
+Scenario Type,Style Discrimination Score,0.404,0.749877,0.002,negligible,n.s.
+Scenario Type,Readability Δ (Emp−Frm),1.931,0.12331,0.0096,negligible,n.s.
+Scenario Type,KG Graph Density,11.248,0.0,0.0536,small,***
+Customer Sentiment,Avg Entity Coverage,3.639,0.012694,0.018,small,*
+Customer Sentiment,Style Discrimination Score,2.938,0.032708,0.0146,small,*
+Customer Sentiment,Readability Δ (Emp−Frm),0.552,0.646741,0.0028,negligible,n.s.
+Customer Sentiment,KG Graph Density,38.564,0.0,0.1626,large,***
+Urgency Level,Avg Entity Coverage,4.199,0.015455,0.0139,small,*
+Urgency Level,Style Discrimination Score,3.959,0.019585,0.0131,small,*
+Urgency Level,Readability Δ (Emp−Frm),0.314,0.730781,0.0011,negligible,n.s.
+Urgency Level,KG Graph Density,22.076,0.0,0.0689,medium,***
+LLM Generation (Llama-2 vs 3),Avg Entity Coverage,0.833,0.361862,0.0014,negligible,n.s.
+LLM Generation (Llama-2 vs 3),Style Discrimination Score,1.236,0.26672,0.0021,negligible,n.s.
+LLM Generation (Llama-2 vs 3),Readability Δ (Emp−Frm),1.919,0.166469,0.0032,negligible,n.s.
+LLM Generation (Llama-2 vs 3),KG Graph Density,0.0,0.986417,0.0,negligible,n.s.
+Model Type (base/chat/instruct),Avg Entity Coverage,0.772,0.462533,0.0026,negligible,n.s.
+Model Type (base/chat/instruct),Style Discrimination Score,3.465,0.031903,0.0115,small,*
+Model Type (base/chat/instruct),Readability Δ (Emp−Frm),84.276,0.0,0.2202,large,***
+Model Type (base/chat/instruct),KG Graph Density,0.004,0.996502,0.0,negligible,n.s.

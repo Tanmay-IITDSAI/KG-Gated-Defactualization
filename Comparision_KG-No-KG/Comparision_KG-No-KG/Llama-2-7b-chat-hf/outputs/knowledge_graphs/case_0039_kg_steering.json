@@ -1,0 +1,93 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "the SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-4506",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "- could you please let me know how we can get the correct item to me as soon as possible",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.85
+      },
+      {
+        "value": "Hiroshi Kato",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "the SmartHome Hub Pro",
+        "target": "- could you please let me know how we can get the correct item to me as soon as possible",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-4506",
+        "target": "the SmartHome Hub Pro",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "SmartHome Hub Pro",
+        "target": "- could you please let me know how we can get the correct item to me as soon as possible",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "ORD-4506",
+        "target": "SmartHome Hub Pro",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Hiroshi Kato",
+        "target": "ORD-4506",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "- could you please let me know how we can get the correct item to me as soon as possible",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "We value your business and want to make things right immediately. Our team will work diligently to resolve this situation as soon as possible and ensure that your product reaches you within the next couple of days at the latest. Please know that we take full responsibility for any inconvenience caused by our mistake and assure you that every effort will be made to rectify the situation swiftly and efficiently.",
+    "defactualized_prompt": "I'm reaching out about my order <ORDER_ID>, where I was supposed to receive <PRODUCT>, but when I opened the box, I was surprised to find a coffee maker instead. This is particularly disappointing as I had ordered it as a birthday gift for my wife, and her birthday is in just two days. I had also paid for express shipping, so I'm expecting a prompt resolution to this issue <ISSUE>? I would appreciate it if you could provide a clear timeline for when I can expect <PRODUCT> to arrive.",
+    "raw_steered_output": "We value your business and want to make things right immediately. Our team will work diligently to resolve this situation as soon as possible and ensure that your product reaches you within the next couple of days at the latest. Please know that we take full responsibility for any inconvenience caused by our mistake and assure you that every effort will be made to rectify the situation swiftly and efficiently.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter immediately and work towards providing an appropriate solution. Please allow us some time (around 2-3 business days) to locate the correct product and arrange its delivery to you. Once we have more information on the expected arrival date, we will inform you via email. Thank you for choosing our store!",
+    "defactualized_prompt": "I'm reaching out about my order <ORDER_ID>, where I was supposed to receive <PRODUCT>, but when I opened the box, I was surprised to find a coffee maker instead. This is particularly disappointing as I had ordered it as a birthday gift for my wife, and her birthday is in just two days. I had also paid for express shipping, so I'm expecting a prompt resolution to this issue <ISSUE>? I would appreciate it if you could provide a clear timeline for when I can expect <PRODUCT> to arrive.",
+    "raw_steered_output": "Our team will investigate the matter immediately and work towards providing an appropriate solution. Please allow us some time (around 2-3 business days) to locate the correct product and arrange its delivery to you. Once we have more information on the expected arrival date, we will inform you via email. Thank you for choosing our store!",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

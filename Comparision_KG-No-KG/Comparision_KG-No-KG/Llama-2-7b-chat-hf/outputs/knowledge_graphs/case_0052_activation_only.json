@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "We value your business immensely and we will do everything within our power to resolve this matter promptly and fairly. Our team is already working on investigating the cause of the double charging incident and we assure you that we will provide a full refund for the duplicated amount as soon as possible. In addition, we will review our systems to ensure such errors don't happen again in the future so you can continue enjoying our services without any disruptions. Please rest assured that we prioritize resolving this situation favorably for you.",
+    "defactualized_prompt": "I've been a loyal customer for 2 years and recently noticed an issue with my latest charge. I was looking at my credit card statement and saw that I've been charged twice for the same Premium Subscription, with the order number ORD-5525, at $49.99 each. I'd appreciate it if you could look into this and refund the duplicate charge as soon as possible. Could you also let me know what caused the error and what steps I can take to prevent it from happening again in the future?",
+    "raw_steered_output": "We value your business immensely and we will do everything within our power to resolve this matter promptly and fairly. Our team is already working on investigating the cause of the double charging incident and we assure you that we will provide a full refund for the duplicated amount as soon as possible. In addition, we will review our systems to ensure such errors don't happen again in the future so you can continue enjoying our services without any disruptions. Please rest assured that we prioritize resolving this situation favorably for you.",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter further and provide resolution within the next 7 working days. Please rest assured that we value our customers like yourself and strive towards providing uninterrupted services while minimizing errors such as these. You may expect communication regarding the outcome via email once the investigation is complete. Thank you for choosing us!",
+    "defactualized_prompt": "I've been a loyal customer for 2 years and recently noticed an issue with my latest charge. I was looking at my credit card statement and saw that I've been charged twice for the same Premium Subscription, with the order number ORD-5525, at $49.99 each. I'd appreciate it if you could look into this and refund the duplicate charge as soon as possible. Could you also let me know what caused the error and what steps I can take to prevent it from happening again in the future?",
+    "raw_steered_output": "Our team will investigate the matter further and provide resolution within the next 7 working days. Please rest assured that we value our customers like yourself and strive towards providing uninterrupted services while minimizing errors such as these. You may expect communication regarding the outcome via email once the investigation is complete. Thank you for choosing us!",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

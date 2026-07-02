@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "We value your loyalty and appreciate your patience in giving us an opportunity to investigate this matter further. Our team will look into it immediately and provide you with a full refund for the duplicate charge within the next 24 hours. Please accept our sincere apologies again and let me know if there's anything else we can do to make things right.",
+    "defactualized_prompt": "I am FURIOUS to see that I've been charged TWICE for the same monthly subscription - the Premium Subscription is clearly listed as a single charge of $49.99, but my credit card statement shows TWO identical charges of $49.99 for the same period, referencing order ORD-5528. I've been a LOYAL CUSTOMER for 2 years and expect a LOT better than this kind of carelessness. I demand a clear explanation and a FULL REFUND for the duplicate charge IMMEDIATELY, or I will be forced to take my business elsewhere and leave a SCATHING review. If necessary, I want to speak to a MANAGER to resolve this issue.",
+    "raw_steered_output": "We value your loyalty and appreciate your patience in giving us an opportunity to investigate this matter further. Our team will look into it immediately and provide you with a full refund for the duplicate charge within the next 24 hours. Please accept our sincere apologies again and let me know if there's anything else we can do to make things right.",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team is investigating the matter further and we apologize for any inconvenience caused by the double charging incident. Please allow us some time to process your request and provide an appropriate resolution. A member of our management staff will reach out to you shortly to address your concerns and offer a full refund for the duplicated charge. Thank you for choosing our service; we value your loyalty and appreciate your patience in resolving this situation.",
+    "defactualized_prompt": "I am FURIOUS to see that I've been charged TWICE for the same monthly subscription - the Premium Subscription is clearly listed as a single charge of $49.99, but my credit card statement shows TWO identical charges of $49.99 for the same period, referencing order ORD-5528. I've been a LOYAL CUSTOMER for 2 years and expect a LOT better than this kind of carelessness. I demand a clear explanation and a FULL REFUND for the duplicate charge IMMEDIATELY, or I will be forced to take my business elsewhere and leave a SCATHING review. If necessary, I want to speak to a MANAGER to resolve this issue.",
+    "raw_steered_output": "Our team is investigating the matter further and we apologize for any inconvenience caused by the double charging incident. Please allow us some time to process your request and provide an appropriate resolution. A member of our management staff will reach out to you shortly to address your concerns and offer a full refund for the duplicated charge. Thank you for choosing our service; we value your loyalty and appreciate your patience in resolving this situation.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

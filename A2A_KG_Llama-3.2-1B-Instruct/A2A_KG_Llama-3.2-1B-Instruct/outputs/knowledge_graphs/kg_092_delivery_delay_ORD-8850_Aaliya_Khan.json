@@ -1,0 +1,83 @@
+{
+  "case_index": 92,
+  "scenario": "delivery_delay",
+  "customer_name": "Aaliya Khan",
+  "order_id": "ORD-8850",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "the Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-8850",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Aaliya Khan",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      },
+      {
+        "value": "delivery now 3 weeks overdue with no update from courier",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "the Ergonomic Office Chair",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-8850",
+        "target": "the Ergonomic Office Chair",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Ergonomic Office Chair",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "ORD-8850",
+        "target": "Ergonomic Office Chair",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Aaliya Khan",
+        "target": "ORD-8850",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "delivery now 3 weeks overdue with no update from courier",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.585
+      }
+    ]
+  }
+}

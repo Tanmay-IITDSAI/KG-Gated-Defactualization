@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Can you please give me some more details such as your full name and order number? That way, I can check on the status of your order immediately and see what caused the delay in shipping. Once I have that information, I will do everything in my power to get this resolved quickly and efficiently.",
+    "defactualized_prompt": "I'm reaching out for the second time regarding my order, ORD-8835, for the Ergonomic Office Chair, which is now three weeks past the expected delivery date. My husband Tom has been working on the floor, waiting for this chair to arrive, and it's getting really frustrating. I haven't received any updates from the courier, and I'd appreciate it if you could look into this and provide a clear timeline for delivery or a refund so we can consider alternative options. I'd like to resolve this today, if possible, as this delay is really impacting Tom's work.",
+    "raw_steered_output": "Can you please give me some more details such as your full name and order number? That way, I can check on the status of your order immediately and see what caused the delay in shipping. Once I have that information, I will do everything in my power to get this resolved quickly and efficiently.",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter further with our logistics department to determine the cause of the delayed delivery status of your Order #ORD-8835. Please allow us some more time while we gather all necessary information before providing an update on estimated delivery dates or potential resolution alternatives. You may rest assured that we prioritize resolving these issues promptly; however, due to unforeseen circumstances beyond our control at times, delays do occur in fulfillment processes. Once again, please accept our sincere apologies for inconvenience caused by this unexpected turnaround.",
+    "defactualized_prompt": "I'm reaching out for the second time regarding my order, ORD-8835, for the Ergonomic Office Chair, which is now three weeks past the expected delivery date. My husband Tom has been working on the floor, waiting for this chair to arrive, and it's getting really frustrating. I haven't received any updates from the courier, and I'd appreciate it if you could look into this and provide a clear timeline for delivery or a refund so we can consider alternative options. I'd like to resolve this today, if possible, as this delay is really impacting Tom's work.",
+    "raw_steered_output": "Our team will investigate the matter further with our logistics department to determine the cause of the delayed delivery status of your Order #ORD-8835. Please allow us some more time while we gather all necessary information before providing an update on estimated delivery dates or potential resolution alternatives. You may rest assured that we prioritize resolving these issues promptly; however, due to unforeseen circumstances beyond our control at times, delays do occur in fulfillment processes. Once again, please accept our sincere apologies for inconvenience caused by this unexpected turnaround.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

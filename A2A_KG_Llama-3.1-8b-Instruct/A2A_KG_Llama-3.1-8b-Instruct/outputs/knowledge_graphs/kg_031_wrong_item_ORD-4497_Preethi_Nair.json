@@ -1,0 +1,71 @@
+{
+  "case_index": 31,
+  "scenario": "wrong_item",
+  "customer_name": "Preethi Nair",
+  "order_id": "ORD-4497",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ORD-4497",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "the SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "still hasn't been resolved",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.95
+      },
+      {
+        "value": "Preethi Nair",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "ORD-4497",
+        "target": "still hasn't been resolved",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "the SmartHome Hub Pro",
+        "target": "still hasn't been resolved",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "SmartHome Hub Pro",
+        "target": "still hasn't been resolved",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "still hasn't been resolved",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

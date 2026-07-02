@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Can you please give us some more details regarding your order such as the date of purchase and the name of the shipping carrier used? This will help our team investigate further and find an appropriate solution for you. We value your patience while we work towards resolving this issue promptly.",
+    "defactualized_prompt": "I'm reaching out about my order, ORD-8854, for the Ergonomic Office Chair, which was supposed to be delivered three weeks ago. Unfortunately, I haven't received any updates from the courier, and I'm still waiting to get my chair. I've been working on the floor for weeks, so I'd appreciate it if you could provide a clear timeline for when I can expect the delivery or offer a refund so I can explore other options locally. Could you please look into this and let me know what's going on with my order?",
+    "raw_steered_output": "Can you please give us some more details regarding your order such as the date of purchase and the name of the shipping carrier used? This will help our team investigate further and find an appropriate solution for you. We value your patience while we work towards resolving this issue promptly.",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team is currently investigating the matter regarding the delay in delivering your ordered item (ORD-8854). Please allow us some time to gather more information before we reach back to you again as soon possible. Thank you for patience while our staff works diligently to resolve these issues promptly.",
+    "defactualized_prompt": "I'm reaching out about my order, ORD-8854, for the Ergonomic Office Chair, which was supposed to be delivered three weeks ago. Unfortunately, I haven't received any updates from the courier, and I'm still waiting to get my chair. I've been working on the floor for weeks, so I'd appreciate it if you could provide a clear timeline for when I can expect the delivery or offer a refund so I can explore other options locally. Could you please look into this and let me know what's going on with my order?",
+    "raw_steered_output": "Our team is currently investigating the matter regarding the delay in delivering your ordered item (ORD-8854). Please allow us some time to gather more information before we reach back to you again as soon possible. Thank you for patience while our staff works diligently to resolve these issues promptly.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

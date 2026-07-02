@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "It sounds like your wait has gone far longer than expected, and that's unacceptable. Please know that we value our customers greatly and would never intentionally delay an important purchase such as this one. Our team is working diligently to resolve any issues related to your order and ensure its prompt delivery. Can you please provide me with more details regarding your order number and approximate date of purchase? This information will help us locate your file quickly and assist in resolving this matter efficiently.",
+    "defactualized_prompt": "I am FED UP with the lack of communication and UPDATE on my Ergonomic Office Chair order, ORD-8836, which is NOW 3 WEEKS OVERDUE. I was supposed to receive this chair for my home office and I've been WORKING ON THE FLOOR for weeks, it's UNACCEPTABLE. I demand a CLEAR TIMELINE for delivery or a FULL REFUND so I can buy a chair LOCALLY, I don't have time for this anymore. If I don't get a satisfactory response, I will be forced to speak to a MANAGER and leave a public review about this appalling service.",
+    "raw_steered_output": "It sounds like your wait has gone far longer than expected, and that's unacceptable. Please know that we value our customers greatly and would never intentionally delay an important purchase such as this one. Our team is working diligently to resolve any issues related to your order and ensure its prompt delivery. Can you please provide me with more details regarding your order number and approximate date of purchase? This information will help us locate your file quickly and assist in resolving this matter efficiently.",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team is working diligently to resolve the issue as soon as possible. Please allow us some more days to investigate and provide an update regarding the status of your order. In the meantime, we apologize again for any inconvenience caused by the delay in receiving your ergonomic office chair.",
+    "defactualized_prompt": "I am FED UP with the lack of communication and UPDATE on my Ergonomic Office Chair order, ORD-8836, which is NOW 3 WEEKS OVERDUE. I was supposed to receive this chair for my home office and I've been WORKING ON THE FLOOR for weeks, it's UNACCEPTABLE. I demand a CLEAR TIMELINE for delivery or a FULL REFUND so I can buy a chair LOCALLY, I don't have time for this anymore. If I don't get a satisfactory response, I will be forced to speak to a MANAGER and leave a public review about this appalling service.",
+    "raw_steered_output": "Our team is working diligently to resolve the issue as soon as possible. Please allow us some more days to investigate and provide an update regarding the status of your order. In the meantime, we apologize again for any inconvenience caused by the delay in receiving your ergonomic office chair.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

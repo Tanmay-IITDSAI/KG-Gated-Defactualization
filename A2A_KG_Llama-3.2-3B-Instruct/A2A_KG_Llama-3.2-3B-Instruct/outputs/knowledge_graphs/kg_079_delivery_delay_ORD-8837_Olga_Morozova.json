@@ -1,0 +1,82 @@
+{
+  "case_index": 79,
+  "scenario": "delivery_delay",
+  "customer_name": "Olga Morozova",
+  "order_id": "ORD-8837",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ORD-8837",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.891
+      },
+      {
+        "value": "the Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "t received it and I haven",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "m not sure what",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "medium",
+        "type": "URGENCY",
+        "salience": 0.75
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7999999999999999
+      },
+      {
+        "value": "delivery now 3 weeks overdue with no update from courier",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "the Ergonomic Office Chair",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "Ergonomic Office Chair",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "t received it and I haven",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "m not sure what",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "delivery now 3 weeks overdue with no update from courier",
+        "target": "medium",
+        "relation": "has_urgency",
+        "weight": 0.488
+      }
+    ]
+  }
+}

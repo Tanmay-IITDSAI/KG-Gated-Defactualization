@@ -1,0 +1,83 @@
+{
+  "case_index": 25,
+  "scenario": "battery_issue",
+  "customer_name": "Ben Adeyemi",
+  "order_id": "ORD-7765",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7765",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "ve tried the suggested fix and it hasn",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "I'm experiencing persists despite following the advice given last week to update my drivers",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Ben Adeyemi",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "I'm experiencing persists despite following the advice given last week to update my drivers",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7765",
+        "target": "TechPro X200 Laptop",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "ve tried the suggested fix and it hasn",
+        "target": "I'm experiencing persists despite following the advice given last week to update my drivers",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "ORD-7765",
+        "target": "ve tried the suggested fix and it hasn",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Ben Adeyemi",
+        "target": "ORD-7765",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "I'm experiencing persists despite following the advice given last week to update my drivers",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

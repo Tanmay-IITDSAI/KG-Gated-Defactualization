@@ -1,0 +1,161 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "the SmartHome Hub Pro I",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "COFFEE",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "UNACCEPTABLE",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-4512",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "ORDER NUMBER ORD-4512",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "COFFEE MAKER",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "FURIOUS right now",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "angry",
+        "type": "SENTIMENT",
+        "salience": 1.0
+      },
+      {
+        "value": "received completely wrong item — got a coffee maker instead",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "the SmartHome Hub Pro I",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-4512",
+        "target": "the SmartHome Hub Pro I",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "COFFEE",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-4512",
+        "target": "COFFEE",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "UNACCEPTABLE",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-4512",
+        "target": "UNACCEPTABLE",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "SmartHome Hub Pro",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "ORD-4512",
+        "target": "SmartHome Hub Pro",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "ORDER NUMBER ORD-4512",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "ORD-4512",
+        "target": "ORDER NUMBER ORD-4512",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "COFFEE MAKER",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "ORD-4512",
+        "target": "COFFEE MAKER",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "FURIOUS right now",
+        "target": "ORD-4512",
+        "relation": "placed_order",
+        "weight": 0.712
+      },
+      {
+        "source": "received completely wrong item — got a coffee maker instead",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.65
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you please provide me with more details on your order number so that we can look into this matter further? We will do everything possible to resolve this issue promptly and ensure that your wife receives her gift on time.",
+    "defactualized_prompt": "I am <CUSTOMER_NAME>, I just opened the box for <PRODUCT> ordered as a birthday gift for my wife, <PRODUCT>, and instead of the product I PAID FOR, I find a <PRODUCT> inside. This is <PRODUCT>, especially since I paid for express shipping and her birthday is in TWO DAYS. I demand to know what happened and I want this FIXED IMMEDIATELY, I want to speak to a manager if necessary.",
+    "raw_steered_output": "Can you please provide me with more details on your order number so that we can look into this matter further? We will do everything possible to resolve this issue promptly and ensure that your wife receives her gift on time.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter immediately and provide an explanation regarding why the incorrect item was delivered. One of our managers will contact you shortly to address any concerns and resolve the issue promptly. Please accept our sincere apologies for any inconvenience caused by this unfortunate incident.",
+    "defactualized_prompt": "I am <CUSTOMER_NAME>, I just opened the box for <PRODUCT> ordered as a birthday gift for my wife, <PRODUCT>, and instead of the product I PAID FOR, I find a <PRODUCT> inside. This is <PRODUCT>, especially since I paid for express shipping and her birthday is in TWO DAYS. I demand to know what happened and I want this FIXED IMMEDIATELY, I want to speak to a manager if necessary.",
+    "raw_steered_output": "Our team will investigate the matter immediately and provide an explanation regarding why the incorrect item was delivered. One of our managers will contact you shortly to address any concerns and resolve the issue promptly. Please accept our sincere apologies for any inconvenience caused by this unfortunate incident.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

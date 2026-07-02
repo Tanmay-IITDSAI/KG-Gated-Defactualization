@@ -1,0 +1,75 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ORD-8835",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.89
+      },
+      {
+        "value": "Tom",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.87
+      },
+      {
+        "value": "the Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "low",
+        "type": "URGENCY",
+        "salience": 0.55
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.95
+      },
+      {
+        "value": "delivery now 3 weeks overdue with no update from courier",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "the Ergonomic Office Chair",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "Ergonomic Office Chair",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "delivery now 3 weeks overdue with no update from courier",
+        "target": "low",
+        "relation": "has_urgency",
+        "weight": 0.358
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you please give me some more details such as your order number? That way, I can check with our shipping team and get back to you within an hour with either good news or next steps towards resolving this issue.",
+    "defactualized_prompt": "I'm reaching out for the second time regarding my order, <CUS<CUSTOMER_NAME>ER_NAME>, for <PRODUCT>, which is now three weeks past the expected delivery date. My husband <CUSTOMER_NAME> has been working on the floor, waiting for this chair to arrive, and it's getting really frustrating. I haven't received any updates from the courier, and I'd appreciate it if you could look into this and provide a clear timeline for delivery or a refund so we can consider alternative options. I'd like to resolve this today, if possible, as this delay is really impacting <CUSTOMER_NAME>'s work.",
+    "raw_steered_output": "Can you please give me some more details such as your order number? That way, I can check with our shipping team and get back to you within an hour with either good news or next steps towards resolving this issue.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter further with our logistics department and get back in touch with you within one business day to address your concerns and offer an update on when you may expect delivery of your product. Please accept our apologies for any inconvenience caused by the delayed shipment.",
+    "defactualized_prompt": "I'm reaching out for the second time regarding my order, <CUS<CUSTOMER_NAME>ER_NAME>, for <PRODUCT>, which is now three weeks past the expected delivery date. My husband <CUSTOMER_NAME> has been working on the floor, waiting for this chair to arrive, and it's getting really frustrating. I haven't received any updates from the courier, and I'd appreciate it if you could look into this and provide a clear timeline for delivery or a refund so we can consider alternative options. I'd like to resolve this today, if possible, as this delay is really impacting <CUSTOMER_NAME>'s work.",
+    "raw_steered_output": "Our team will investigate the matter further with our logistics department and get back in touch with you within one business day to address your concerns and offer an update on when you may expect delivery of your product. Please accept our apologies for any inconvenience caused by the delayed shipment.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

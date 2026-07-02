@@ -1,0 +1,82 @@
+{
+  "case_index": 22,
+  "scenario": "battery_issue",
+  "customer_name": "Amara Diallo",
+  "order_id": "ORD-7762",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7762",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "COMPLETELY UNACCEPTABLE",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "IMMEDIATELY",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "FED UP with",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "angry",
+        "type": "SENTIMENT",
+        "salience": 1.0
+      },
+      {
+        "value": "battery draining completely within 2 hours of a full charge",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "battery draining completely within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-7762",
+        "target": "battery draining completely within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "COMPLETELY UNACCEPTABLE",
+        "target": "battery draining completely within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "IMMEDIATELY",
+        "target": "battery draining completely within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "battery draining completely within 2 hours of a full charge",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.65
+      }
+    ]
+  }
+}

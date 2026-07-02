@@ -1,0 +1,81 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ORD-8842",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "the Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "low",
+        "type": "URGENCY",
+        "salience": 0.55
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Eun-Ji Oh",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      },
+      {
+        "value": "delivery now 3 weeks overdue with no update from courier",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "ORD-8842",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "the Ergonomic Office Chair",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "Ergonomic Office Chair",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "delivery now 3 weeks overdue with no update from courier",
+        "target": "low",
+        "relation": "has_urgency",
+        "weight": 0.358
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Please know that we take these delays very seriously and will do everything in our power to resolve them as soon as possible. Can you please give us some more details such as your tracking number so we can investigate further and keep you updated on the status of your order?",
+    "defactualized_prompt": "I'm reaching out about my order, <PRODUCT>, for <PRODUCT>, which is now three weeks past the expected delivery date. Unfortunately, I haven't received any updates from the courier, and I'm still waiting to get my chair. I've been working from the floor for weeks, so I'd appreciate it if you could provide a clear timeline for when I can expect my chair to arrive or offer a refund so I can explore local options. Could you please look into this and get back to me with a resolution?",
+    "raw_steered_output": "Please know that we take these delays very seriously and will do everything in our power to resolve them as soon as possible. Can you please give us some more details such as your tracking number so we can investigate further and keep you updated on the status of your order?",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter further and work towards providing an update on the status of your order as soon as possible. In the meantime, we apologize for any inconvenience caused by the delay in receiving your product and assure you that our top priority lies in resolving this issue promptly. Please rest assured that once we have more information, we will contact you directly via email regarding next steps.",
+    "defactualized_prompt": "I'm reaching out about my order, <PRODUCT>, for <PRODUCT>, which is now three weeks past the expected delivery date. Unfortunately, I haven't received any updates from the courier, and I'm still waiting to get my chair. I've been working from the floor for weeks, so I'd appreciate it if you could provide a clear timeline for when I can expect my chair to arrive or offer a refund so I can explore local options. Could you please look into this and get back to me with a resolution?",
+    "raw_steered_output": "Our team will investigate the matter further and work towards providing an update on the status of your order as soon as possible. In the meantime, we apologize for any inconvenience caused by the delay in receiving your product and assure you that our top priority lies in resolving this issue promptly. Please rest assured that once we have more information, we will contact you directly via email regarding next steps.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

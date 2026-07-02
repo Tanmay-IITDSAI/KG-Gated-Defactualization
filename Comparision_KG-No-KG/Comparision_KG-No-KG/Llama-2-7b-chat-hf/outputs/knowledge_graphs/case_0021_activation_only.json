@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "We value our customers greatly at TechPro, so we would never want anyone to feel like they can't rely on their products fully. Please allow me some time to look into this matter further while I connect you directly with one of our managers who should be able to assist in resolving any issues promptly; please hold for just moment longer before being transferred over.",
+    "defactualized_prompt": "I am FED UP with my TechPro X200 Laptop, which I purchased just 3 weeks ago with order number ORD-7762. Despite updating the drivers as suggested by your support team LAST WEEK, the battery is STILL DRAINING COMPLETELY within 2 hours of a full charge, which is COMPLETELY UNACCEPTABLE. I have a critical deadline to meet TOMORROW and I'm embarrassed that I'm having to deal with this issue, I DEMAND that you take immediate action to resolve this or I will be forced to ask for a FULL REFUND and share my terrible experience with others. Can I PLEASE speak to a manager if necessary?",
+    "raw_steered_output": "We value our customers greatly at TechPro, so we would never want anyone to feel like they can't rely on their products fully. Please allow me some time to look into this matter further while I connect you directly with one of our managers who should be able to assist in resolving any issues promptly; please hold for just moment longer before being transferred over.",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our engineers are working diligently to investigate the matter further and provide an appropriate solution. In the meantime, we recommend disabling WiFi and Bluetooth when not in use to conserve battery life until our resolution can be implemented. Please allow us some time to address this concern and contact us again should any additional assistance be required.",
+    "defactualized_prompt": "I am FED UP with my TechPro X200 Laptop, which I purchased just 3 weeks ago with order number ORD-7762. Despite updating the drivers as suggested by your support team LAST WEEK, the battery is STILL DRAINING COMPLETELY within 2 hours of a full charge, which is COMPLETELY UNACCEPTABLE. I have a critical deadline to meet TOMORROW and I'm embarrassed that I'm having to deal with this issue, I DEMAND that you take immediate action to resolve this or I will be forced to ask for a FULL REFUND and share my terrible experience with others. Can I PLEASE speak to a manager if necessary?",
+    "raw_steered_output": "Our engineers are working diligently to investigate the matter further and provide an appropriate solution. In the meantime, we recommend disabling WiFi and Bluetooth when not in use to conserve battery life until our resolution can be implemented. Please allow us some time to address this concern and contact us again should any additional assistance be required.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

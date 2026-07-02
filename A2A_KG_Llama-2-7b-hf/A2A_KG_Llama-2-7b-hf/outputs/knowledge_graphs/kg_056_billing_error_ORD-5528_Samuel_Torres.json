@@ -1,0 +1,98 @@
+{
+  "case_index": 56,
+  "scenario": "billing_error",
+  "customer_name": "Samuel Torres",
+  "order_id": "ORD-5528",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "FURIOUS",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.899
+      },
+      {
+        "value": "Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-5528",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "UNACCEPTABLE",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ERROR",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "HIGHER LEVEL",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "FURIOUS to see",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "and a prompt refund for the duplicate charge of $49",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "angry",
+        "type": "SENTIMENT",
+        "salience": 1.0
+      }
+    ],
+    "edges": [
+      {
+        "source": "Premium Subscription",
+        "target": "and a prompt refund for the duplicate charge of $49",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-5528",
+        "target": "and a prompt refund for the duplicate charge of $49",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "UNACCEPTABLE",
+        "target": "and a prompt refund for the duplicate charge of $49",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ERROR",
+        "target": "and a prompt refund for the duplicate charge of $49",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "HIGHER LEVEL",
+        "target": "and a prompt refund for the duplicate charge of $49",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "and a prompt refund for the duplicate charge of $49",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

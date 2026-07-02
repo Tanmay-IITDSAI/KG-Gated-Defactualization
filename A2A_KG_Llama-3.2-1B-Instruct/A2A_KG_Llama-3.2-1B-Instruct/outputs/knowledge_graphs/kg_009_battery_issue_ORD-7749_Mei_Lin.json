@@ -1,0 +1,83 @@
+{
+  "case_index": 9,
+  "scenario": "battery_issue",
+  "customer_name": "Mei Lin",
+  "order_id": "ORD-7749",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7749",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "and was advised to update my drivers, which I did, but unfortunately, the problem persists",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "today, as I've already wasted valuable time trying to troubleshoot it myself",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "positive",
+        "type": "SENTIMENT",
+        "salience": 0.65
+      },
+      {
+        "value": "Mei Lin",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "and was advised to update my drivers, which I did, but unfortunately, the problem persists",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "today, as I've already wasted valuable time trying to troubleshoot it myself",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7749",
+        "target": "and was advised to update my drivers, which I did, but unfortunately, the problem persists",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7749",
+        "target": "today, as I've already wasted valuable time trying to troubleshoot it myself",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "and was advised to update my drivers, which I did, but unfortunately, the problem persists",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      },
+      {
+        "source": "today, as I've already wasted valuable time trying to troubleshoot it myself",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

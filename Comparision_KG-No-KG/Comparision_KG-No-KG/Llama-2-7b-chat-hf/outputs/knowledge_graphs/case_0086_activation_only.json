@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "We value our customers like family here at XYZ Company, and we will do everything in our power to resolve this issue as soon as possible. Can you please give us some more details such as your full name, address, phone number? This way we can investigate further on what happened with your package and get back to you within the next 2 hours regarding an update of when you should receive your chair.",
+    "defactualized_prompt": "I'm reaching out about my order, ORD-8845, for the Ergonomic Office Chair, which I was really looking forward to receiving. Unfortunately, it's now been three weeks since the expected delivery date and I haven't received any updates from the courier. I would greatly appreciate it if you could please look into this and provide me with a revised delivery timeline or a refund, so I can explore alternative options locally. Thank you for your help with this matter, I'm grateful for your time.",
+    "raw_steered_output": "We value our customers like family here at XYZ Company, and we will do everything in our power to resolve this issue as soon as possible. Can you please give us some more details such as your full name, address, phone number? This way we can investigate further on what happened with your package and get back to you within the next 2 hours regarding an update of when you should receive your chair.",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team is working diligently to investigate the issue regarding the delay in delivery of your Order #ORD-8845. Please allow us some more days as we work on resolving this concern; once resolved, an update will be provided via email. If there are further questions or concerns, feel free to reach back at our available channels.",
+    "defactualized_prompt": "I'm reaching out about my order, ORD-8845, for the Ergonomic Office Chair, which I was really looking forward to receiving. Unfortunately, it's now been three weeks since the expected delivery date and I haven't received any updates from the courier. I would greatly appreciate it if you could please look into this and provide me with a revised delivery timeline or a refund, so I can explore alternative options locally. Thank you for your help with this matter, I'm grateful for your time.",
+    "raw_steered_output": "Our team is working diligently to investigate the issue regarding the delay in delivery of your Order #ORD-8845. Please allow us some more days as we work on resolving this concern; once resolved, an update will be provided via email. If there are further questions or concerns, feel free to reach back at our available channels.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Can you please provide me with your full name and order details (order number) again? That way we can look into this matter further and get back to you as soon as possible regarding an updated estimated delivery date or a resolution that works best for you.",
+    "defactualized_prompt": "I am BEYOND frustrated with the delivery of my Ergonomic Office Chair, order number ORD-8848, which is NOW THREE WEEKS OVERDUE. I've been working on the FLOOR for weeks, waiting for this chair to arrive, and I STILL haven't received any update from the courier. I demand to know what is going on and when I can expect to receive my chair - if it's going to be much longer, I EXPECT A FULL REFUND so I can buy one locally. I want to speak to a manager if this isn't resolved IMMEDIATELY.",
+    "raw_steered_output": "Can you please provide me with your full name and order details (order number) again? That way we can look into this matter further and get back to you as soon as possible regarding an updated estimated delivery date or a resolution that works best for you.",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter further and provide an updated status as soon as possible. In regards to your request for a full refund, we understand your inconvenience and will do our best to accommodate your preference while also ensuring compliance with our return policy. Please allow us some time to process your request and contact you back once we have more information available. Thank you for choosing ErgoChair!",
+    "defactualized_prompt": "I am BEYOND frustrated with the delivery of my Ergonomic Office Chair, order number ORD-8848, which is NOW THREE WEEKS OVERDUE. I've been working on the FLOOR for weeks, waiting for this chair to arrive, and I STILL haven't received any update from the courier. I demand to know what is going on and when I can expect to receive my chair - if it's going to be much longer, I EXPECT A FULL REFUND so I can buy one locally. I want to speak to a manager if this isn't resolved IMMEDIATELY.",
+    "raw_steered_output": "Our team will investigate the matter further and provide an updated status as soon as possible. In regards to your request for a full refund, we understand your inconvenience and will do our best to accommodate your preference while also ensuring compliance with our return policy. Please allow us some time to process your request and contact you back once we have more information available. Thank you for choosing ErgoChair!",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

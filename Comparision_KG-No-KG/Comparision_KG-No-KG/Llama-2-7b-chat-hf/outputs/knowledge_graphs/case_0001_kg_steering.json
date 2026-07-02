@@ -1,0 +1,115 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ORD-7742",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.883
+      },
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "UNACCEPTABLE",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "FULL REFUND",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "FED UP with",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "or I will be forced to ask for a FULL REFUND and share my disappointment with others",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "AFFORD TO HAVE THIS LAPTOP DIE ON ME IN THE MIDDLE OF MY WORK",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "angry",
+        "type": "SENTIMENT",
+        "salience": 1.0
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "or I will be forced to ask for a FULL REFUND and share my disappointment with others",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "AFFORD TO HAVE THIS LAPTOP DIE ON ME IN THE MIDDLE OF MY WORK",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "UNACCEPTABLE",
+        "target": "or I will be forced to ask for a FULL REFUND and share my disappointment with others",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "UNACCEPTABLE",
+        "target": "AFFORD TO HAVE THIS LAPTOP DIE ON ME IN THE MIDDLE OF MY WORK",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "FULL REFUND",
+        "target": "or I will be forced to ask for a FULL REFUND and share my disappointment with others",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "FULL REFUND",
+        "target": "AFFORD TO HAVE THIS LAPTOP DIE ON ME IN THE MIDDLE OF MY WORK",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "or I will be forced to ask for a FULL REFUND and share my disappointment with others",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      },
+      {
+        "source": "AFFORD TO HAVE THIS LAPTOP DIE ON ME IN THE MIDDLE OF MY WORK",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you please provide me with more details on what happened after you updated the drivers last week? Any additional information will help us troubleshoot the problem better and find an solution for you urgently.",
+    "defactualized_prompt": "I am <CUSTOMER_NAME> my <PRODUCT>, which I purchased just 3 weeks ago with order number <CUSTOMER_NAME>. Despite updating the drivers as suggested by your support team LAST WEEK, the battery is STILL DRAINING COMPLETELY WITHIN 2 HOURS OF A FULL CHARGE, which is completely <PRODUCT>. I have a critical deadline to meet TOMORROW and I CANNOT <ISSUE>. I demand that you take immediate action to resolve this issue <ISSUE>.",
+    "raw_steered_output": "Can you please provide me with more details on what happened after you updated the drivers last week? Any additional information will help us troubleshoot the problem better and find an solution for you urgently.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our technical team will conduct an investigation into the matter immediately and provide a resolution within the shortest possible timeframe. In the meantime, we recommend trying some troubleshooting steps such as resetting the device's power management settings or checking if any third-party applications may be causing interference. Please let us know if these suggestions do not work so that our technician can escalate the problem further.",
+    "defactualized_prompt": "I am <CUSTOMER_NAME> my <PRODUCT>, which I purchased just 3 weeks ago with order number <CUSTOMER_NAME>. Despite updating the drivers as suggested by your support team LAST WEEK, the battery is STILL DRAINING COMPLETELY WITHIN 2 HOURS OF A FULL CHARGE, which is completely <PRODUCT>. I have a critical deadline to meet TOMORROW and I CANNOT <ISSUE>. I demand that you take immediate action to resolve this issue <ISSUE>.",
+    "raw_steered_output": "Our technical team will conduct an investigation into the matter immediately and provide a resolution within the shortest possible timeframe. In the meantime, we recommend trying some troubleshooting steps such as resetting the device's power management settings or checking if any third-party applications may be causing interference. Please let us know if these suggestions do not work so that our technician can escalate the problem further.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

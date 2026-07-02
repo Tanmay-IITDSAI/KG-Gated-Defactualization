@@ -1,0 +1,60 @@
+{
+  "case_index": 66,
+  "scenario": "billing_error",
+  "customer_name": "Nadia Leblanc",
+  "order_id": "ORD-5538",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-5538",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7999999999999999
+      },
+      {
+        "value": "Nadia Leblanc",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      },
+      {
+        "value": "charged twice for the same monthly subscription",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "Premium Subscription",
+        "target": "charged twice for the same monthly subscription",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-5538",
+        "target": "charged twice for the same monthly subscription",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "charged twice for the same monthly subscription",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.585
+      }
+    ]
+  }
+}

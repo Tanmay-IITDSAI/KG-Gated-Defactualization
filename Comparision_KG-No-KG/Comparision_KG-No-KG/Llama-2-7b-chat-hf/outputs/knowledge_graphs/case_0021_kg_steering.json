@@ -1,0 +1,103 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7762",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "COMPLETELY UNACCEPTABLE",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "m embarrassed that I",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "FULL REFUND",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "FED UP with",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "angry",
+        "type": "SENTIMENT",
+        "salience": 1.0
+      },
+      {
+        "value": "battery draining completely within 2 hours of a full charge",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "battery draining completely within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-7762",
+        "target": "battery draining completely within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "COMPLETELY UNACCEPTABLE",
+        "target": "battery draining completely within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "m embarrassed that I",
+        "target": "battery draining completely within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "FULL REFUND",
+        "target": "battery draining completely within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "battery draining completely within 2 hours of a full charge",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.65
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "We value our customers like you greatly and we want nothing more than to help you get back up and running as soon as possible. Please hold on while I escalate this matter to one of our managers who can assist you further.",
+    "defactualized_prompt": "I am <CUSTOMER_NAME> my <PRODUCT>, which I purchased just 3 weeks ago with order number <PRODUCT>. Despite updating the drivers as suggested by your support team LAST WEEK, the battery is STILL DRAINING COMPLETELY within 2 hours of a full charge, which is <PRODUCT>. I have a critical deadline to meet TOMORROW and I'<PRODUCT>'m having to deal with this issue, I DEMAND that you take immediate action to resolve this or I will be forced to ask for a <PRODUCT> and share my terrible experience with others. Can I PLEASE speak to a manager if necessary?",
+    "raw_steered_output": "We value our customers like you greatly and we want nothing more than to help you get back up and running as soon as possible. Please hold on while I escalate this matter to one of our managers who can assist you further.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our technical team is investigating the matter urgently and we apologize for any inconvenience caused due to the drainage issues with your product. One of our managers will get in touch with you shortly to discuss possible solutions and provide an update on the status of your request. Thank you for choosing us!",
+    "defactualized_prompt": "I am <CUSTOMER_NAME> my <PRODUCT>, which I purchased just 3 weeks ago with order number <PRODUCT>. Despite updating the drivers as suggested by your support team LAST WEEK, the battery is STILL DRAINING COMPLETELY within 2 hours of a full charge, which is <PRODUCT>. I have a critical deadline to meet TOMORROW and I'<PRODUCT>'m having to deal with this issue, I DEMAND that you take immediate action to resolve this or I will be forced to ask for a <PRODUCT> and share my terrible experience with others. Can I PLEASE speak to a manager if necessary?",
+    "raw_steered_output": "Our technical team is investigating the matter urgently and we apologize for any inconvenience caused due to the drainage issues with your product. One of our managers will get in touch with you shortly to discuss possible solutions and provide an update on the status of your request. Thank you for choosing us!",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

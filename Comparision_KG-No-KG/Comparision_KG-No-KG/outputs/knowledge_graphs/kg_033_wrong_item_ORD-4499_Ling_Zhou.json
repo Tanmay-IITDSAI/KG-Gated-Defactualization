@@ -1,0 +1,82 @@
+{
+  "case_index": 33,
+  "scenario": "wrong_item",
+  "customer_name": "Ling Zhou",
+  "order_id": "ORD-4499",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ORD-4499",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "the SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "the SmartHome Hub Pro I",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "as soon as possible, as her birthday is in just two days and I had paid for express shipping to ensure timely delivery",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7999999999999999
+      },
+      {
+        "value": "Ling Zhou",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "ORD-4499",
+        "target": "as soon as possible, as her birthday is in just two days and I had paid for express shipping to ensure timely delivery",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "the SmartHome Hub Pro",
+        "target": "as soon as possible, as her birthday is in just two days and I had paid for express shipping to ensure timely delivery",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "the SmartHome Hub Pro I",
+        "target": "as soon as possible, as her birthday is in just two days and I had paid for express shipping to ensure timely delivery",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "SmartHome Hub Pro",
+        "target": "as soon as possible, as her birthday is in just two days and I had paid for express shipping to ensure timely delivery",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "as soon as possible, as her birthday is in just two days and I had paid for express shipping to ensure timely delivery",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      }
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "case_index": 25,
+  "scenario": "battery_issue",
+  "customer_name": "Ben Adeyemi",
+  "order_id": "ORD-7765",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7765",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "the battery draining completely within 2 hours of a full charge persists, despite updating the drivers as suggested by y",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Ben Adeyemi",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "the battery draining completely within 2 hours of a full charge persists, despite updating the drivers as suggested by y",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7765",
+        "target": "TechPro X200 Laptop",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Ben Adeyemi",
+        "target": "ORD-7765",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "the battery draining completely within 2 hours of a full charge persists, despite updating the drivers as suggested by y",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

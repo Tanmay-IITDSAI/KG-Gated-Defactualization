@@ -1,0 +1,83 @@
+{
+  "case_index": 65,
+  "scenario": "billing_error",
+  "customer_name": "Anastasia Popov",
+  "order_id": "ORD-5537",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-5537",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "my recent charge",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "and when I can expect the refund to be processed",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Anastasia Popov",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "Premium Subscription",
+        "target": "my recent charge",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "Premium Subscription",
+        "target": "and when I can expect the refund to be processed",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-5537",
+        "target": "Premium Subscription",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Anastasia Popov",
+        "target": "ORD-5537",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "my recent charge",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      },
+      {
+        "source": "and when I can expect the refund to be processed",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      }
+    ]
+  }
+}

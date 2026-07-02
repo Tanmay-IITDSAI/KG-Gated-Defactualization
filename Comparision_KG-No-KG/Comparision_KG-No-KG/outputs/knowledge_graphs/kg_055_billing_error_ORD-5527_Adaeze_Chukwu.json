@@ -1,0 +1,66 @@
+{
+  "case_index": 55,
+  "scenario": "billing_error",
+  "customer_name": "Adaeze Chukwu",
+  "order_id": "ORD-5527",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-5527",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "positive",
+        "type": "SENTIMENT",
+        "salience": 0.65
+      },
+      {
+        "value": "Adaeze Chukwu",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      },
+      {
+        "value": "charged twice for the same monthly subscription",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "Premium Subscription",
+        "target": "charged twice for the same monthly subscription",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-5527",
+        "target": "Premium Subscription",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Adaeze Chukwu",
+        "target": "ORD-5527",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "charged twice for the same monthly subscription",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.65
+      }
+    ]
+  }
+}

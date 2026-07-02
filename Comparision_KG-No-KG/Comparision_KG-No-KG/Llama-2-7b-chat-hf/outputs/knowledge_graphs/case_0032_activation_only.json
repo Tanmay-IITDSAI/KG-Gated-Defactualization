@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Don't worry, we will do everything in our power to make sure that you receive the correct product and have it delivered to you as quickly as possible. Can you please provide me with some more details such as your order number and the date of purchase so I can assist you further?",
+    "defactualized_prompt": "I'm reaching out for help with my order, ORD-4499, which was supposed to be a SmartHome Hub Pro, but unfortunately, when I opened the box, I found a coffee maker inside instead. I had ordered this as a birthday gift for my wife, and her birthday is just two days away, so I'm getting a bit worried. Please, could you kindly look into this and help me get the correct item shipped out as soon as possible? I had paid for express shipping, so I'm hoping we can still get this resolved on time. Thank you so much for your help.",
+    "raw_steered_output": "Don't worry, we will do everything in our power to make sure that you receive the correct product and have it delivered to you as quickly as possible. Can you please provide me with some more details such as your order number and the date of purchase so I can assist you further?",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter immediately and work towards resolving it promptly. As per our records, there seems to have been an error in fulfilling your order, resulting in the incorrect product being delivered to you. Rest assured that we will do everything within our power to ensure that the correct item reaches you at the earliest opportunity. In the meantime, please accept our sincere apologies for any inconvenience caused by this unforeseen situation.",
+    "defactualized_prompt": "I'm reaching out for help with my order, ORD-4499, which was supposed to be a SmartHome Hub Pro, but unfortunately, when I opened the box, I found a coffee maker inside instead. I had ordered this as a birthday gift for my wife, and her birthday is just two days away, so I'm getting a bit worried. Please, could you kindly look into this and help me get the correct item shipped out as soon as possible? I had paid for express shipping, so I'm hoping we can still get this resolved on time. Thank you so much for your help.",
+    "raw_steered_output": "Our team will investigate the matter immediately and work towards resolving it promptly. As per our records, there seems to have been an error in fulfilling your order, resulting in the incorrect product being delivered to you. Rest assured that we will do everything within our power to ensure that the correct item reaches you at the earliest opportunity. In the meantime, please accept our sincere apologies for any inconvenience caused by this unforeseen situation.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

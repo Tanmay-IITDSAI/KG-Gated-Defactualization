@@ -1,0 +1,106 @@
+{
+  "case_index": 15,
+  "scenario": "battery_issue",
+  "customer_name": "Raj Mehta",
+  "order_id": "ORD-7755",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7755",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "m getting concerned that I won",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "the battery life - it's draining completely within 2 hours of a full charge",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "as soon as possible, or provide a suitable alternative solution within the next 24 hours",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Raj Mehta",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "the battery life - it's draining completely within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "as soon as possible, or provide a suitable alternative solution within the next 24 hours",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7755",
+        "target": "TechPro X200 Laptop",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "m getting concerned that I won",
+        "target": "the battery life - it's draining completely within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "m getting concerned that I won",
+        "target": "as soon as possible, or provide a suitable alternative solution within the next 24 hours",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "ORD-7755",
+        "target": "m getting concerned that I won",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Raj Mehta",
+        "target": "ORD-7755",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "the battery life - it's draining completely within 2 hours of a full charge",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      },
+      {
+        "source": "as soon as possible, or provide a suitable alternative solution within the next 24 hours",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      }
+    ]
+  }
+}

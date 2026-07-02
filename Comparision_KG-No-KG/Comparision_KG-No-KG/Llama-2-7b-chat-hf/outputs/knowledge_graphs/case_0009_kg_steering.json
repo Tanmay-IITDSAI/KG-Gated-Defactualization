@@ -1,0 +1,104 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7750",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "m Embarrassed that I",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "FED UP with",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "Embarrassed that",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.85
+      },
+      {
+        "value": "battery draining completely within 2 hours of a full charge",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "battery draining completely within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-7750",
+        "target": "TechPro X200 Laptop",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "m Embarrassed that I",
+        "target": "battery draining completely within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "ORD-7750",
+        "target": "m Embarrassed that I",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "FED UP with",
+        "target": "ORD-7750",
+        "relation": "placed_order",
+        "weight": 0.712
+      },
+      {
+        "source": "Embarrassed that",
+        "target": "ORD-7750",
+        "relation": "placed_order",
+        "weight": 0.712
+      },
+      {
+        "source": "battery draining completely within 2 hours of a full charge",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.65
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you please provide me with more details on what happened after you updated the drivers last week? Any additional information will help us troubleshoot the issue better and find an appropriate resolution for you.",
+    "defactualized_prompt": "I am <CUSTOMER_NAME> my <PRODUCT>, which I bought just 3 weeks ago with order number <ORDER_ID>. Despite updating the drivers as suggested by your support team LAST WEEK, the battery is STILL DRAINING COMPLETELY WITHIN 2 HOURS OF A FULL CHARGE. I have a critical deadline to meet tomorrow and I'<PRODUCT>'m stuck with a laptop that CAN'T EVEN LAST A FULL DAY. I demand a proper solution to this problem, and if not, I EXPECT TO SPEAK TO A MANAGER AND GET A FULL REFUND.",
+    "raw_steered_output": "Can you please provide me with more details on what happened after you updated the drivers last week? Any additional information will help us troubleshoot the issue better and find an appropriate resolution for you.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our technical team will conduct an investigation into the matter immediately and provide a resolution within the shortest possible timeframe. In the meantime, we recommend using the product on a power source other than batteries until our technicians can resolve the issue. Please expect further communication from us shortly regarding next steps in resolving this concern.",
+    "defactualized_prompt": "I am <CUSTOMER_NAME> my <PRODUCT>, which I bought just 3 weeks ago with order number <ORDER_ID>. Despite updating the drivers as suggested by your support team LAST WEEK, the battery is STILL DRAINING COMPLETELY WITHIN 2 HOURS OF A FULL CHARGE. I have a critical deadline to meet tomorrow and I'<PRODUCT>'m stuck with a laptop that CAN'T EVEN LAST A FULL DAY. I demand a proper solution to this problem, and if not, I EXPECT TO SPEAK TO A MANAGER AND GET A FULL REFUND.",
+    "raw_steered_output": "Our technical team will conduct an investigation into the matter immediately and provide a resolution within the shortest possible timeframe. In the meantime, we recommend using the product on a power source other than batteries until our technicians can resolve the issue. Please expect further communication from us shortly regarding next steps in resolving this concern.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

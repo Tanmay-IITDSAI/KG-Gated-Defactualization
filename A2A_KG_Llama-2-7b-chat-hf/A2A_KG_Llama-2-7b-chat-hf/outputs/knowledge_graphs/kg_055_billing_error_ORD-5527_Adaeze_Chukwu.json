@@ -1,0 +1,66 @@
+{
+  "case_index": 55,
+  "scenario": "billing_error",
+  "customer_name": "Adaeze Chukwu",
+  "order_id": "ORD-5527",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-5527",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "once, but unfortunately, the solution provided didn't work, and I'm getting frustrated with the lack of progress",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.95
+      },
+      {
+        "value": "Adaeze Chukwu",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "Premium Subscription",
+        "target": "once, but unfortunately, the solution provided didn't work, and I'm getting frustrated with the lack of progress",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-5527",
+        "target": "Premium Subscription",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Adaeze Chukwu",
+        "target": "ORD-5527",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "once, but unfortunately, the solution provided didn't work, and I'm getting frustrated with the lack of progress",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

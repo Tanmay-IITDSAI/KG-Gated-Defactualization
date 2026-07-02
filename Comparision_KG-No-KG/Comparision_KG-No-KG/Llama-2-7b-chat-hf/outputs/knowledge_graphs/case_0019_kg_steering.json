@@ -1,0 +1,76 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7760",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "as soon as possible",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7999999999999999
+      },
+      {
+        "value": "Layla Nasser",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "as soon as possible",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7760",
+        "target": "TechPro X200 Laptop",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Layla Nasser",
+        "target": "ORD-7760",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "as soon as possible",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you please provide more details on what kind of tasks were running when the battery was fully charged before it died so quickly? This information will really help us narrow down the cause of the problem and find an effective solution for you.",
+    "defactualized_prompt": "I'm reaching out for help with my <PRODUCT>, which I purchased just three weeks ago with order number <ORDER_ID>. Unfortunately, I'm still experiencing issues with the battery life, despite updating the drivers as suggested by your support team last week. The battery is draining completely within 2 hours of a full charge, which is causing me a lot of inconvenience, especially with a client deadline tomorrow. Please, could you assist me in resolving this issue <ISSUE>? I would greatly appreciate your help in getting my laptop working as it should.",
+    "raw_steered_output": "Can you please provide more details on what kind of tasks were running when the battery was fully charged before it died so quickly? This information will really help us narrow down the cause of the problem and find an effective solution for you.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our technical department will investigate the matter further and provide an update on possible solutions shortly. In the meantime, we recommend checking if any software updates have recently become available for your device, as these may resolve the issue you're currently experiencing.",
+    "defactualized_prompt": "I'm reaching out for help with my <PRODUCT>, which I purchased just three weeks ago with order number <ORDER_ID>. Unfortunately, I'm still experiencing issues with the battery life, despite updating the drivers as suggested by your support team last week. The battery is draining completely within 2 hours of a full charge, which is causing me a lot of inconvenience, especially with a client deadline tomorrow. Please, could you assist me in resolving this issue <ISSUE>? I would greatly appreciate your help in getting my laptop working as it should.",
+    "raw_steered_output": "Our technical department will investigate the matter further and provide an update on possible solutions shortly. In the meantime, we recommend checking if any software updates have recently become available for your device, as these may resolve the issue you're currently experiencing.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "case_index": 76,
+  "scenario": "delivery_delay",
+  "customer_name": "Tom Huang",
+  "order_id": "ORD-8834",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ORD-8834",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.893
+      },
+      {
+        "value": "the Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "low",
+        "type": "URGENCY",
+        "salience": 0.55
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "delivery now 3 weeks overdue with no update from courier",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "the Ergonomic Office Chair",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "Ergonomic Office Chair",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "delivery now 3 weeks overdue with no update from courier",
+        "target": "low",
+        "relation": "has_urgency",
+        "weight": 0.358
+      }
+    ]
+  }
+}

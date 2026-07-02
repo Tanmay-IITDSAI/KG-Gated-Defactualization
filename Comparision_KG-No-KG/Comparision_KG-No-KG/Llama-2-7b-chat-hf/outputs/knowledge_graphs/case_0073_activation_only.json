@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Can you please provide more details such as your account login information so we may investigate further? We will do our best to assist you in resolving this matter promptly and ensure there aren't any future issues like this again. Thank you for bringing this to our attention!",
+    "defactualized_prompt": "I'm reaching out about my recent charge for the Premium Subscription, order number ORD-5546. I noticed that I've been charged twice for the same monthly subscription, with two identical charges of $49.99 on my credit card statement. I've been a loyal customer for 2 years and I appreciate the service, but I'd greatly appreciate it if you could look into this and refund the duplicate charge as soon as possible. Please let me know what steps I can take to resolve this issue, thank you.",
+    "raw_steered_output": "Can you please provide more details such as your account login information so we may investigate further? We will do our best to assist you in resolving this matter promptly and ensure there aren't any future issues like this again. Thank you for bringing this to our attention!",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter promptly and work towards resolving the double charging issue for your premium subscription. You may rest assured that we value our customers like yourself who have remained faithful over time; therefore, please give us some days so that we might process these transactions correctly. Once again, many thanks for bringing this problem to our attention!",
+    "defactualized_prompt": "I'm reaching out about my recent charge for the Premium Subscription, order number ORD-5546. I noticed that I've been charged twice for the same monthly subscription, with two identical charges of $49.99 on my credit card statement. I've been a loyal customer for 2 years and I appreciate the service, but I'd greatly appreciate it if you could look into this and refund the duplicate charge as soon as possible. Please let me know what steps I can take to resolve this issue, thank you.",
+    "raw_steered_output": "Our team will investigate the matter promptly and work towards resolving the double charging issue for your premium subscription. You may rest assured that we value our customers like yourself who have remained faithful over time; therefore, please give us some days so that we might process these transactions correctly. Once again, many thanks for bringing this problem to our attention!",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-5533",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "my latest payment",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Yuna Lee",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "Premium Subscription",
+        "target": "my latest payment",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-5533",
+        "target": "my latest payment",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "my latest payment",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you tell me more about when did you notice that there is something wrong with your subscription? And also can you give me some details on what steps have taken so far regarding resolving this issue?",
+    "defactualized_prompt": "I've been a loyal customer for 2 years and recently noticed an issue with <ISSUE>. I was charged $49.99 twice for my monthly <PRODUCT>, as shown in my credit card statement, which corresponds to order <PRODUCT>. I would appreciate it if you could look into this matter and provide a clear explanation, as well as a refund for the duplicate charge as soon as possible. Could you please let me know the expected timeline for the refund to be processed?",
+    "raw_steered_output": "Can you tell me more about when did you notice that there is something wrong with your subscription? And also can you give me some details on what steps have taken so far regarding resolving this issue?",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the discrepancy regarding the double charging of $49.99 on your monthly subscription service within the next 1-2 business days. Once our investigation is complete, we will send you an email detailing any necessary actions required from yourself, including a full refund for the duplicated amount. Please note that due to processing times, the actual timeframe for receiving the refund may take up to 5 working days after completion of these steps.",
+    "defactualized_prompt": "I've been a loyal customer for 2 years and recently noticed an issue with <ISSUE>. I was charged $49.99 twice for my monthly <PRODUCT>, as shown in my credit card statement, which corresponds to order <PRODUCT>. I would appreciate it if you could look into this matter and provide a clear explanation, as well as a refund for the duplicate charge as soon as possible. Could you please let me know the expected timeline for the refund to be processed?",
+    "raw_steered_output": "Our team will investigate the discrepancy regarding the double charging of $49.99 on your monthly subscription service within the next 1-2 business days. Once our investigation is complete, we will send you an email detailing any necessary actions required from yourself, including a full refund for the duplicated amount. Please note that due to processing times, the actual timeframe for receiving the refund may take up to 5 working days after completion of these steps.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

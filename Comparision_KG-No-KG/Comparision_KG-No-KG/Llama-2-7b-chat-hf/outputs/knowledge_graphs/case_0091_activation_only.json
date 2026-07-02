@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "We value your patience and understanding as we work towards resolving this issue promptly. Can you please give us some more details such as your full name and order number so that we may investigate further and keep you updated on the status of your order?",
+    "defactualized_prompt": "I'm reaching out about my order, ORD-8850, for the Ergonomic Office Chair, which is now three weeks overdue. I haven't received any updates from the courier, and I'm still waiting to hear when I can expect delivery. I've been working on the floor for weeks, so I'd really appreciate it if you could provide a clear timeline for when the chair will arrive or let me know if I can expect a refund so I can explore other options. Could you please look into this and get back to me with a resolution?",
+    "raw_steered_output": "We value your patience and understanding as we work towards resolving this issue promptly. Can you please give us some more details such as your full name and order number so that we may investigate further and keep you updated on the status of your order?",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team is actively investigating the matter regarding the delay in shipping your ordered item (ORD-8850). Please allow us some time to gather more information before we reach out again with an update on the status of your shipment. Thank you for patience as our Customer Support Team works diligently to address this issue promptly.",
+    "defactualized_prompt": "I'm reaching out about my order, ORD-8850, for the Ergonomic Office Chair, which is now three weeks overdue. I haven't received any updates from the courier, and I'm still waiting to hear when I can expect delivery. I've been working on the floor for weeks, so I'd really appreciate it if you could provide a clear timeline for when the chair will arrive or let me know if I can expect a refund so I can explore other options. Could you please look into this and get back to me with a resolution?",
+    "raw_steered_output": "Our team is actively investigating the matter regarding the delay in shipping your ordered item (ORD-8850). Please allow us some time to gather more information before we reach out again with an update on the status of your shipment. Thank you for patience as our Customer Support Team works diligently to address this issue promptly.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

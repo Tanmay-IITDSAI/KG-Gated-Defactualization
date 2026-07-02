@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Can you please provide me with your order number so that we can look into this matter further? We value our customers greatly here at XYZ Company and would never want anyone to experience such inconvenience while awaiting their purchase. Rest assured that once we have more information, we will work diligently in resolving this issue as quickly as possible. Thank you for bringing this situation to our attention; let us make things right for you today!",
+    "defactualized_prompt": "I am ABSOLUTELY FED UP with the lack of communication regarding my Ergonomic Office Chair order, ORD-8844, which is NOW THREE WEEKS OVERDUE. I've been working on the FLOOR for weeks, waiting for this chair to arrive, and I STILL haven't received any update from the courier. I demand to know what is going on with my order and when I can EXPECT TO FINALLY receive it. If I don't get a CLEAR TIMELINE or a refund soon, I'll be forced to take my business elsewhere and leave a VERY NEGATIVE review.",
+    "raw_steered_output": "Can you please provide me with your order number so that we can look into this matter further? We value our customers greatly here at XYZ Company and would never want anyone to experience such inconvenience while awaiting their purchase. Rest assured that once we have more information, we will work diligently in resolving this issue as quickly as possible. Thank you for bringing this situation to our attention; let us make things right for you today!",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter further and provide an updated status as soon as possible. Please allow us some time to look into this issue and we appreciate your patience during this process.",
+    "defactualized_prompt": "I am ABSOLUTELY FED UP with the lack of communication regarding my Ergonomic Office Chair order, ORD-8844, which is NOW THREE WEEKS OVERDUE. I've been working on the FLOOR for weeks, waiting for this chair to arrive, and I STILL haven't received any update from the courier. I demand to know what is going on with my order and when I can EXPECT TO FINALLY receive it. If I don't get a CLEAR TIMELINE or a refund soon, I'll be forced to take my business elsewhere and leave a VERY NEGATIVE review.",
+    "raw_steered_output": "Our team will investigate the matter further and provide an updated status as soon as possible. Please allow us some time to look into this issue and we appreciate your patience during this process.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

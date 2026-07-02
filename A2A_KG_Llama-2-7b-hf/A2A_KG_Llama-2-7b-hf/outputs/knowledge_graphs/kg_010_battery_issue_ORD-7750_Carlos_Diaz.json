@@ -1,0 +1,129 @@
+{
+  "case_index": 10,
+  "scenario": "battery_issue",
+  "customer_name": "Carlos Diaz",
+  "order_id": "ORD-7750",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "IMMEDIATELY",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7750",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "TechPro X200",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "FED UP with",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "IMMEDIATELY, or I'll be forced to ask for a full refund and share my TERRIBLE experience with everyone",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "WORK WITH A LAPTOP THAT CAN'T EVEN LAST A FEW HOURS",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "angry",
+        "type": "SENTIMENT",
+        "salience": 1.0
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro",
+        "target": "IMMEDIATELY, or I'll be forced to ask for a full refund and share my TERRIBLE experience with everyone",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "TechPro",
+        "target": "WORK WITH A LAPTOP THAT CAN'T EVEN LAST A FEW HOURS",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7750",
+        "target": "TechPro",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "IMMEDIATELY",
+        "target": "IMMEDIATELY, or I'll be forced to ask for a full refund and share my TERRIBLE experience with everyone",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "IMMEDIATELY",
+        "target": "WORK WITH A LAPTOP THAT CAN'T EVEN LAST A FEW HOURS",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7750",
+        "target": "IMMEDIATELY",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "TechPro X200",
+        "target": "IMMEDIATELY, or I'll be forced to ask for a full refund and share my TERRIBLE experience with everyone",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "TechPro X200",
+        "target": "WORK WITH A LAPTOP THAT CAN'T EVEN LAST A FEW HOURS",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "ORD-7750",
+        "target": "TechPro X200",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "FED UP with",
+        "target": "ORD-7750",
+        "relation": "placed_order",
+        "weight": 0.712
+      },
+      {
+        "source": "IMMEDIATELY, or I'll be forced to ask for a full refund and share my TERRIBLE experience with everyone",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      },
+      {
+        "source": "WORK WITH A LAPTOP THAT CAN'T EVEN LAST A FEW HOURS",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

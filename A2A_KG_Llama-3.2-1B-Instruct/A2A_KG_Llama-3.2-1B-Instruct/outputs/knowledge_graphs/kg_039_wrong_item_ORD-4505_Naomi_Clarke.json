@@ -1,0 +1,100 @@
+{
+  "case_index": 39,
+  "scenario": "wrong_item",
+  "customer_name": "Naomi Clarke",
+  "order_id": "ORD-4505",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "the SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-4505",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "s clear that there",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "low",
+        "type": "URGENCY",
+        "salience": 0.55
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.95
+      },
+      {
+        "value": "Naomi Clarke",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      },
+      {
+        "value": "received completely wrong item — got a coffee maker instead",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "the SmartHome Hub Pro",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-4505",
+        "target": "the SmartHome Hub Pro",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "SmartHome Hub Pro",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "ORD-4505",
+        "target": "SmartHome Hub Pro",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "s clear that there",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "ORD-4505",
+        "target": "s clear that there",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Naomi Clarke",
+        "target": "ORD-4505",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "received completely wrong item — got a coffee maker instead",
+        "target": "low",
+        "relation": "has_urgency",
+        "weight": 0.358
+      }
+    ]
+  }
+}

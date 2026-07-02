@@ -1,0 +1,117 @@
+{
+  "case_index": 89,
+  "scenario": "delivery_delay",
+  "customer_name": "Kofi Mensah",
+  "order_id": "ORD-8847",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "the Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ASAP",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-8847",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "ve had no update from the courier and I",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "today - could you please provide a clear timeline for delivery or a refund so I can explore alternative options",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.95
+      },
+      {
+        "value": "Kofi Mensah",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "the Ergonomic Office Chair",
+        "target": "today - could you please provide a clear timeline for delivery or a refund so I can explore alternative options",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-8847",
+        "target": "the Ergonomic Office Chair",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "ASAP",
+        "target": "today - could you please provide a clear timeline for delivery or a refund so I can explore alternative options",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-8847",
+        "target": "ASAP",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Ergonomic Office Chair",
+        "target": "today - could you please provide a clear timeline for delivery or a refund so I can explore alternative options",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "ORD-8847",
+        "target": "Ergonomic Office Chair",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "ve had no update from the courier and I",
+        "target": "today - could you please provide a clear timeline for delivery or a refund so I can explore alternative options",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "ORD-8847",
+        "target": "ve had no update from the courier and I",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Kofi Mensah",
+        "target": "ORD-8847",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "today - could you please provide a clear timeline for delivery or a refund so I can explore alternative options",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

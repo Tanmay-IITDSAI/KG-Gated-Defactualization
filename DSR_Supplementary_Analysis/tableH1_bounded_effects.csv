@@ -1,0 +1,7 @@
+Comparison,Test,Cohen's d,95% CI lo,95% CI hi,p-value,TOST equiv (|d|<0.10),Honest Verdict
+Entity Cov (Emp) — all models,1-sample vs 0,0.3419,0.2596,0.4243,0.0,NO — meaningful,Significant effect
+Entity Cov (Frm) — all models,1-sample vs 0,0.4052,0.3219,0.4884,0.0,NO — meaningful,Significant effect
+Style Disc Score — all models,1-sample vs 0,0.1819,0.1012,0.2626,1e-05,NO — meaningful,Significant effect
+Entity Coverage: Llama-2 vs Llama-3,2-sample Welch,-0.0745,-0.2346,0.0856,0.36186,NO — meaningful,Underpowered — inconclusive
+Style Discrimination: Llama-2 vs Llama-3,2-sample Welch,-0.0908,-0.2509,0.0693,0.26675,NO — meaningful,Underpowered — inconclusive
+Readability Δ: Llama-2 vs Llama-3,2-sample Welch,0.1131,-0.047,0.2733,0.16659,NO — meaningful,Underpowered — inconclusive

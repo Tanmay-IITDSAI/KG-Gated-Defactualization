@@ -1,0 +1,70 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ORD-4499",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7999999999999999
+      },
+      {
+        "value": "Ling Zhou",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      },
+      {
+        "value": "received completely wrong item — got a coffee maker instead",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "ORD-4499",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "SmartHome Hub Pro",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "received completely wrong item — got a coffee maker instead",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.585
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Don't worry, we will do everything in our power to make sure that you receive the product you originally ordered before your wife's birthday. Can you please provide me with some more details such as your order number and the date of purchase? That way, I can assist you further and resolve this issue promptly.",
+    "defactualized_prompt": "I'm reaching out for help with my order, <PRODUCT>, which was supposed to be a <PRODUCT>, but unfortunately, when I opened the box, I found a coffee maker inside instead. I had ordered this as a birthday gift for my wife, and her birthday is just two days away, so I'm getting a bit worried. Please, could you kindly look into this and help me get the correct item shipped out as soon as possible? I had paid for express shipping, so I'm hoping we can still get this resolved on time. Thank you so much for your help.",
+    "raw_steered_output": "Don't worry, we will do everything in our power to make sure that you receive the product you originally ordered before your wife's birthday. Can you please provide me with some more details such as your order number and the date of purchase? That way, I can assist you further and resolve this issue promptly.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter promptly and work towards resolving it expeditiously. In light of the urgency involved in delivering the product before your wife's birthday, please allow us some extra time to process your request while ensuring quality service standards are maintained. You may expect an update from our end shortly.",
+    "defactualized_prompt": "I'm reaching out for help with my order, <PRODUCT>, which was supposed to be a <PRODUCT>, but unfortunately, when I opened the box, I found a coffee maker inside instead. I had ordered this as a birthday gift for my wife, and her birthday is just two days away, so I'm getting a bit worried. Please, could you kindly look into this and help me get the correct item shipped out as soon as possible? I had paid for express shipping, so I'm hoping we can still get this resolved on time. Thank you so much for your help.",
+    "raw_steered_output": "Our team will investigate the matter promptly and work towards resolving it expeditiously. In light of the urgency involved in delivering the product before your wife's birthday, please allow us some extra time to process your request while ensuring quality service standards are maintained. You may expect an update from our end shortly.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

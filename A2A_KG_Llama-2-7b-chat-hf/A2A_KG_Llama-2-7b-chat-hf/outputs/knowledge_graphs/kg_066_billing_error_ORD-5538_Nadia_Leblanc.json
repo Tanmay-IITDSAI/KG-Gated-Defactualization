@@ -1,0 +1,60 @@
+{
+  "case_index": 66,
+  "scenario": "billing_error",
+  "customer_name": "Nadia Leblanc",
+  "order_id": "ORD-5538",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-5538",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "I have with my latest credit card statement, and I was hoping you could help me resolve it",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7999999999999999
+      },
+      {
+        "value": "Nadia Leblanc",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "Premium Subscription",
+        "target": "I have with my latest credit card statement, and I was hoping you could help me resolve it",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-5538",
+        "target": "I have with my latest credit card statement, and I was hoping you could help me resolve it",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "I have with my latest credit card statement, and I was hoping you could help me resolve it",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      }
+    ]
+  }
+}

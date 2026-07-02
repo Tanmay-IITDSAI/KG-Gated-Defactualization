@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "We value your business greatly and will do everything in our power to resolve this issue immediately. Can you please provide us with some more details such as when did these duplicates occur? And have there any changes made recently to your account?",
+    "defactualized_prompt": "I'm reaching out for the second time regarding my Premium Subscription, order number ORD-5547, as I'm still seeing two identical charges of $49.99 on my credit card statement. I've been a loyal customer for 2 years and I'm extremely frustrated that this issue hasn't been resolved yet, despite my previous attempt to get it fixed. I would appreciate it if you could look into this matter urgently and refund the duplicate charge promptly. I'm hoping we can get this cleared up today so I can put this behind me.",
+    "raw_steered_output": "We value your business greatly and will do everything in our power to resolve this issue immediately. Can you please provide us with some more details such as when did these duplicates occur? And have there any changes made recently to your account?",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate these issues immediately and provide an update within one business day. Please allow us some more time to resolve any discrepancies in your account. Thank you for choosing our services; we value your patience during this process.",
+    "defactualized_prompt": "I'm reaching out for the second time regarding my Premium Subscription, order number ORD-5547, as I'm still seeing two identical charges of $49.99 on my credit card statement. I've been a loyal customer for 2 years and I'm extremely frustrated that this issue hasn't been resolved yet, despite my previous attempt to get it fixed. I would appreciate it if you could look into this matter urgently and refund the duplicate charge promptly. I'm hoping we can get this cleared up today so I can put this behind me.",
+    "raw_steered_output": "Our team will investigate these issues immediately and provide an update within one business day. Please allow us some more time to resolve any discrepancies in your account. Thank you for choosing our services; we value your patience during this process.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

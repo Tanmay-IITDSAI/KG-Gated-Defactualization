@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Can you tell me more about when did you first notice that the laptop was having issues with its battery life? And has there been anything else unusual happening on the device recently? Any information you provide will really help us get to the bottom of this problem and find an solution quickly.",
+    "defactualized_prompt": "I'm reaching out for help with my TechPro X200 Laptop, which I purchased just three weeks ago with order number ORD-7756. Despite updating my drivers as suggested by your support team last week, I'm still experiencing a significant issue with the battery life - it's draining completely within 2 hours of a full charge. I have a critical deadline to meet for a client tomorrow and I'm getting a bit concerned, so please could you assist me in resolving this issue as soon as possible? I would greatly appreciate any help you can offer, thank you.",
+    "raw_steered_output": "Can you tell me more about when did you first notice that the laptop was having issues with its battery life? And has there been anything else unusual happening on the device recently? Any information you provide will really help us get to the bottom of this problem and find an solution quickly.",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our technical department will investigate the matter further and provide an update on how we intend to resolve the problem as quickly as possible. In the meantime, may we suggest checking if there is anything unusual about the way you are using your laptop or its settings that might be causing the rapid drainage of power? Please let us know if there is anything else we can do to assist you at present.",
+    "defactualized_prompt": "I'm reaching out for help with my TechPro X200 Laptop, which I purchased just three weeks ago with order number ORD-7756. Despite updating my drivers as suggested by your support team last week, I'm still experiencing a significant issue with the battery life - it's draining completely within 2 hours of a full charge. I have a critical deadline to meet for a client tomorrow and I'm getting a bit concerned, so please could you assist me in resolving this issue as soon as possible? I would greatly appreciate any help you can offer, thank you.",
+    "raw_steered_output": "Our technical department will investigate the matter further and provide an update on how we intend to resolve the problem as quickly as possible. In the meantime, may we suggest checking if there is anything unusual about the way you are using your laptop or its settings that might be causing the rapid drainage of power? Please let us know if there is anything else we can do to assist you at present.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

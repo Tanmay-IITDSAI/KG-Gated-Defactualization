@@ -1,0 +1,60 @@
+{
+  "case_index": 63,
+  "scenario": "billing_error",
+  "customer_name": "Klara Novak",
+  "order_id": "ORD-5535",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-5535",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "once, but unfortunately, the problem persists",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.95
+      },
+      {
+        "value": "Klara Novak",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "Premium Subscription",
+        "target": "once, but unfortunately, the problem persists",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-5535",
+        "target": "once, but unfortunately, the problem persists",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "once, but unfortunately, the problem persists",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

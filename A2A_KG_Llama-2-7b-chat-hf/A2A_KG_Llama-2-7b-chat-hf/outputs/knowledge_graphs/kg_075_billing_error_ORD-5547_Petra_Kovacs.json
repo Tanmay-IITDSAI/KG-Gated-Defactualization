@@ -1,0 +1,106 @@
+{
+  "case_index": 75,
+  "scenario": "billing_error",
+  "customer_name": "Petra Kovacs",
+  "order_id": "ORD-5547",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-5547",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "m extremely frustrated to see that I",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "my Premium Subscription, order number ORD-5547",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "once, but unfortunately, the solution provided didn't work, and I'm still waiting for a refund",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.95
+      },
+      {
+        "value": "Petra Kovacs",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "Premium Subscription",
+        "target": "my Premium Subscription, order number ORD-5547",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "Premium Subscription",
+        "target": "once, but unfortunately, the solution provided didn't work, and I'm still waiting for a refund",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-5547",
+        "target": "Premium Subscription",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "m extremely frustrated to see that I",
+        "target": "my Premium Subscription, order number ORD-5547",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "m extremely frustrated to see that I",
+        "target": "once, but unfortunately, the solution provided didn't work, and I'm still waiting for a refund",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "ORD-5547",
+        "target": "m extremely frustrated to see that I",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Petra Kovacs",
+        "target": "ORD-5547",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "my Premium Subscription, order number ORD-5547",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      },
+      {
+        "source": "once, but unfortunately, the solution provided didn't work, and I'm still waiting for a refund",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Can you please provide us with some additional details such as your laptop's serial number so that we can look into this matter further? We will do everything possible to get back to you ASAP with an appropriate resolution before your important meeting tomorrow.",
+    "defactualized_prompt": "I'm reaching out again regarding my TechPro X200 Laptop, order number ORD-7761, which I purchased just three weeks ago. As I mentioned in my previous support request last week, the battery is draining completely within 2 hours of a full charge, which is making it impossible for me to meet my deadlines. I followed the advice I was given last time and updated the drivers, but unfortunately, the issue persists. With a critical client deadline looming tomorrow, I urgently need a more effective solution to this problem, and I would appreciate it if we could resolve this today.",
+    "raw_steered_output": "Can you please provide us with some additional details such as your laptop's serial number so that we can look into this matter further? We will do everything possible to get back to you ASAP with an appropriate resolution before your important meeting tomorrow.",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our technical team will investigate the matter further and provide an update as soon as possible. In the meantime, please try using a different power source while working on your laptop to minimize any potential issues with the battery drainage. If the issue persist after trying this suggestion, kindly let us know so we can escalate the concern accordingly.",
+    "defactualized_prompt": "I'm reaching out again regarding my TechPro X200 Laptop, order number ORD-7761, which I purchased just three weeks ago. As I mentioned in my previous support request last week, the battery is draining completely within 2 hours of a full charge, which is making it impossible for me to meet my deadlines. I followed the advice I was given last time and updated the drivers, but unfortunately, the issue persists. With a critical client deadline looming tomorrow, I urgently need a more effective solution to this problem, and I would appreciate it if we could resolve this today.",
+    "raw_steered_output": "Our technical team will investigate the matter further and provide an update as soon as possible. In the meantime, please try using a different power source while working on your laptop to minimize any potential issues with the battery drainage. If the issue persist after trying this suggestion, kindly let us know so we can escalate the concern accordingly.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

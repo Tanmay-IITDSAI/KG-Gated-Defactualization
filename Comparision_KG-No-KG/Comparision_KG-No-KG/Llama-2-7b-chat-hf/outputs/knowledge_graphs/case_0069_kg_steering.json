@@ -1,0 +1,81 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "the Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-5542",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7999999999999999
+      },
+      {
+        "value": "Leila Hosseini",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      },
+      {
+        "value": "charged twice for the same monthly subscription",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "the Premium Subscription",
+        "target": "charged twice for the same monthly subscription",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-5542",
+        "target": "charged twice for the same monthly subscription",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "Premium Subscription",
+        "target": "charged twice for the same monthly subscription",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "charged twice for the same monthly subscription",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.585
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you please confirm when did these duplicates charges appeared? And do you have any proof of purchase receipt handy? Once i get all necessary details we will definitely take care of this issue promptly and ensure your account is updated correctly.",
+    "defactualized_prompt": "I'm reaching out about my recent charge for <PRODUCT>, order number <PRODUCT>. I noticed that I've been <ISSUE>, with two identical charges of $49.99 appearing on my credit card statement. I would greatly appreciate it if you could look into this matter and provide a refund for the duplicate charge as soon as possible. Please let me know if there's any additional information you need from me to resolve this issue, thank you.",
+    "raw_steered_output": "Can you please confirm when did these duplicates charges appeared? And do you have any proof of purchase receipt handy? Once i get all necessary details we will definitely take care of this issue promptly and ensure your account is updated correctly.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the discrepancy in your account and work towards resolving the issue promptly. In the meantime, please find our response attached below for your reference. If we require further details from you, kindly respond at your earliest convenience so we can assist you better.",
+    "defactualized_prompt": "I'm reaching out about my recent charge for <PRODUCT>, order number <PRODUCT>. I noticed that I've been <ISSUE>, with two identical charges of $49.99 appearing on my credit card statement. I would greatly appreciate it if you could look into this matter and provide a refund for the duplicate charge as soon as possible. Please let me know if there's any additional information you need from me to resolve this issue, thank you.",
+    "raw_steered_output": "Our team will investigate the discrepancy in your account and work towards resolving the issue promptly. In the meantime, please find our response attached below for your reference. If we require further details from you, kindly respond at your earliest convenience so we can assist you better.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "case_index": 2,
+  "scenario": "battery_issue",
+  "customer_name": "Leo Chen",
+  "order_id": "ORD-7742",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ORD-7742",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.886
+      },
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "IMMEDIATELY",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "FULL CHARGE",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "t even get a full day",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "FED UP with",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "isn't resolved IMMEDIATELY, and I expect to speak to a manager if necessary",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "angry",
+        "type": "SENTIMENT",
+        "salience": 1.0
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "isn't resolved IMMEDIATELY, and I expect to speak to a manager if necessary",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "IMMEDIATELY",
+        "target": "isn't resolved IMMEDIATELY, and I expect to speak to a manager if necessary",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "FULL CHARGE",
+        "target": "isn't resolved IMMEDIATELY, and I expect to speak to a manager if necessary",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "t even get a full day",
+        "target": "isn't resolved IMMEDIATELY, and I expect to speak to a manager if necessary",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "isn't resolved IMMEDIATELY, and I expect to speak to a manager if necessary",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

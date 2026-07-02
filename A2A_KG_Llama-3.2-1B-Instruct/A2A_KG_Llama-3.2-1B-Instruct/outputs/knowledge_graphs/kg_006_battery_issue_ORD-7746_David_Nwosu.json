@@ -1,0 +1,134 @@
+{
+  "case_index": 6,
+  "scenario": "battery_issue",
+  "customer_name": "David Nwosu",
+  "order_id": "ORD-7746",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7746",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "UNACCEPTABLE",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "SAME ISSUE",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "FULL REFUND",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "FED UP with",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "- the battery is DRAINING COMPLETELY within 2 hours of a full charge",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "WORK with a laptop that can't even last a few hours, this is UNACCEPTABLE",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "angry",
+        "type": "SENTIMENT",
+        "salience": 1.0
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "- the battery is DRAINING COMPLETELY within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "WORK with a laptop that can't even last a few hours, this is UNACCEPTABLE",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7746",
+        "target": "- the battery is DRAINING COMPLETELY within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7746",
+        "target": "WORK with a laptop that can't even last a few hours, this is UNACCEPTABLE",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "UNACCEPTABLE",
+        "target": "- the battery is DRAINING COMPLETELY within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "UNACCEPTABLE",
+        "target": "WORK with a laptop that can't even last a few hours, this is UNACCEPTABLE",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "SAME ISSUE",
+        "target": "- the battery is DRAINING COMPLETELY within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "SAME ISSUE",
+        "target": "WORK with a laptop that can't even last a few hours, this is UNACCEPTABLE",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "FULL REFUND",
+        "target": "- the battery is DRAINING COMPLETELY within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "FULL REFUND",
+        "target": "WORK with a laptop that can't even last a few hours, this is UNACCEPTABLE",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "- the battery is DRAINING COMPLETELY within 2 hours of a full charge",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      },
+      {
+        "source": "WORK with a laptop that can't even last a few hours, this is UNACCEPTABLE",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-5526",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7999999999999999
+      },
+      {
+        "value": "Luca Bianchi",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      },
+      {
+        "value": "charged twice for the same monthly subscription",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "Premium Subscription",
+        "target": "charged twice for the same monthly subscription",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-5526",
+        "target": "Premium Subscription",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Luca Bianchi",
+        "target": "ORD-5526",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "charged twice for the same monthly subscription",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.585
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you please give me more details on when did you placed the second order for the product with the same order ID? And also can you confirm if there was any mistake while processing the orders? Once i have all these information ,I will make sure to investigate it further and get back to you asap .Thank You",
+    "defactualized_prompt": "I'm reaching out about my recent credit card statement and I noticed that I've been charged twice for my <PRODUCT>, which is order number <ORDER_ID>. I've been a loyal customer for about 2 years now and I appreciate the service, but I'm a bit concerned about the duplicate charge of $49.99. Could you please look into this and provide a refund for the extra charge as soon as possible? I'd greatly appreciate your help in resolving this issue, thank you.",
+    "raw_steered_output": "Can you please give me more details on when did you placed the second order for the product with the same order ID? And also can you confirm if there was any mistake while processing the orders? Once i have all these information ,I will make sure to investigate it further and get back to you asap .Thank You",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter promptly and process any necessary adjustments on your account within one business day. Please allow us time to resolve the discrepancy; we value our customers like yourself and strive to maintain high standards of quality in all aspects of our services. Thank you again for bringing this to our attention!",
+    "defactualized_prompt": "I'm reaching out about my recent credit card statement and I noticed that I've been charged twice for my <PRODUCT>, which is order number <ORDER_ID>. I've been a loyal customer for about 2 years now and I appreciate the service, but I'm a bit concerned about the duplicate charge of $49.99. Could you please look into this and provide a refund for the extra charge as soon as possible? I'd greatly appreciate your help in resolving this issue, thank you.",
+    "raw_steered_output": "Our team will investigate the matter promptly and process any necessary adjustments on your account within one business day. Please allow us time to resolve the discrepancy; we value our customers like yourself and strive to maintain high standards of quality in all aspects of our services. Thank you again for bringing this to our attention!",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

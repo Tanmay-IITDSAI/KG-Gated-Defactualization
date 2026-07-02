@@ -1,0 +1,83 @@
+{
+  "case_index": 8,
+  "scenario": "battery_issue",
+  "customer_name": "Jake Thompson",
+  "order_id": "ORD-7748",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7748",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "persists - it's still draining completely within 2 hours of a full charge",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "fixed, and provide a timeline for the resolution",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Jake Thompson",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "persists - it's still draining completely within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "fixed, and provide a timeline for the resolution",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7748",
+        "target": "TechPro X200 Laptop",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Jake Thompson",
+        "target": "ORD-7748",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "persists - it's still draining completely within 2 hours of a full charge",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      },
+      {
+        "source": "fixed, and provide a timeline for the resolution",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "case_index": 22,
+  "scenario": "battery_issue",
+  "customer_name": "Amara Diallo",
+  "order_id": "ORD-7762",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7762",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "COMPLETELY UNACCEPTABLE",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "FULL REFUND",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "FED UP with",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "PERSISTS - my battery is STILL draining completely within 2 hours of a full charge, which is COMPLETELY UNACCEPTABLE",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "angry",
+        "type": "SENTIMENT",
+        "salience": 1.0
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "PERSISTS - my battery is STILL draining completely within 2 hours of a full charge, which is COMPLETELY UNACCEPTABLE",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7762",
+        "target": "PERSISTS - my battery is STILL draining completely within 2 hours of a full charge, which is COMPLETELY UNACCEPTABLE",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "COMPLETELY UNACCEPTABLE",
+        "target": "PERSISTS - my battery is STILL draining completely within 2 hours of a full charge, which is COMPLETELY UNACCEPTABLE",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "FULL REFUND",
+        "target": "PERSISTS - my battery is STILL draining completely within 2 hours of a full charge, which is COMPLETELY UNACCEPTABLE",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "PERSISTS - my battery is STILL draining completely within 2 hours of a full charge, which is COMPLETELY UNACCEPTABLE",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

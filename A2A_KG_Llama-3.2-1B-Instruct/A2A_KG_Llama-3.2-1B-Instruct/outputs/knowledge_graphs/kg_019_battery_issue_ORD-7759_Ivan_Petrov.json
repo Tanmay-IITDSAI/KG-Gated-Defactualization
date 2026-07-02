@@ -1,0 +1,83 @@
+{
+  "case_index": 19,
+  "scenario": "battery_issue",
+  "customer_name": "Ivan Petrov",
+  "order_id": "ORD-7759",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7759",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "the battery life - it's draining completely within 2 hours of a full charge",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "as soon as possible or provide a clear timeline for when I can expect a fix",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Ivan Petrov",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "the battery life - it's draining completely within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "as soon as possible or provide a clear timeline for when I can expect a fix",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7759",
+        "target": "TechPro X200 Laptop",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Ivan Petrov",
+        "target": "ORD-7759",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "the battery life - it's draining completely within 2 hours of a full charge",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      },
+      {
+        "source": "as soon as possible or provide a clear timeline for when I can expect a fix",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      }
+    ]
+  }
+}

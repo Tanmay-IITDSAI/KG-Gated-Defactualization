@@ -1,0 +1,83 @@
+{
+  "case_index": 71,
+  "scenario": "billing_error",
+  "customer_name": "Marcus Brown",
+  "order_id": "ORD-5543",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-5543",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "m disappointed that this issue hasn",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "hasn't been resolved yet, especially after my initial attempt to get it fixed",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.95
+      },
+      {
+        "value": "Marcus Brown",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "Premium Subscription",
+        "target": "hasn't been resolved yet, especially after my initial attempt to get it fixed",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-5543",
+        "target": "Premium Subscription",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "m disappointed that this issue hasn",
+        "target": "hasn't been resolved yet, especially after my initial attempt to get it fixed",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "ORD-5543",
+        "target": "m disappointed that this issue hasn",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Marcus Brown",
+        "target": "ORD-5543",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "hasn't been resolved yet, especially after my initial attempt to get it fixed",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7764",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "as I have a urgent deadline to meet tomorrow for my freelance design work",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7999999999999999
+      },
+      {
+        "value": "Hana Park",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "as I have a urgent deadline to meet tomorrow for my freelance design work",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7764",
+        "target": "TechPro X200 Laptop",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Hana Park",
+        "target": "ORD-7764",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "as I have a urgent deadline to meet tomorrow for my freelance design work",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you please tell me more about when these issues started occurring? And have there been any changes in usage patterns that might be contributing to the rapid drain on the battery? Any additional information will really help us troubleshoot this issue and find an appropriate resolution for you as quickly as we can.",
+    "defactualized_prompt": "I'm reaching out for help with my <PRODUCT>, which I purchased just three weeks ago with order number <ORDER_ID>. Unfortunately, I'm still experiencing issues with the battery life, despite updating the drivers as suggested by your support team last week. The battery is draining completely within 2 hours of a full charge, which is causing me a lot of trouble <ISSUE>. Please, could you kindly look into this and provide a solution as soon as possible, I would greatly appreciate it.",
+    "raw_steered_output": "Can you please tell me more about when these issues started occurring? And have there been any changes in usage patterns that might be contributing to the rapid drain on the battery? Any additional information will really help us troubleshoot this issue and find an appropriate resolution for you as quickly as we can.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our technical department will investigate the issue regarding the short battery life on your product and work towards providing an appropriate resolution at their earliest convenience. You can expect our response via email once we have gathered all necessary information from our investigation process. Thank you for choosing us!",
+    "defactualized_prompt": "I'm reaching out for help with my <PRODUCT>, which I purchased just three weeks ago with order number <ORDER_ID>. Unfortunately, I'm still experiencing issues with the battery life, despite updating the drivers as suggested by your support team last week. The battery is draining completely within 2 hours of a full charge, which is causing me a lot of trouble <ISSUE>. Please, could you kindly look into this and provide a solution as soon as possible, I would greatly appreciate it.",
+    "raw_steered_output": "Our technical department will investigate the issue regarding the short battery life on your product and work towards providing an appropriate resolution at their earliest convenience. You can expect our response via email once we have gathered all necessary information from our investigation process. Thank you for choosing us!",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

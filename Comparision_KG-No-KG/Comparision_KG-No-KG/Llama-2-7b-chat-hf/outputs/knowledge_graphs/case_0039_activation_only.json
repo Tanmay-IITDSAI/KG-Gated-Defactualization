@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "We value your business and want to make things right immediately. Our team will work diligently to resolve this situation as quickly as possible and ensure that you receive the product you originally ordered. Can you please confirm your contact information again so we can keep you updated on the status of your package?",
+    "defactualized_prompt": "I'm reaching out about my order ORD-4506, where I was supposed to receive the SmartHome Hub Pro, but when I opened the box, I was surprised to find a coffee maker instead. This is particularly disappointing as I had ordered it as a birthday gift for my wife, and her birthday is in just two days. I had also paid for express shipping, so I'm expecting a prompt resolution to this issue - could you please let me know how we can get the correct item to me as soon as possible? I would appreciate it if you could provide a clear timeline for when I can expect the SmartHome Hub Pro to arrive.",
+    "raw_steered_output": "We value your business and want to make things right immediately. Our team will work diligently to resolve this situation as quickly as possible and ensure that you receive the product you originally ordered. Can you please confirm your contact information again so we can keep you updated on the status of your package?",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will work diligently to resolve the matter expeditiously. Please allow us some time to investigate the cause of the error and arrange for the delivery of the incorrect product. You may anticipate hearing back from our team within the next 24 hours with an update on the status of your request. Thank you for choosing our company!",
+    "defactualized_prompt": "I'm reaching out about my order ORD-4506, where I was supposed to receive the SmartHome Hub Pro, but when I opened the box, I was surprised to find a coffee maker instead. This is particularly disappointing as I had ordered it as a birthday gift for my wife, and her birthday is in just two days. I had also paid for express shipping, so I'm expecting a prompt resolution to this issue - could you please let me know how we can get the correct item to me as soon as possible? I would appreciate it if you could provide a clear timeline for when I can expect the SmartHome Hub Pro to arrive.",
+    "raw_steered_output": "Our team will work diligently to resolve the matter expeditiously. Please allow us some time to investigate the cause of the error and arrange for the delivery of the incorrect product. You may anticipate hearing back from our team within the next 24 hours with an update on the status of your request. Thank you for choosing our company!",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

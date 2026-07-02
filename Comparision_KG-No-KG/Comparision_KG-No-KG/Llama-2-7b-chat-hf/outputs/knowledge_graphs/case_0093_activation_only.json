@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Can you please provide me with your full name and order details (order number) again? That way we can look into this matter further and find an appropriate solution as quickly as possible.",
+    "defactualized_prompt": "I am BEYOND FRUSTRATED with the delivery of my Ergonomic Office Chair, order number ORD-8852, which is NOW THREE WEEKS OVERDUE. I've been working on the FLOOR for weeks, waiting for this chair to arrive, and I've had ZERO updates from the courier. I demand to know what's going on and when I can expect my chair to arrive - if it's not going to arrive soon, I EXPECT A FULL REFUND so I can buy one LOCALLY. I want to speak to a manager if I don't get a satisfactory answer ASAP.",
+    "raw_steered_output": "Can you please provide me with your full name and order details (order number) again? That way we can look into this matter further and find an appropriate solution as quickly as possible.",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter further and provide an update as soon as possible regarding the status of your delivery. Please allow us some time to look into this issue and we appreciate your patience during this process.",
+    "defactualized_prompt": "I am BEYOND FRUSTRATED with the delivery of my Ergonomic Office Chair, order number ORD-8852, which is NOW THREE WEEKS OVERDUE. I've been working on the FLOOR for weeks, waiting for this chair to arrive, and I've had ZERO updates from the courier. I demand to know what's going on and when I can expect my chair to arrive - if it's not going to arrive soon, I EXPECT A FULL REFUND so I can buy one LOCALLY. I want to speak to a manager if I don't get a satisfactory answer ASAP.",
+    "raw_steered_output": "Our team will investigate the matter further and provide an update as soon as possible regarding the status of your delivery. Please allow us some time to look into this issue and we appreciate your patience during this process.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

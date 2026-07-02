@@ -1,0 +1,94 @@
+{
+  "case_index": 64,
+  "scenario": "billing_error",
+  "customer_name": "Hassan Ali",
+  "order_id": "ORD-5536",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "FURIOUS",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.899
+      },
+      {
+        "value": "Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ERROR",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-5536",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "FURIOUS to see",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "and a refund for the duplicate charge of $49",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "angry",
+        "type": "SENTIMENT",
+        "salience": 1.0
+      }
+    ],
+    "edges": [
+      {
+        "source": "Premium Subscription",
+        "target": "and a refund for the duplicate charge of $49",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-5536",
+        "target": "Premium Subscription",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "ERROR",
+        "target": "and a refund for the duplicate charge of $49",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-5536",
+        "target": "ERROR",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "FURIOUS",
+        "target": "ORD-5536",
+        "relation": "placed_order",
+        "weight": 0.854
+      },
+      {
+        "source": "FURIOUS to see",
+        "target": "ORD-5536",
+        "relation": "placed_order",
+        "weight": 0.712
+      },
+      {
+        "source": "and a refund for the duplicate charge of $49",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

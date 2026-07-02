@@ -1,0 +1,93 @@
+{
+  "case_index": 6,
+  "scenario": "battery_issue",
+  "customer_name": "David Nwosu",
+  "order_id": "ORD-7746",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7746",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "UNACCEPTABLE",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "IMMEDIATELY",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "FED UP with",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "IMMEDIATELY, or I'll be forced to ask for a full refund and share my TERRIBLE experience with others",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "angry",
+        "type": "SENTIMENT",
+        "salience": 1.0
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro",
+        "target": "IMMEDIATELY, or I'll be forced to ask for a full refund and share my TERRIBLE experience with others",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7746",
+        "target": "IMMEDIATELY, or I'll be forced to ask for a full refund and share my TERRIBLE experience with others",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "UNACCEPTABLE",
+        "target": "IMMEDIATELY, or I'll be forced to ask for a full refund and share my TERRIBLE experience with others",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "IMMEDIATELY",
+        "target": "IMMEDIATELY, or I'll be forced to ask for a full refund and share my TERRIBLE experience with others",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "IMMEDIATELY, or I'll be forced to ask for a full refund and share my TERRIBLE experience with others",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "IMMEDIATELY, or I'll be forced to ask for a full refund and share my TERRIBLE experience with others",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

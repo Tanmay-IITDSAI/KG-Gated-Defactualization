@@ -1,0 +1,93 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "the SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-4494",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Kwame Boateng",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      },
+      {
+        "value": "received completely wrong item — got a coffee maker instead",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "the SmartHome Hub Pro",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-4494",
+        "target": "the SmartHome Hub Pro",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "SmartHome Hub Pro",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "ORD-4494",
+        "target": "SmartHome Hub Pro",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Kwame Boateng",
+        "target": "ORD-4494",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "received completely wrong item — got a coffee maker instead",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.585
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "We value your business and want to make things right immediately. Our team will investigate this issue promptly and provide you with an update on the status of your replacement product within the next hour. In the meantime, please accept our sincere apologies for any inconvenience caused by this mistake.",
+    "defactualized_prompt": "I'm reaching out about my order, <ORDER_ID>, for <PRODUCT> that I purchased as a birthday gift for my wife, which is just two days away. Unfortunately, when I opened the box in front of my family, I was surprised to find a coffee maker inside instead of <PRODUCT>. I had paid for express shipping to ensure timely delivery, but receiving the wrong item has put me in a difficult position. I would appreciate it if you could look into this matter urgently and arrange for the correct item to be shipped to me as soon as possible.",
+    "raw_steered_output": "We value your business and want to make things right immediately. Our team will investigate this issue promptly and provide you with an update on the status of your replacement product within the next hour. In the meantime, please accept our sincere apologies for any inconvenience caused by this mistake.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate promptly and work towards resolving the issue with utmost priority. Please allow us some time to process your request while we verify details regarding your purchase and coordinate replacement shipment of the incorrect product. You may expect an update on our progress within the next 24 hours. Thank you for choosing our store!",
+    "defactualized_prompt": "I'm reaching out about my order, <ORDER_ID>, for <PRODUCT> that I purchased as a birthday gift for my wife, which is just two days away. Unfortunately, when I opened the box in front of my family, I was surprised to find a coffee maker inside instead of <PRODUCT>. I had paid for express shipping to ensure timely delivery, but receiving the wrong item has put me in a difficult position. I would appreciate it if you could look into this matter urgently and arrange for the correct item to be shipped to me as soon as possible.",
+    "raw_steered_output": "Our team will investigate promptly and work towards resolving the issue with utmost priority. Please allow us some time to process your request while we verify details regarding your purchase and coordinate replacement shipment of the incorrect product. You may expect an update on our progress within the next 24 hours. Thank you for choosing our store!",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

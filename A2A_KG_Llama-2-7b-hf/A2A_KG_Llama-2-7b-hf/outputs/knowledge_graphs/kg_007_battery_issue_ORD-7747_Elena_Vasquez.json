@@ -1,0 +1,60 @@
+{
+  "case_index": 7,
+  "scenario": "battery_issue",
+  "customer_name": "Elena Vasquez",
+  "order_id": "ORD-7747",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7747",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "or provide a possible solution",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "low",
+        "type": "URGENCY",
+        "salience": 0.55
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7999999999999999
+      },
+      {
+        "value": "Elena Vasquez",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "or provide a possible solution",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7747",
+        "target": "or provide a possible solution",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "or provide a possible solution",
+        "target": "low",
+        "relation": "has_urgency",
+        "weight": 0.495
+      }
+    ]
+  }
+}

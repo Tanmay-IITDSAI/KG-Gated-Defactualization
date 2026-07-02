@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Can you please provide me with more details such as when did you place the order and what is the estimated delivery time frame according to our records? Once I have that information, I will do everything in my power to assist you further and get your chair shipped out to you as soon as possible.",
+    "defactualized_prompt": "I'm reaching out for some help with my order, ORD-8837, which was supposed to be delivered three weeks ago. I'm still waiting for my Ergonomic Office Chair to arrive and unfortunately, I haven't received any updates from the courier. Please could you look into this for me and let me know if there's a revised delivery date or if I can expect a refund so I can make alternative arrangements? I'd really appreciate your help with this, thank you.",
+    "raw_steered_output": "Can you please provide me with more details such as when did you place the order and what is the estimated delivery time frame according to our records? Once I have that information, I will do everything in my power to assist you further and get your chair shipped out to you as soon as possible.",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team is working diligently to investigate the issue regarding the delay in delivery of your Ergonomic Office Chair (ORD-8837). Once we have obtained more information from our logistics department, we will provide an update on the status of your shipment and offer possible solutions such as a revised delivery date or a full refund. Thank you for choosing us; please give us time to resolve this matter promptly.",
+    "defactualized_prompt": "I'm reaching out for some help with my order, ORD-8837, which was supposed to be delivered three weeks ago. I'm still waiting for my Ergonomic Office Chair to arrive and unfortunately, I haven't received any updates from the courier. Please could you look into this for me and let me know if there's a revised delivery date or if I can expect a refund so I can make alternative arrangements? I'd really appreciate your help with this, thank you.",
+    "raw_steered_output": "Our team is working diligently to investigate the issue regarding the delay in delivery of your Ergonomic Office Chair (ORD-8837). Once we have obtained more information from our logistics department, we will provide an update on the status of your shipment and offer possible solutions such as a revised delivery date or a full refund. Thank you for choosing us; please give us time to resolve this matter promptly.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

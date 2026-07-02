@@ -1,0 +1,98 @@
+{
+  "case_index": 52,
+  "scenario": "billing_error",
+  "customer_name": "Noah Scott",
+  "order_id": "ORD-5524",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "FURIOUS",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.899
+      },
+      {
+        "value": "Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-5524",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "UNACCEPTABLE",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ERROR",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "IMMEDIATELY",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "FURIOUS to see",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "has left a bad taste in my mouth and I'm on the verge of cancelling my subscription altogether",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "angry",
+        "type": "SENTIMENT",
+        "salience": 1.0
+      }
+    ],
+    "edges": [
+      {
+        "source": "Premium Subscription",
+        "target": "has left a bad taste in my mouth and I'm on the verge of cancelling my subscription altogether",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-5524",
+        "target": "has left a bad taste in my mouth and I'm on the verge of cancelling my subscription altogether",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "UNACCEPTABLE",
+        "target": "has left a bad taste in my mouth and I'm on the verge of cancelling my subscription altogether",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ERROR",
+        "target": "has left a bad taste in my mouth and I'm on the verge of cancelling my subscription altogether",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "IMMEDIATELY",
+        "target": "has left a bad taste in my mouth and I'm on the verge of cancelling my subscription altogether",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "has left a bad taste in my mouth and I'm on the verge of cancelling my subscription altogether",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

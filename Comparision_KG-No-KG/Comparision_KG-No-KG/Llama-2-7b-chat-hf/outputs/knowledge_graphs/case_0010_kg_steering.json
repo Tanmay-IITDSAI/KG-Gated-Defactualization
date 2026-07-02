@@ -1,0 +1,70 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7751",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "persists - it's still draining completely within 2 hours of a full charge",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Nina Johansson",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "persists - it's still draining completely within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7751",
+        "target": "persists - it's still draining completely within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "persists - it's still draining completely within 2 hours of a full charge",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "We value our customers like you greatly and we will do everything in our power to help resolve this matter promptly so that you have peace of mind before your important project is due. Can you tell me some more details regarding what happened with the product recently?",
+    "defactualized_prompt": "I'm reaching out about my <PRODUCT>, order number <PRODUCT>, which I purchased just three weeks ago for my freelance design work. Despite updating the drivers as suggested by your support team last week, the battery issue <ISSUE>. With a critical client deadline tomorrow, I urgently need a more permanent solution to this problem. Could you please advise on the next steps and provide a timeline for when this can be resolved?",
+    "raw_steered_output": "We value our customers like you greatly and we will do everything in our power to help resolve this matter promptly so that you have peace of mind before your important project is due. Can you tell me some more details regarding what happened with the product recently?",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our technical department is investigating the matter further and will contact you with possible solutions within the next 24 hours. In the meantime, we recommend trying an alternative power source if necessary until our technician reaches back to you. Please let us know if there's anything else we may assist you in resolving this situation promptly.",
+    "defactualized_prompt": "I'm reaching out about my <PRODUCT>, order number <PRODUCT>, which I purchased just three weeks ago for my freelance design work. Despite updating the drivers as suggested by your support team last week, the battery issue <ISSUE>. With a critical client deadline tomorrow, I urgently need a more permanent solution to this problem. Could you please advise on the next steps and provide a timeline for when this can be resolved?",
+    "raw_steered_output": "Our technical department is investigating the matter further and will contact you with possible solutions within the next 24 hours. In the meantime, we recommend trying an alternative power source if necessary until our technician reaches back to you. Please let us know if there's anything else we may assist you in resolving this situation promptly.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "case_index": 84,
+  "scenario": "delivery_delay",
+  "customer_name": "Eun-Ji Oh",
+  "order_id": "ORD-8842",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ORD-8842",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "the Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "t received it and haven",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "medium",
+        "type": "URGENCY",
+        "salience": 0.85
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Eun-Ji Oh",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      },
+      {
+        "value": "delivery now 3 weeks overdue with no update from courier",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "ORD-8842",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "the Ergonomic Office Chair",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "Ergonomic Office Chair",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "t received it and haven",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "delivery now 3 weeks overdue with no update from courier",
+        "target": "medium",
+        "relation": "has_urgency",
+        "weight": 0.552
+      }
+    ]
+  }
+}

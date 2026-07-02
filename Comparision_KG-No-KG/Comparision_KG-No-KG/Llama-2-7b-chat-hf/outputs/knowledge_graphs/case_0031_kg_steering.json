@@ -1,0 +1,81 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ORD-4498",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "the SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "and provide a timeline for when I can expect to receive the correct product",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Daniel Weber",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "ORD-4498",
+        "target": "and provide a timeline for when I can expect to receive the correct product",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "the SmartHome Hub Pro",
+        "target": "and provide a timeline for when I can expect to receive the correct product",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "SmartHome Hub Pro",
+        "target": "and provide a timeline for when I can expect to receive the correct product",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "and provide a timeline for when I can expect to receive the correct product",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "We value your business and want to make things right immediately. Our team will investigate this situation thoroughly and work on getting the correct product delivered to you within the next 24 hours. Please give us some time to sort everything out while we prioritize providing excellent service to our customers like yourself.",
+    "defactualized_prompt": "I'm reaching out about my order <PRODUCT> for <PRODUCT>, which I purchased as a birthday gift for my wife with express shipping since her birthday is in just two days. However, when I opened the box in front of my family, I was surprised and embarrassed to find a coffee maker inside instead of <PRODUCT>. I would appreciate it if you could look into this matter urgently and arrange for the correct item to be shipped to me as soon as possible. Could you please let me know the steps you will take to resolve this issue <ISSUE>?",
+    "raw_steered_output": "We value your business and want to make things right immediately. Our team will investigate this situation thoroughly and work on getting the correct product delivered to you within the next 24 hours. Please give us some time to sort everything out while we prioritize providing excellent service to our customers like yourself.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate promptly and work towards resolving the discrepancy regarding the incorrect product delivered within the next couple of business days. Please allow us some time to process your request while we ensure an appropriate solution reaches you at no additional cost to yourself. Thank you for choosing our brand!",
+    "defactualized_prompt": "I'm reaching out about my order <PRODUCT> for <PRODUCT>, which I purchased as a birthday gift for my wife with express shipping since her birthday is in just two days. However, when I opened the box in front of my family, I was surprised and embarrassed to find a coffee maker inside instead of <PRODUCT>. I would appreciate it if you could look into this matter urgently and arrange for the correct item to be shipped to me as soon as possible. Could you please let me know the steps you will take to resolve this issue <ISSUE>?",
+    "raw_steered_output": "Our team will investigate promptly and work towards resolving the discrepancy regarding the incorrect product delivered within the next couple of business days. Please allow us some time to process your request while we ensure an appropriate solution reaches you at no additional cost to yourself. Thank you for choosing our brand!",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

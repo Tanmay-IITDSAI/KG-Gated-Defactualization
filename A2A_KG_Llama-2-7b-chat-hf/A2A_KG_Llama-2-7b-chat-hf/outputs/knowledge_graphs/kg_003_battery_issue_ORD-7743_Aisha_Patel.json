@@ -1,0 +1,83 @@
+{
+  "case_index": 3,
+  "scenario": "battery_issue",
+  "customer_name": "Aisha Patel",
+  "order_id": "ORD-7743",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7743",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "persists - it drains completely within 2 hours of a full charge, which is significantly impacting my freelance design wo",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "as soon as possible",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Aisha Patel",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "persists - it drains completely within 2 hours of a full charge, which is significantly impacting my freelance design wo",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "as soon as possible",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7743",
+        "target": "TechPro X200 Laptop",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Aisha Patel",
+        "target": "ORD-7743",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "persists - it drains completely within 2 hours of a full charge, which is significantly impacting my freelance design wo",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      },
+      {
+        "source": "as soon as possible",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      }
+    ]
+  }
+}

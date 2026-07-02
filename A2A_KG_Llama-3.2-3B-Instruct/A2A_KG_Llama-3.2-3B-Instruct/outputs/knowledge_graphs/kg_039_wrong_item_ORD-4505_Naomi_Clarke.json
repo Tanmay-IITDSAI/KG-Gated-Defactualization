@@ -1,0 +1,83 @@
+{
+  "case_index": 39,
+  "scenario": "wrong_item",
+  "customer_name": "Naomi Clarke",
+  "order_id": "ORD-4505",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "the SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-4505",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "today since the birthday is just two days away and I paid for express shipping",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.95
+      },
+      {
+        "value": "Naomi Clarke",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "the SmartHome Hub Pro",
+        "target": "today since the birthday is just two days away and I paid for express shipping",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-4505",
+        "target": "the SmartHome Hub Pro",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "SmartHome Hub Pro",
+        "target": "today since the birthday is just two days away and I paid for express shipping",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "ORD-4505",
+        "target": "SmartHome Hub Pro",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Naomi Clarke",
+        "target": "ORD-4505",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "today since the birthday is just two days away and I paid for express shipping",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

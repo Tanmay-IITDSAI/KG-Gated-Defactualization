@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Can you please provide me with more details so we can look into this matter further? We take these kinds of issues very seriously here at our company and would like to make things right as soon as possible. Please allow me to assist you in resolving this issue and providing a satisfactory solution.",
+    "defactualized_prompt": "I am FURIOUS to see that I've been charged TWICE for my Premium Subscription, order number ORD-5524, and I demand a clear explanation for this mistake. I've been a loyal customer for 2 years and I expect BETTER from your company. The two identical charges of $49.99 are UNACCEPTABLE and I want a refund for one of them IMMEDIATELY. If this isn't resolved promptly, I'll be forced to speak to a manager and consider leaving a public review about this experience.",
+    "raw_steered_output": "Can you please provide me with more details so we can look into this matter further? We take these kinds of issues very seriously here at our company and would like to make things right as soon as possible. Please allow me to assist you in resolving this issue and providing a satisfactory solution.",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate these double charge issues with urgency as we value our customers like yourself who have remained loyal over time. Please allow us some days while we work on resolving this issue; once done, an email notification shall follow regarding any actions taken in response to addressing it satisfactorily.",
+    "defactualized_prompt": "I am FURIOUS to see that I've been charged TWICE for my Premium Subscription, order number ORD-5524, and I demand a clear explanation for this mistake. I've been a loyal customer for 2 years and I expect BETTER from your company. The two identical charges of $49.99 are UNACCEPTABLE and I want a refund for one of them IMMEDIATELY. If this isn't resolved promptly, I'll be forced to speak to a manager and consider leaving a public review about this experience.",
+    "raw_steered_output": "Our team will investigate these double charge issues with urgency as we value our customers like yourself who have remained loyal over time. Please allow us some days while we work on resolving this issue; once done, an email notification shall follow regarding any actions taken in response to addressing it satisfactorily.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

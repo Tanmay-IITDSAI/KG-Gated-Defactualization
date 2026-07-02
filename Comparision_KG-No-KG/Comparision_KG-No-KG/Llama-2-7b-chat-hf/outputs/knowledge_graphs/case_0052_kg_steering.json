@@ -1,0 +1,93 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-5525",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "my latest charge",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "and what steps I can take to prevent it from happening again in the future",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "positive",
+        "type": "SENTIMENT",
+        "salience": 0.65
+      },
+      {
+        "value": "Keiko Yamamoto",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "Premium Subscription",
+        "target": "my latest charge",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "Premium Subscription",
+        "target": "and what steps I can take to prevent it from happening again in the future",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-5525",
+        "target": "Premium Subscription",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Keiko Yamamoto",
+        "target": "ORD-5525",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "my latest charge",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      },
+      {
+        "source": "and what steps I can take to prevent it from happening again in the future",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "We take these kinds of issues very seriously, and we will do everything in our power to resolve them promptly and fairly. Can you please provide us with some more details so we can investigate further and get back to you as soon as possible?",
+    "defactualized_prompt": "I've been a loyal customer for 2 years and recently noticed an issue with <ISSUE>. I was looking at my credit card statement and saw that I've been charged twice for the same <PRODUCT>, with the order number <ORDER_ID>, at $49.99 each. I'd appreciate it if you could look into this and refund the duplicate charge as soon as possible. Could you also let me know what caused the error <ISSUE>?",
+    "raw_steered_output": "We take these kinds of issues very seriously, and we will do everything in our power to resolve them promptly and fairly. Can you please provide us with some more details so we can investigate further and get back to you as soon as possible?",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter further, including checking on any potential errors in our system which may have resulted in double charging for the product(s) associated with Order ID (insert order id). Once we complete these investigations, we shall provide prompt resolution and inform you accordingly regarding next steps. Thank you for bringing this discrepancy to our attention; please feel free to contact us should there be anything else required from our end.",
+    "defactualized_prompt": "I've been a loyal customer for 2 years and recently noticed an issue with <ISSUE>. I was looking at my credit card statement and saw that I've been charged twice for the same <PRODUCT>, with the order number <ORDER_ID>, at $49.99 each. I'd appreciate it if you could look into this and refund the duplicate charge as soon as possible. Could you also let me know what caused the error <ISSUE>?",
+    "raw_steered_output": "Our team will investigate the matter further, including checking on any potential errors in our system which may have resulted in double charging for the product(s) associated with Order ID (insert order id). Once we complete these investigations, we shall provide prompt resolution and inform you accordingly regarding next steps. Thank you for bringing this discrepancy to our attention; please feel free to contact us should there be anything else required from our end.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

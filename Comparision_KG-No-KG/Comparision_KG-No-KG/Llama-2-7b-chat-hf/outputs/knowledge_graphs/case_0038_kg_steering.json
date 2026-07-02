@@ -1,0 +1,92 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ORD-4505",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "the SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "s clear that there",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "low",
+        "type": "URGENCY",
+        "salience": 0.55
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.95
+      },
+      {
+        "value": "Naomi Clarke",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      },
+      {
+        "value": "received completely wrong item — got a coffee maker instead",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "ORD-4505",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "the SmartHome Hub Pro",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "SmartHome Hub Pro",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "s clear that there",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "received completely wrong item — got a coffee maker instead",
+        "target": "low",
+        "relation": "has_urgency",
+        "weight": 0.358
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Cancelling an entire order can sometimes take some extra work, but we will do our best to make sure your replacement product arrives at your doorstep before tomorrow morning. Please know that we value your business and appreciate your patience during these situations; let us see what we can do to help!",
+    "defactualized_prompt": "I'm extremely <SENTIMENT> and disappointed with my order, <PRODUCT>, which was supposed to be <PRODUCT> that I purchased as a birthday gift for my wife. Instead, when I opened the box in front of my family, I found a coffee maker inside, which is completely useless to me. This is my second time reaching out to support, and I've already tried to troubleshoot the issue, but it'<PRODUCT>'s been a massive mistake with my order. I paid for express shipping so that I could get this gift to my wife on time, and now with her birthday just two days away, I'm counting on you to resolve this issue today.",
+    "raw_steered_output": "Cancelling an entire order can sometimes take some extra work, but we will do our best to make sure your replacement product arrives at your doorstep before tomorrow morning. Please know that we value your business and appreciate your patience during these situations; let us see what we can do to help!",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will work diligently to investigate the matter further and provide an appropriate solution within the shortest possible timeframe. Please allow us some more hours to process your request before following up again. Thank you for choosing our store!",
+    "defactualized_prompt": "I'm extremely <SENTIMENT> and disappointed with my order, <PRODUCT>, which was supposed to be <PRODUCT> that I purchased as a birthday gift for my wife. Instead, when I opened the box in front of my family, I found a coffee maker inside, which is completely useless to me. This is my second time reaching out to support, and I've already tried to troubleshoot the issue, but it'<PRODUCT>'s been a massive mistake with my order. I paid for express shipping so that I could get this gift to my wife on time, and now with her birthday just two days away, I'm counting on you to resolve this issue today.",
+    "raw_steered_output": "Our team will work diligently to investigate the matter further and provide an appropriate solution within the shortest possible timeframe. Please allow us some more hours to process your request before following up again. Thank you for choosing our store!",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

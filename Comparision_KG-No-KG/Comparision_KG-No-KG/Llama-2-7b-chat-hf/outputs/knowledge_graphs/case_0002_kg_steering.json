@@ -1,0 +1,93 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7743",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "the battery life - it's draining completely within 2 hours of a full charge",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "to be resolved",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Aisha Patel",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "the battery life - it's draining completely within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "to be resolved",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7743",
+        "target": "TechPro X200 Laptop",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Aisha Patel",
+        "target": "ORD-7743",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "the battery life - it's draining completely within 2 hours of a full charge",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      },
+      {
+        "source": "to be resolved",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you tell me more about what happened after you updated your drivers last week? Any additional details might help us identify the root cause of the issue so we can work towards finding an effective solution as soon as possible. We value our customers like you greatly and will do everything in our power to get things back up and running smoothly again for you by tomorrow if at all feasible.",
+    "defactualized_prompt": "I'm reaching out about my <PRODUCT>, which I purchased just three weeks ago with order number <ORDER_ID>. Despite following the support team's advice to update my drivers last week, I'm still experiencing a significant issue with <ISSUE>. As a freelance designer, I rely on this laptop to meet my deadlines, and with a critical project due tomorrow, I urgently need a resolution to this problem. Could you please provide a concrete solution or a timeline for when I can expect this issue <ISSUE>?",
+    "raw_steered_output": "Can you tell me more about what happened after you updated your drivers last week? Any additional details might help us identify the root cause of the issue so we can work towards finding an effective solution as soon as possible. We value our customers like you greatly and will do everything in our power to get things back up and running smoothly again for you by tomorrow if at all feasible.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our technical department is investigating the matter as soon possible and will get back in touch with you within the next business day regarding potential solutions or an estimated timeframe for resolving the issue. Please be assured we value our customers satisfaction and appreciate any patience during these times while working towards finding a suitable answer",
+    "defactualized_prompt": "I'm reaching out about my <PRODUCT>, which I purchased just three weeks ago with order number <ORDER_ID>. Despite following the support team's advice to update my drivers last week, I'm still experiencing a significant issue with <ISSUE>. As a freelance designer, I rely on this laptop to meet my deadlines, and with a critical project due tomorrow, I urgently need a resolution to this problem. Could you please provide a concrete solution or a timeline for when I can expect this issue <ISSUE>?",
+    "raw_steered_output": "Our technical department is investigating the matter as soon possible and will get back in touch with you within the next business day regarding potential solutions or an estimated timeframe for resolving the issue. Please be assured we value our customers satisfaction and appreciate any patience during these times while working towards finding a suitable answer",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

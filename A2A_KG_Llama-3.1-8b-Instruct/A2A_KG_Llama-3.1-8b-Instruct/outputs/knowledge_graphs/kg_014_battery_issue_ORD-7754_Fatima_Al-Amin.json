@@ -1,0 +1,100 @@
+{
+  "case_index": 14,
+  "scenario": "battery_issue",
+  "customer_name": "Fatima Al-Amin",
+  "order_id": "ORD-7754",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ASAP",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7754",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "FULL REFUND",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "FED UP with",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "the battery DRAINING COMPLETELY within 2 hours of a full charge STILL PERSISTS",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.85
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "the battery DRAINING COMPLETELY within 2 hours of a full charge STILL PERSISTS",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7754",
+        "target": "TechPro X200 Laptop",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "ASAP",
+        "target": "the battery DRAINING COMPLETELY within 2 hours of a full charge STILL PERSISTS",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7754",
+        "target": "ASAP",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "FULL REFUND",
+        "target": "the battery DRAINING COMPLETELY within 2 hours of a full charge STILL PERSISTS",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "ORD-7754",
+        "target": "FULL REFUND",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "FED UP with",
+        "target": "ORD-7754",
+        "relation": "placed_order",
+        "weight": 0.712
+      },
+      {
+        "source": "the battery DRAINING COMPLETELY within 2 hours of a full charge STILL PERSISTS",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

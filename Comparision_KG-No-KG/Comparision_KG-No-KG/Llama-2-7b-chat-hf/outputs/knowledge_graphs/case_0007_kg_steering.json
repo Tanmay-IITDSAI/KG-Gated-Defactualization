@@ -1,0 +1,93 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7748",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "the battery life",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "persists - the battery is still draining completely within 2 hours of a full charge",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Jake Thompson",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "the battery life",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "persists - the battery is still draining completely within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7748",
+        "target": "TechPro X200 Laptop",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Jake Thompson",
+        "target": "ORD-7748",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "the battery life",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      },
+      {
+        "source": "persists - the battery is still draining completely within 2 hours of a full charge",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Losing access to your product at such an important time is unacceptable, and we will do everything in our power to help resolve this issue promptly. Can you please send me some additional details regarding the error messages you're receiving along with any relevant logs that might assist us in troubleshooting the cause of the problem? Once I receive these materials from you, I can escalate them internally and get back to you within the next few hours with a detailed resolution plan tailored specifically towards addressing your needs.",
+    "defactualized_prompt": "I'm reaching out about my <PRODUCT>, which I purchased just three weeks ago with order number <ORDER_ID>, as I'm experiencing a significant issue with <ISSUE>. Despite following the support team's previous advice to update my drivers, the problem <ISSUE>. I'm a freelance designer and I have a critical deadline to meet tomorrow, so I urgently need a more concrete solution to this issue. Could you please provide a clear plan of action and a timeline for resolving this problem, as I rely on this laptop for my work?",
+    "raw_steered_output": "Losing access to your product at such an important time is unacceptable, and we will do everything in our power to help resolve this issue promptly. Can you please send me some additional details regarding the error messages you're receiving along with any relevant logs that might assist us in troubleshooting the cause of the problem? Once I receive these materials from you, I can escalate them internally and get back to you within the next few hours with a detailed resolution plan tailored specifically towards addressing your needs.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our technical experts will investigate the matter further and provide an updated resolution plan within the next 2 hours. Please allow us some time to analyze the situation and offer a suitable fix before your upcoming deadline. Thank you for choosing our products; we appreciate your patience during this process.",
+    "defactualized_prompt": "I'm reaching out about my <PRODUCT>, which I purchased just three weeks ago with order number <ORDER_ID>, as I'm experiencing a significant issue with <ISSUE>. Despite following the support team's previous advice to update my drivers, the problem <ISSUE>. I'm a freelance designer and I have a critical deadline to meet tomorrow, so I urgently need a more concrete solution to this issue. Could you please provide a clear plan of action and a timeline for resolving this problem, as I rely on this laptop for my work?",
+    "raw_steered_output": "Our technical experts will investigate the matter further and provide an updated resolution plan within the next 2 hours. Please allow us some time to analyze the situation and offer a suitable fix before your upcoming deadline. Thank you for choosing our products; we appreciate your patience during this process.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "case_index": 87,
+  "scenario": "delivery_delay",
+  "customer_name": "Takeshi Mori",
+  "order_id": "ORD-8845",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ORD-8845",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "the Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "t received it and haven",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "s an issue that",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "that's causing the delay",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "medium",
+        "type": "URGENCY",
+        "salience": 0.75
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7999999999999999
+      },
+      {
+        "value": "Takeshi Mori",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "ORD-8845",
+        "target": "that's causing the delay",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "the Ergonomic Office Chair",
+        "target": "that's causing the delay",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "Ergonomic Office Chair",
+        "target": "that's causing the delay",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "t received it and haven",
+        "target": "that's causing the delay",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "s an issue that",
+        "target": "that's causing the delay",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "that's causing the delay",
+        "target": "medium",
+        "relation": "has_urgency",
+        "weight": 0.675
+      }
+    ]
+  }
+}

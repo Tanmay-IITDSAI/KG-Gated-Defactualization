@@ -1,0 +1,76 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7745",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "persists - it's still draining completely within 2 hours of a full charge, which is making it impossible for me to meet",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Sara Kim",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "persists - it's still draining completely within 2 hours of a full charge, which is making it impossible for me to meet",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7745",
+        "target": "TechPro X200 Laptop",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Sara Kim",
+        "target": "ORD-7745",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "persists - it's still draining completely within 2 hours of a full charge, which is making it impossible for me to meet",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you tell me more about when these issues started happening after your purchase of our product just three weeks ago? Any details that might help us identify what went wrong would greatly aid in finding an appropriate resolution quickly!",
+    "defactualized_prompt": "I'm reaching out to support for the second time regarding my <PRODUCT>, order number <ORDER_ID>, which I've had for only three weeks. Despite updating the drivers as suggested last week, the battery issue <ISSUE> my deadlines. I have a critical client project due tomorrow and I urgently need a solution to this problem, so I'd appreciate it if we could resolve this today. Could you please assist me with a more permanent fix or provide a suitable alternative?",
+    "raw_steered_output": "Can you tell me more about when these issues started happening after your purchase of our product just three weeks ago? Any details that might help us identify what went wrong would greatly aid in finding an appropriate resolution quickly!",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team is working diligently on resolving the issue with your product and will get back in touch with you shortly to offer an appropriate resolution or replacement option. Please bear with us while our technical department investigates the matter further. Thank you for choosing our brand!",
+    "defactualized_prompt": "I'm reaching out to support for the second time regarding my <PRODUCT>, order number <ORDER_ID>, which I've had for only three weeks. Despite updating the drivers as suggested last week, the battery issue <ISSUE> my deadlines. I have a critical client project due tomorrow and I urgently need a solution to this problem, so I'd appreciate it if we could resolve this today. Could you please assist me with a more permanent fix or provide a suitable alternative?",
+    "raw_steered_output": "Our team is working diligently on resolving the issue with your product and will get back in touch with you shortly to offer an appropriate resolution or replacement option. Please bear with us while our technical department investigates the matter further. Thank you for choosing our brand!",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

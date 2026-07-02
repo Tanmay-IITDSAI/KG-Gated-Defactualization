@@ -1,0 +1,83 @@
+{
+  "case_index": 17,
+  "scenario": "battery_issue",
+  "customer_name": "Andre Dupont",
+  "order_id": "ORD-7757",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7757",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "my TechPro X200 Laptop (order ORD-7757) persists, despite updating the drivers as suggested last week",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "remains, and I'm getting increasingly frustrated",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.95
+      },
+      {
+        "value": "Andre Dupont",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "my TechPro X200 Laptop (order ORD-7757) persists, despite updating the drivers as suggested last week",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "remains, and I'm getting increasingly frustrated",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7757",
+        "target": "TechPro X200 Laptop",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Andre Dupont",
+        "target": "ORD-7757",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "my TechPro X200 Laptop (order ORD-7757) persists, despite updating the drivers as suggested last week",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      },
+      {
+        "source": "remains, and I'm getting increasingly frustrated",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

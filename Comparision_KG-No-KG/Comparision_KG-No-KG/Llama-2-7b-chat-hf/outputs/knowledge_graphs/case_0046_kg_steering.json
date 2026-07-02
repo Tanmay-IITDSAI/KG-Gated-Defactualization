@@ -1,0 +1,92 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ORD-4513",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "the SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "s also a gift for my wife",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "resolved today, so I can get the correct gift to my wife on her birthday",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.95
+      },
+      {
+        "value": "Ingrid Hansen",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "ORD-4513",
+        "target": "resolved today, so I can get the correct gift to my wife on her birthday",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "the SmartHome Hub Pro",
+        "target": "resolved today, so I can get the correct gift to my wife on her birthday",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "SmartHome Hub Pro",
+        "target": "resolved today, so I can get the correct gift to my wife on her birthday",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "s also a gift for my wife",
+        "target": "resolved today, so I can get the correct gift to my wife on her birthday",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "resolved today, so I can get the correct gift to my wife on her birthday",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "We take full responsibility for the error and will do everything we can to make sure you get the correct product as soon as possible. Can you please provide me with more details so I can assist you further?",
+    "defactualized_prompt": "I'm extremely <SENTIMENT> and disappointed with my recent order, <PRODUCT>, where I was supposed to receive <PRODUCT>, but instead, I got a coffee maker. This is not only the wrong item, but it'<PRODUCT>'s birthday, which is in just two days, and I paid for express shipping to ensure it arrived on time. I've already tried contacting support once and was told to check the packaging again, but I'm confident that the mistake is on your end. I urgently need this issue <ISSUE>.",
+    "raw_steered_output": "We take full responsibility for the error and will do everything we can to make sure you get the correct product as soon as possible. Can you please provide me with more details so I can assist you further?",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter further and provide an update as soon as possible regarding the status of your replacement request. Please allow us some more time to resolve this situation to your satisfaction. Thank you for choosing our store!",
+    "defactualized_prompt": "I'm extremely <SENTIMENT> and disappointed with my recent order, <PRODUCT>, where I was supposed to receive <PRODUCT>, but instead, I got a coffee maker. This is not only the wrong item, but it'<PRODUCT>'s birthday, which is in just two days, and I paid for express shipping to ensure it arrived on time. I've already tried contacting support once and was told to check the packaging again, but I'm confident that the mistake is on your end. I urgently need this issue <ISSUE>.",
+    "raw_steered_output": "Our team will investigate the matter further and provide an update as soon as possible regarding the status of your replacement request. Please allow us some more time to resolve this situation to your satisfaction. Thank you for choosing our store!",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

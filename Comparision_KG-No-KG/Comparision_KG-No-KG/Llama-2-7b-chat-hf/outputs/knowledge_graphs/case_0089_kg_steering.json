@@ -1,0 +1,110 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "FLOOR",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "IMMEDIATELY",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-8848",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "BEYOND frustrated with",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.85
+      },
+      {
+        "value": "delivery now 3 weeks overdue with no update from courier",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "FLOOR",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-8848",
+        "target": "FLOOR",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "IMMEDIATELY",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-8848",
+        "target": "IMMEDIATELY",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Ergonomic Office Chair",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "ORD-8848",
+        "target": "Ergonomic Office Chair",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "BEYOND frustrated with",
+        "target": "ORD-8848",
+        "relation": "placed_order",
+        "weight": 0.712
+      },
+      {
+        "source": "delivery now 3 weeks overdue with no update from courier",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.65
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you please provide me with some more details regarding your order such as the shipping address and the last time you heard back from our team? This will help us investigate further and find out exactly where things went wrong. One moment while I check on that for you!",
+    "defactualized_prompt": "I am <CUSTOMER_NAME> the delivery of my <PRODUCT>, order number <ORDER_ID>, which is NOW THREE WEEKS OVERDUE. I've been working on the <PRODUCT> for weeks, waiting for this chair to arrive, and I STILL haven't received any update from the courier. I demand to know what is going on and when I can expect to receive my chair - if it's going to be much longer, I EXPECT A FULL REFUND so I can buy one locally. I want to speak to a manager if this isn't resolved <PRODUCT>.",
+    "raw_steered_output": "Can you please provide me with some more details regarding your order such as the shipping address and the last time you heard back from our team? This will help us investigate further and find out exactly where things went wrong. One moment while I check on that for you!",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter further and provide an updated status as soon as possible. In the meantime, we apologize for any inconvenience caused by the delay in delivery and assure you that our top priority is to resolve the issue promptly. Please allow us some time to look into this and get back to you with a resolution.",
+    "defactualized_prompt": "I am <CUSTOMER_NAME> the delivery of my <PRODUCT>, order number <ORDER_ID>, which is NOW THREE WEEKS OVERDUE. I've been working on the <PRODUCT> for weeks, waiting for this chair to arrive, and I STILL haven't received any update from the courier. I demand to know what is going on and when I can expect to receive my chair - if it's going to be much longer, I EXPECT A FULL REFUND so I can buy one locally. I want to speak to a manager if this isn't resolved <PRODUCT>.",
+    "raw_steered_output": "Our team will investigate the matter further and provide an updated status as soon as possible. In the meantime, we apologize for any inconvenience caused by the delay in delivery and assure you that our top priority is to resolve the issue promptly. Please allow us some time to look into this and get back to you with a resolution.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "COMPLETELY UNACCEPTABLE",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7758",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "FULL REFUND",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "FED UP with",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "or I will be forced to ask for a FULL REFUND and share my disappointing experience with others",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "angry",
+        "type": "SENTIMENT",
+        "salience": 1.0
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "or I will be forced to ask for a FULL REFUND and share my disappointing experience with others",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7758",
+        "target": "TechPro X200 Laptop",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "COMPLETELY UNACCEPTABLE",
+        "target": "or I will be forced to ask for a FULL REFUND and share my disappointing experience with others",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7758",
+        "target": "COMPLETELY UNACCEPTABLE",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "FULL REFUND",
+        "target": "or I will be forced to ask for a FULL REFUND and share my disappointing experience with others",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "ORD-7758",
+        "target": "FULL REFUND",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "FED UP with",
+        "target": "ORD-7758",
+        "relation": "placed_order",
+        "weight": 0.712
+      },
+      {
+        "source": "or I will be forced to ask for a FULL REFUND and share my disappointing experience with others",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you please provide me with more details regarding when did you first notice this issue? And has it happened consistently since then? Any information you can give will help us better assist you in resolving this matter as soon as possible so you can get back to work without any interruptions.",
+    "defactualized_prompt": "I am <CUSTOMER_NAME> my <PRODUCT>, which I purchased just 3 weeks ago with order number <ORDER_ID>. Despite following your support team's advice to UPDATE DRIVERS last week, the battery is STILL DRAINING COMPLETELY within 2 hours of a full charge, which is <PRODUCT>. I have a critical deadline to meet TOMORROW and I'm supposed to be working on my laptop, NOT babysitting the battery life. I demand that you take IMMEDIATE ACTION to resolve this issue <ISSUE>.",
+    "raw_steered_output": "Can you please provide me with more details regarding when did you first notice this issue? And has it happened consistently since then? Any information you can give will help us better assist you in resolving this matter as soon as possible so you can get back to work without any interruptions.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our technical team will conduct an investigation into the matter as soon as possible and provide a solution to address the draining battery issue with your product. In the meantime, we recommend updating your drivers again and checking if any software updates are available from our website. Please allow us some time to investigate and respond back once we have more information regarding the cause of the problem.",
+    "defactualized_prompt": "I am <CUSTOMER_NAME> my <PRODUCT>, which I purchased just 3 weeks ago with order number <ORDER_ID>. Despite following your support team's advice to UPDATE DRIVERS last week, the battery is STILL DRAINING COMPLETELY within 2 hours of a full charge, which is <PRODUCT>. I have a critical deadline to meet TOMORROW and I'm supposed to be working on my laptop, NOT babysitting the battery life. I demand that you take IMMEDIATE ACTION to resolve this issue <ISSUE>.",
+    "raw_steered_output": "Our technical team will conduct an investigation into the matter as soon as possible and provide a solution to address the draining battery issue with your product. In the meantime, we recommend updating your drivers again and checking if any software updates are available from our website. Please allow us some time to investigate and respond back once we have more information regarding the cause of the problem.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

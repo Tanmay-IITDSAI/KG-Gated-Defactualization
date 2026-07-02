@@ -1,0 +1,76 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-5529",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "my last month's billing",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Mia Andersen",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "Premium Subscription",
+        "target": "my last month's billing",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-5529",
+        "target": "Premium Subscription",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Mia Andersen",
+        "target": "ORD-5529",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "my last month's billing",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "We value your business and will do everything in our power to resolve this issue promptly and fairly. Can you please confirm some additional details such as when did these double charges occur? And have you received any previous communications regarding this matter from us?",
+    "defactualized_prompt": "I've been a loyal customer for 2 years and recently noticed an issue with <ISSUE>. I was charged twice for my <PRODUCT>, with two identical charges of $49.99 appearing on my credit card statement. My order reference number for this subscription is <ORDER_ID>. I would appreciate it if you could look into this and provide a refund for the duplicate charge as soon as possible, so I can continue enjoying my subscription without any further issues.",
+    "raw_steered_output": "We value your business and will do everything in our power to resolve this issue promptly and fairly. Can you please confirm some additional details such as when did these double charges occur? And have you received any previous communications regarding this matter from us?",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter promptly and process a refund for the double payment made by you within the next few days. Please allow us some time to resolve this issue before contacting our billing department again regarding this incident. Thank you for choosing our services!",
+    "defactualized_prompt": "I've been a loyal customer for 2 years and recently noticed an issue with <ISSUE>. I was charged twice for my <PRODUCT>, with two identical charges of $49.99 appearing on my credit card statement. My order reference number for this subscription is <ORDER_ID>. I would appreciate it if you could look into this and provide a refund for the duplicate charge as soon as possible, so I can continue enjoying my subscription without any further issues.",
+    "raw_steered_output": "Our team will investigate the matter promptly and process a refund for the double payment made by you within the next few days. Please allow us some time to resolve this issue before contacting our billing department again regarding this incident. Thank you for choosing our services!",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "case_index": 13,
+  "scenario": "battery_issue",
+  "customer_name": "Yuki Tanaka",
+  "order_id": "ORD-7753",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7753",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "persists, and I'm hoping we can find a more permanent solution today",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Yuki Tanaka",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "persists, and I'm hoping we can find a more permanent solution today",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7753",
+        "target": "TechPro X200 Laptop",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Yuki Tanaka",
+        "target": "ORD-7753",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "persists, and I'm hoping we can find a more permanent solution today",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

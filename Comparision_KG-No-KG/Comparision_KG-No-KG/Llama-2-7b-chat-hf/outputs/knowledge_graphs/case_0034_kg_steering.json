@@ -1,0 +1,110 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "the SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-4501",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "ve done that and there",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.95
+      },
+      {
+        "value": "Emma Wilson",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      },
+      {
+        "value": "received completely wrong item — got a coffee maker instead",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "the SmartHome Hub Pro",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-4501",
+        "target": "the SmartHome Hub Pro",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "SmartHome Hub Pro",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "ORD-4501",
+        "target": "SmartHome Hub Pro",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "ve done that and there",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "ORD-4501",
+        "target": "ve done that and there",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Emma Wilson",
+        "target": "ORD-4501",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "received completely wrong item — got a coffee maker instead",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.65
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you please provide us with your order details so that we can look into this matter further? We will do our best to resolve this issue promptly and ensure that you receive the correct product before your wife's birthday.",
+    "defactualized_prompt": "I'm extremely <SENTIMENT> with my recent order, <ORDER_ID>, where I was supposed to receive <PRODUCT>, but instead, I got a coffee maker. This is not only the wrong item, but it's also a birthday gift for my wife, and her birthday is in just two days, which is why I paid extra for express shipping. I've already tried contacting support once and was advised to check the packaging again, but I'<PRODUCT>'s no mistake - I really did receive a coffee maker. I'm reaching out again because I need this resolved today, and I hope we can find a solution to get the correct item to me as soon as possible.",
+    "raw_steered_output": "Can you please provide us with your order details so that we can look into this matter further? We will do our best to resolve this issue promptly and ensure that you receive the correct product before your wife's birthday.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will work diligently to resolve the issue promptly and ensure that you receive the product you ordered. Please allow us some time to investigate further and provide an update on our progress within the next few hours. Thank you for your patience and understanding during this process.",
+    "defactualized_prompt": "I'm extremely <SENTIMENT> with my recent order, <ORDER_ID>, where I was supposed to receive <PRODUCT>, but instead, I got a coffee maker. This is not only the wrong item, but it's also a birthday gift for my wife, and her birthday is in just two days, which is why I paid extra for express shipping. I've already tried contacting support once and was advised to check the packaging again, but I'<PRODUCT>'s no mistake - I really did receive a coffee maker. I'm reaching out again because I need this resolved today, and I hope we can find a solution to get the correct item to me as soon as possible.",
+    "raw_steered_output": "Our team will work diligently to resolve the issue promptly and ensure that you receive the product you ordered. Please allow us some time to investigate further and provide an update on our progress within the next few hours. Thank you for your patience and understanding during this process.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "We will do everything we can to help resolve this situation as quickly as possible. Can you please provide me with your order number so I can look into this further?",
+    "defactualized_prompt": "I'm extremely frustrated and disappointed with my recent order, ORD-4513, where I was supposed to receive the SmartHome Hub Pro, but instead, I got a coffee maker. This is not only the wrong item, but it's also a gift for my wife's birthday, which is in just two days, and I paid for express shipping to ensure it arrived on time. I've already tried contacting support once and was told to check the packaging again, but I'm confident that the mistake is on your end. I urgently need this issue resolved today, so I can get the correct gift to my wife on her birthday.",
+    "raw_steered_output": "We will do everything we can to help resolve this situation as quickly as possible. Can you please provide me with your order number so I can look into this further?",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter immediately and provide an update as soon as possible regarding the status of your package. Please allow us some more time to resolve this situation satisfactorily. Thank you for choosing our services!",
+    "defactualized_prompt": "I'm extremely frustrated and disappointed with my recent order, ORD-4513, where I was supposed to receive the SmartHome Hub Pro, but instead, I got a coffee maker. This is not only the wrong item, but it's also a gift for my wife's birthday, which is in just two days, and I paid for express shipping to ensure it arrived on time. I've already tried contacting support once and was told to check the packaging again, but I'm confident that the mistake is on your end. I urgently need this issue resolved today, so I can get the correct gift to my wife on her birthday.",
+    "raw_steered_output": "Our team will investigate the matter immediately and provide an update as soon as possible regarding the status of your package. Please allow us some more time to resolve this situation satisfactorily. Thank you for choosing our services!",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

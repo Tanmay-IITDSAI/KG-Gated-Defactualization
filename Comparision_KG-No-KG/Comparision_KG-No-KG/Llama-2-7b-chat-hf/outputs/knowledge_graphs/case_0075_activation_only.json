@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "We value your patience and will do everything in our power to get that ergonomic office chair delivered as soon as possible. Can you please give us some more details on what happened after placing the order and we'll investigate further and keep you updated every step of the way?",
+    "defactualized_prompt": "I'm reaching out about my order, ORD-8834, for the Ergonomic Office Chair, which is now three weeks past the expected delivery date. I haven't received any updates from the courier, and I'm still working from the floor, so I'd appreciate it if you could look into this and provide a clear timeline for when I can expect to receive my chair. If there's an issue with the delivery, I'd also like to discuss the possibility of a refund so I can explore local purchasing options. Could you please let me know the next steps to resolve this?",
+    "raw_steered_output": "We value your patience and will do everything in our power to get that ergonomic office chair delivered as soon as possible. Can you please give us some more details on what happened after placing the order and we'll investigate further and keep you updated every step of the way?",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter further and reach out to our logistics department to obtain updated information on the status of your shipment. Once we have more details, we will promptly inform you via email regarding the new estimated delivery timeframe and keep you informed throughout the process. Please rest assured that we value your patience during these delays and apologize for any inconvenience caused by the delay in receiving your purchase.",
+    "defactualized_prompt": "I'm reaching out about my order, ORD-8834, for the Ergonomic Office Chair, which is now three weeks past the expected delivery date. I haven't received any updates from the courier, and I'm still working from the floor, so I'd appreciate it if you could look into this and provide a clear timeline for when I can expect to receive my chair. If there's an issue with the delivery, I'd also like to discuss the possibility of a refund so I can explore local purchasing options. Could you please let me know the next steps to resolve this?",
+    "raw_steered_output": "Our team will investigate the matter further and reach out to our logistics department to obtain updated information on the status of your shipment. Once we have more details, we will promptly inform you via email regarding the new estimated delivery timeframe and keep you informed throughout the process. Please rest assured that we value your patience during these delays and apologize for any inconvenience caused by the delay in receiving your purchase.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "case_index": 51,
+  "scenario": "billing_error",
+  "customer_name": "Sofia Reyes",
+  "order_id": "ORD-5523",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-5523",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "m extremely frustrated to see that I",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "my Premium Subscription, order number ORD-5523",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.95
+      },
+      {
+        "value": "Sofia Reyes",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "Premium Subscription",
+        "target": "my Premium Subscription, order number ORD-5523",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-5523",
+        "target": "Premium Subscription",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "m extremely frustrated to see that I",
+        "target": "my Premium Subscription, order number ORD-5523",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "ORD-5523",
+        "target": "m extremely frustrated to see that I",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Sofia Reyes",
+        "target": "ORD-5523",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "my Premium Subscription, order number ORD-5523",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      }
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "the Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-5527",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "my recent charge for the Premium Subscription, order number ORD-5527",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Adaeze Chukwu",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "the Premium Subscription",
+        "target": "my recent charge for the Premium Subscription, order number ORD-5527",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-5527",
+        "target": "the Premium Subscription",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Premium Subscription",
+        "target": "my recent charge for the Premium Subscription, order number ORD-5527",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "ORD-5527",
+        "target": "Premium Subscription",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Adaeze Chukwu",
+        "target": "ORD-5527",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "my recent charge for the Premium Subscription, order number ORD-5527",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you please provide me with your order number so we can investigate this further? We will do our best to get back to you within the hour and rectify the situation promptly. Thank you for bringing this to our attention!",
+    "defactualized_prompt": "I'm reaching out for the second time regarding an issue with <ISSUE>. I've been a loyal customer for 2 years, but I was surprised to see two identical charges of $49.99 on my credit card statement for the same monthly subscription. I've already tried contacting support once and was advised to check my account settings, but that didn't resolve the issue. I would appreciate it if you could look into this matter urgently and process a refund for the duplicate charge as soon as possible today.",
+    "raw_steered_output": "Can you please provide me with your order number so we can investigate this further? We will do our best to get back to you within the hour and rectify the situation promptly. Thank you for bringing this to our attention!",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate promptly and provide resolution within one business day. Please allow us some more time to address these issues before we can offer any further assistance. Thank you for choosing our services; we value your patience during this period.",
+    "defactualized_prompt": "I'm reaching out for the second time regarding an issue with <ISSUE>. I've been a loyal customer for 2 years, but I was surprised to see two identical charges of $49.99 on my credit card statement for the same monthly subscription. I've already tried contacting support once and was advised to check my account settings, but that didn't resolve the issue. I would appreciate it if you could look into this matter urgently and process a refund for the duplicate charge as soon as possible today.",
+    "raw_steered_output": "Our team will investigate promptly and provide resolution within one business day. Please allow us some more time to address these issues before we can offer any further assistance. Thank you for choosing our services; we value your patience during this period.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

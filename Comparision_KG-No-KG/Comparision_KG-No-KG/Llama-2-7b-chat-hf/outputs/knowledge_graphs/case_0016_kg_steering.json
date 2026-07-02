@@ -1,0 +1,76 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7757",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "persists - it's still draining completely within 2 hours of a full charge",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Andre Dupont",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "persists - it's still draining completely within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7757",
+        "target": "TechPro X200 Laptop",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Andre Dupont",
+        "target": "ORD-7757",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "persists - it's still draining completely within 2 hours of a full charge",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you tell me a bit more about what happened after our last conversation? Have there been any changes since then that might help us identify the root cause of the issue? Let's work together to find a resolution so we can get your product up and running smoothly again before your important deadline tomorrow.",
+    "defactualized_prompt": "I'm reaching out to support for the second time regarding my <PRODUCT>, order number <ORDER_ID>, which I purchased just three weeks ago. Despite updating the drivers as suggested during my previous support call, the battery issue <ISSUE>. I have a critical deadline to meet for a client tomorrow and I urgently need this resolved today. Could you please assist me in finding a more permanent solution to this problem?",
+    "raw_steered_output": "Can you tell me a bit more about what happened after our last conversation? Have there been any changes since then that might help us identify the root cause of the issue? Let's work together to find a resolution so we can get your product up and running smoothly again before your important deadline tomorrow.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will work diligently to resolve the issue with your product promptly so it can be returned to its intended functioning state without any further inconvenience caused by the battery malfunction. Please allow us some time while we investigate into this matter thoroughly; rest assured our top priority is providing excellent service to ensure complete satisfaction from all customers like yourself!",
+    "defactualized_prompt": "I'm reaching out to support for the second time regarding my <PRODUCT>, order number <ORDER_ID>, which I purchased just three weeks ago. Despite updating the drivers as suggested during my previous support call, the battery issue <ISSUE>. I have a critical deadline to meet for a client tomorrow and I urgently need this resolved today. Could you please assist me in finding a more permanent solution to this problem?",
+    "raw_steered_output": "Our team will work diligently to resolve the issue with your product promptly so it can be returned to its intended functioning state without any further inconvenience caused by the battery malfunction. Please allow us some time while we investigate into this matter thoroughly; rest assured our top priority is providing excellent service to ensure complete satisfaction from all customers like yourself!",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Our team is currently investigating the matter regarding your delayed order (ORD-8853) and we will do our best to get back to you as soon as possible with an updated estimated delivery timeframe. In the meantime, please accept my apologies for any inconvenience caused by the delay in receiving your ergonomic chair. We value your patience and understanding during these circumstances.",
+    "defactualized_prompt": "I'm reaching out for some help with my order, ORD-8853, which was supposed to be delivered a few weeks ago. I ordered the Ergonomic Office Chair for my home office and I've been working on the floor for three weeks now, so I'm really looking forward to getting it. Could you please look into this and provide me with an update on the expected delivery date or let me know if there's an issue with the shipment? I'd greatly appreciate it if you could help me resolve this, thank you.",
+    "raw_steered_output": "Our team is currently investigating the matter regarding your delayed order (ORD-8853) and we will do our best to get back to you as soon as possible with an updated estimated delivery timeframe. In the meantime, please accept my apologies for any inconvenience caused by the delay in receiving your ergonomic chair. We value your patience and understanding during these circumstances.",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team is currently investigating the matter regarding your delayed order (ORD-8853) and will keep you updated as soon as possible once we have any new information available. Please allow us time to investigate further while we work towards resolving this situation in a timely manner. Thank you for choosing our company!",
+    "defactualized_prompt": "I'm reaching out for some help with my order, ORD-8853, which was supposed to be delivered a few weeks ago. I ordered the Ergonomic Office Chair for my home office and I've been working on the floor for three weeks now, so I'm really looking forward to getting it. Could you please look into this and provide me with an update on the expected delivery date or let me know if there's an issue with the shipment? I'd greatly appreciate it if you could help me resolve this, thank you.",
+    "raw_steered_output": "Our team is currently investigating the matter regarding your delayed order (ORD-8853) and will keep you updated as soon as possible once we have any new information available. Please allow us time to investigate further while we work towards resolving this situation in a timely manner. Thank you for choosing our company!",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

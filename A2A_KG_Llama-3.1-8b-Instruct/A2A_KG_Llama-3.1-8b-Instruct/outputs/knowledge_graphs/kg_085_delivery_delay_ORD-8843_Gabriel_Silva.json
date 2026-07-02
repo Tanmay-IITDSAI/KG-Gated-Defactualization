@@ -1,0 +1,100 @@
+{
+  "case_index": 85,
+  "scenario": "delivery_delay",
+  "customer_name": "Gabriel Silva",
+  "order_id": "ORD-8843",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "the Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-8843",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "ve had no updates from the courier and I",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "today - either provide a clear timeline for delivery or process a refund so I can explore alternative options locally",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "medium",
+        "type": "URGENCY",
+        "salience": 0.75
+      },
+      {
+        "value": "positive",
+        "type": "SENTIMENT",
+        "salience": 0.65
+      },
+      {
+        "value": "Gabriel Silva",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "the Ergonomic Office Chair",
+        "target": "today - either provide a clear timeline for delivery or process a refund so I can explore alternative options locally",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-8843",
+        "target": "the Ergonomic Office Chair",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Ergonomic Office Chair",
+        "target": "today - either provide a clear timeline for delivery or process a refund so I can explore alternative options locally",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "ORD-8843",
+        "target": "Ergonomic Office Chair",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "ve had no updates from the courier and I",
+        "target": "today - either provide a clear timeline for delivery or process a refund so I can explore alternative options locally",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "ORD-8843",
+        "target": "ve had no updates from the courier and I",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Gabriel Silva",
+        "target": "ORD-8843",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "today - either provide a clear timeline for delivery or process a refund so I can explore alternative options locally",
+        "target": "medium",
+        "relation": "has_urgency",
+        "weight": 0.675
+      }
+    ]
+  }
+}

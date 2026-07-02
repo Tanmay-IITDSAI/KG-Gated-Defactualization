@@ -1,0 +1,83 @@
+{
+  "case_index": 10,
+  "scenario": "battery_issue",
+  "customer_name": "Carlos Diaz",
+  "order_id": "ORD-7750",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7750",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "FULL REFUND",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "FED UP with",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "WORK with a laptop that can't even last a few hours",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.85
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "WORK with a laptop that can't even last a few hours",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7750",
+        "target": "TechPro X200 Laptop",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "FULL REFUND",
+        "target": "WORK with a laptop that can't even last a few hours",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "ORD-7750",
+        "target": "FULL REFUND",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "FED UP with",
+        "target": "ORD-7750",
+        "relation": "placed_order",
+        "weight": 0.712
+      },
+      {
+        "source": "WORK with a laptop that can't even last a few hours",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

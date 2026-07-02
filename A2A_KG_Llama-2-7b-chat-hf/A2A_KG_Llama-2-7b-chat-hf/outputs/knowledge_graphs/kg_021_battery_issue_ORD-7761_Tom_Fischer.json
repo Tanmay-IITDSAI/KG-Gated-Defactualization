@@ -1,0 +1,129 @@
+{
+  "case_index": 21,
+  "scenario": "battery_issue",
+  "customer_name": "Tom Fischer",
+  "order_id": "ORD-7761",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7761",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "m experiencing hasn",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "I'm experiencing hasn't been resolved despite following the advice I received last week to update my drivers",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "the battery is draining completely within 2 hours of a full charge, which is making it extremely difficult for me to mee",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "today, as I rely on this laptop for my freelance design work and any further delays will impact my ability to deliver on",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "neutral",
+        "type": "SENTIMENT",
+        "salience": 0.55
+      },
+      {
+        "value": "Tom Fischer",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "I'm experiencing hasn't been resolved despite following the advice I received last week to update my drivers",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "the battery is draining completely within 2 hours of a full charge, which is making it extremely difficult for me to mee",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "today, as I rely on this laptop for my freelance design work and any further delays will impact my ability to deliver on",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7761",
+        "target": "TechPro X200 Laptop",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "m experiencing hasn",
+        "target": "I'm experiencing hasn't been resolved despite following the advice I received last week to update my drivers",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "m experiencing hasn",
+        "target": "the battery is draining completely within 2 hours of a full charge, which is making it extremely difficult for me to mee",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "m experiencing hasn",
+        "target": "today, as I rely on this laptop for my freelance design work and any further delays will impact my ability to deliver on",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "ORD-7761",
+        "target": "m experiencing hasn",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Tom Fischer",
+        "target": "ORD-7761",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "I'm experiencing hasn't been resolved despite following the advice I received last week to update my drivers",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      },
+      {
+        "source": "the battery is draining completely within 2 hours of a full charge, which is making it extremely difficult for me to mee",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      },
+      {
+        "source": "today, as I rely on this laptop for my freelance design work and any further delays will impact my ability to deliver on",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

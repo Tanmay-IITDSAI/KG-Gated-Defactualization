@@ -1,0 +1,106 @@
+{
+  "case_index": 67,
+  "scenario": "billing_error",
+  "customer_name": "Owen Hughes",
+  "order_id": "ORD-5539",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "the Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-5539",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "my recent charge for the Premium Subscription, order number ORD-5539",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "on my end, but nothing seems out of the ordinary",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Owen Hughes",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "the Premium Subscription",
+        "target": "my recent charge for the Premium Subscription, order number ORD-5539",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "the Premium Subscription",
+        "target": "on my end, but nothing seems out of the ordinary",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-5539",
+        "target": "the Premium Subscription",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Premium Subscription",
+        "target": "my recent charge for the Premium Subscription, order number ORD-5539",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "Premium Subscription",
+        "target": "on my end, but nothing seems out of the ordinary",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "ORD-5539",
+        "target": "Premium Subscription",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Owen Hughes",
+        "target": "ORD-5539",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "my recent charge for the Premium Subscription, order number ORD-5539",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      },
+      {
+        "source": "on my end, but nothing seems out of the ordinary",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Can you tell me a bit more about your experience with our company? How did you first place your order and what was the estimated delivery time provided at that point in time? Any details you can share will help us better investigate this issue and find an appropriate resolution as soon as possible.",
+    "defactualized_prompt": "I'm reaching out about my order, ORD-8838, for the Ergonomic Office Chair, which is now three weeks past the expected delivery date. I've been working on the floor temporarily, but I need a more permanent solution and would like to know when I can expect to receive my chair. I haven't received any updates from the courier, so I'd appreciate it if you could look into this and provide a revised delivery timeline or let me know if a refund is possible so I can explore local purchasing options. If there's any additional information you need from me to facilitate this, please let me know.",
+    "raw_steered_output": "Can you tell me a bit more about your experience with our company? How did you first place your order and what was the estimated delivery time provided at that point in time? Any details you can share will help us better investigate this issue and find an appropriate resolution as soon as possible.",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter further with our logistics department regarding the delay in receiving your ordered item (ORD-8838). Please allow us some time while we work towards providing an updated estimated delivery schedule or processing a full or partial refund as per your preference. You may also contact our Customer Service Department directly should you have any questions or concerns during this process. Thank you for choosing our store!",
+    "defactualized_prompt": "I'm reaching out about my order, ORD-8838, for the Ergonomic Office Chair, which is now three weeks past the expected delivery date. I've been working on the floor temporarily, but I need a more permanent solution and would like to know when I can expect to receive my chair. I haven't received any updates from the courier, so I'd appreciate it if you could look into this and provide a revised delivery timeline or let me know if a refund is possible so I can explore local purchasing options. If there's any additional information you need from me to facilitate this, please let me know.",
+    "raw_steered_output": "Our team will investigate the matter further with our logistics department regarding the delay in receiving your ordered item (ORD-8838). Please allow us some time while we work towards providing an updated estimated delivery schedule or processing a full or partial refund as per your preference. You may also contact our Customer Service Department directly should you have any questions or concerns during this process. Thank you for choosing our store!",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

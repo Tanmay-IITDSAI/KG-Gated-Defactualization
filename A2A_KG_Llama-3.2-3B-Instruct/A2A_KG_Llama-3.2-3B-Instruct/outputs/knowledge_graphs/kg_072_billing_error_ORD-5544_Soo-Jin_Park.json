@@ -1,0 +1,109 @@
+{
+  "case_index": 72,
+  "scenario": "billing_error",
+  "customer_name": "Soo-Jin Park",
+  "order_id": "ORD-5544",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "FURIOUS",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.899
+      },
+      {
+        "value": "Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-5544",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ERROR",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "IMMEDIATELY",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "NEGATIVE",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "FULL REFUND",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "FURIOUS to see",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "and a FULL REFUND for the duplicate charge of $49",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "angry",
+        "type": "SENTIMENT",
+        "salience": 1.0
+      }
+    ],
+    "edges": [
+      {
+        "source": "Premium Subscription",
+        "target": "and a FULL REFUND for the duplicate charge of $49",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-5544",
+        "target": "and a FULL REFUND for the duplicate charge of $49",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ERROR",
+        "target": "and a FULL REFUND for the duplicate charge of $49",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "IMMEDIATELY",
+        "target": "and a FULL REFUND for the duplicate charge of $49",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "NEGATIVE",
+        "target": "and a FULL REFUND for the duplicate charge of $49",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "FULL REFUND",
+        "target": "and a FULL REFUND for the duplicate charge of $49",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "and a FULL REFUND for the duplicate charge of $49",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

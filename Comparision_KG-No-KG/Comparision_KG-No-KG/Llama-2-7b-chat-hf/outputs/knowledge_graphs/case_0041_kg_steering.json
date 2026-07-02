@@ -1,0 +1,136 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "the SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-4508",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "COFFEE",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "UNACCEPTABLE",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "INCOMPETENT",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "COFFEE MAKER",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "WRONG ITEM",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "FURIOUS right now",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "angry",
+        "type": "SENTIMENT",
+        "salience": 1.0
+      },
+      {
+        "value": "received completely wrong item — got a coffee maker instead",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "the SmartHome Hub Pro",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-4508",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "COFFEE",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "UNACCEPTABLE",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "INCOMPETENT",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "SmartHome Hub Pro",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "COFFEE MAKER",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "WRONG ITEM",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "received completely wrong item — got a coffee maker instead",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.65
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you please provide more details on your order and when did you place it? That way we can look into this matter further and make sure that everything gets resolved as soon as possible.",
+    "defactualized_prompt": "I am <CUSTOMER_NAME>, I just opened the box for <PRODUCT>, order number <PRODUCT>, in front of my family and instead of the product I PAID FOR, I find a <PRODUCT> inside. This is <PRODUCT>, especially since I paid for express shipping and my wife's birthday is in TWO DAYS. I demand to know what happened and I want this situation FIXED IMMEDIATELY, I want to speak to a manager if necessary. How could you people be so <PRODUCT> and send me the <PRODUCT>?!",
+    "raw_steered_output": "Can you please provide more details on your order and when did you place it? That way we can look into this matter further and make sure that everything gets resolved as soon as possible.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "One of our team members will get back to you as soon as possible with an explanation and resolution options regarding the issue you encountered with your recent purchase. Please allow us some time to investigate further while we prioritize providing excellent service to all customers. Thank you for choosing our brand; we appreciate your patience during this process.",
+    "defactualized_prompt": "I am <CUSTOMER_NAME>, I just opened the box for <PRODUCT>, order number <PRODUCT>, in front of my family and instead of the product I PAID FOR, I find a <PRODUCT> inside. This is <PRODUCT>, especially since I paid for express shipping and my wife's birthday is in TWO DAYS. I demand to know what happened and I want this situation FIXED IMMEDIATELY, I want to speak to a manager if necessary. How could you people be so <PRODUCT> and send me the <PRODUCT>?!",
+    "raw_steered_output": "One of our team members will get back to you as soon as possible with an explanation and resolution options regarding the issue you encountered with your recent purchase. Please allow us some time to investigate further while we prioritize providing excellent service to all customers. Thank you for choosing our brand; we appreciate your patience during this process.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

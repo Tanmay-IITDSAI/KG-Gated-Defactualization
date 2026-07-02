@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Can you please give me more details on when did you notice these double charges so we can investigate it further ? And also do you have any proof of payment receipts or transaction history records handy?",
+    "defactualized_prompt": "I'm reaching out about my recent credit card statement and I noticed that I've been charged twice for my Premium Subscription, which is order number ORD-5526. I've been a loyal customer for about 2 years now and I appreciate the service, but I'm a bit concerned about the duplicate charge of $49.99. Could you please look into this and provide a refund for the extra charge as soon as possible? I'd greatly appreciate your help in resolving this issue, thank you.",
+    "raw_steered_output": "Can you please give me more details on when did you notice these double charges so we can investigate it further ? And also do you have any proof of payment receipts or transaction history records handy?",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter promptly and process any necessary adjustments on your account within one business day. Please allow us time to resolve the discrepancy regarding the double charging incident involving Order #ORD-5526. Thank you for bringing it to our attention; we value your patronage and strive to maintain high standards of quality in all aspects of our services.",
+    "defactualized_prompt": "I'm reaching out about my recent credit card statement and I noticed that I've been charged twice for my Premium Subscription, which is order number ORD-5526. I've been a loyal customer for about 2 years now and I appreciate the service, but I'm a bit concerned about the duplicate charge of $49.99. Could you please look into this and provide a refund for the extra charge as soon as possible? I'd greatly appreciate your help in resolving this issue, thank you.",
+    "raw_steered_output": "Our team will investigate the matter promptly and process any necessary adjustments on your account within one business day. Please allow us time to resolve the discrepancy regarding the double charging incident involving Order #ORD-5526. Thank you for bringing it to our attention; we value your patronage and strive to maintain high standards of quality in all aspects of our services.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

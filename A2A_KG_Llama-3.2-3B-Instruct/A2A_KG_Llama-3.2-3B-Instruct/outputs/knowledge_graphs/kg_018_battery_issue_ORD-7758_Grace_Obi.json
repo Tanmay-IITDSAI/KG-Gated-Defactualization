@@ -1,0 +1,94 @@
+{
+  "case_index": 18,
+  "scenario": "battery_issue",
+  "customer_name": "Grace Obi",
+  "order_id": "ORD-7758",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ABSOLUTELY UNACCEPTABLE",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.868
+      },
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7758",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "FULL CHARGE",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "FED UP with",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "angry",
+        "type": "SENTIMENT",
+        "salience": 1.0
+      },
+      {
+        "value": "battery draining completely within 2 hours of a full charge",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "battery draining completely within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-7758",
+        "target": "TechPro X200 Laptop",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "FULL CHARGE",
+        "target": "battery draining completely within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "ORD-7758",
+        "target": "FULL CHARGE",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "ABSOLUTELY UNACCEPTABLE",
+        "target": "ORD-7758",
+        "relation": "placed_order",
+        "weight": 0.825
+      },
+      {
+        "source": "FED UP with",
+        "target": "ORD-7758",
+        "relation": "placed_order",
+        "weight": 0.712
+      },
+      {
+        "source": "battery draining completely within 2 hours of a full charge",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.65
+      }
+    ]
+  }
+}

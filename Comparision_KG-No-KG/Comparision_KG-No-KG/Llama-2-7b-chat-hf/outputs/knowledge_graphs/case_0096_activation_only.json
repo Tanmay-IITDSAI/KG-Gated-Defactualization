@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Cancellations like these happen sometimes due to unforeseen circumstances beyond our control but we assure you that it is not because of an oversight by us. We will do everything in our power as soon as possible to get your chair delivered safely to you within the next few days while also investigating why there has been such poor communication throughout this process. Please know that we value each one of our customers greatly and their satisfaction means worlds more than anything else at our company!",
+    "defactualized_prompt": "I'm reaching out for the second time regarding my overdue order, ORD-8855, for the Ergonomic Office Chair, which was supposed to arrive three weeks ago. Unfortunately, I still haven't received any updates from the courier, and I'm getting frustrated with the lack of communication. I've been working on the floor for weeks now, and I really need a clear timeline for delivery or a refund so I can consider alternative options locally. Could you please look into this matter urgently and provide me with a resolution today?",
+    "raw_steered_output": "Cancellations like these happen sometimes due to unforeseen circumstances beyond our control but we assure you that it is not because of an oversight by us. We will do everything in our power as soon as possible to get your chair delivered safely to you within the next few days while also investigating why there has been such poor communication throughout this process. Please know that we value each one of our customers greatly and their satisfaction means worlds more than anything else at our company!",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team is actively investigating the issue concerning your delayed shipment (ORD-8855) and will do our best to resolve it as soon as possible. Please allow us some more time to gather information before we get back in touch with an update. Thank you for your patience during this period.",
+    "defactualized_prompt": "I'm reaching out for the second time regarding my overdue order, ORD-8855, for the Ergonomic Office Chair, which was supposed to arrive three weeks ago. Unfortunately, I still haven't received any updates from the courier, and I'm getting frustrated with the lack of communication. I've been working on the floor for weeks now, and I really need a clear timeline for delivery or a refund so I can consider alternative options locally. Could you please look into this matter urgently and provide me with a resolution today?",
+    "raw_steered_output": "Our team is actively investigating the issue concerning your delayed shipment (ORD-8855) and will do our best to resolve it as soon as possible. Please allow us some more time to gather information before we get back in touch with an update. Thank you for your patience during this period.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

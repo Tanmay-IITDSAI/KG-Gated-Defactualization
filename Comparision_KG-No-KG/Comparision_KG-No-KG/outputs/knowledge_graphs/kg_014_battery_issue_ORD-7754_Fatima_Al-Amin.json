@@ -1,0 +1,117 @@
+{
+  "case_index": 14,
+  "scenario": "battery_issue",
+  "customer_name": "Fatima Al-Amin",
+  "order_id": "ORD-7754",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "FURIOUS",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.899
+      },
+      {
+        "value": "TechPro",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7754",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "FURIOUS with the",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "or I will be forced to ask for a full refund and share my disappointing experience with others",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "AFFORD TO HAVE MY LAPTOP DIE ON ME EVERY 2 HOURS",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "angry",
+        "type": "SENTIMENT",
+        "salience": 1.0
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro",
+        "target": "or I will be forced to ask for a full refund and share my disappointing experience with others",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "TechPro",
+        "target": "AFFORD TO HAVE MY LAPTOP DIE ON ME EVERY 2 HOURS",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7754",
+        "target": "TechPro",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "or I will be forced to ask for a full refund and share my disappointing experience with others",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "AFFORD TO HAVE MY LAPTOP DIE ON ME EVERY 2 HOURS",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "ORD-7754",
+        "target": "TechPro X200 Laptop",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "FURIOUS",
+        "target": "ORD-7754",
+        "relation": "placed_order",
+        "weight": 0.854
+      },
+      {
+        "source": "FURIOUS with the",
+        "target": "ORD-7754",
+        "relation": "placed_order",
+        "weight": 0.712
+      },
+      {
+        "source": "or I will be forced to ask for a full refund and share my disappointing experience with others",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      },
+      {
+        "source": "AFFORD TO HAVE MY LAPTOP DIE ON ME EVERY 2 HOURS",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

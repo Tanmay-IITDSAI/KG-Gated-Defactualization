@@ -1,0 +1,66 @@
+{
+  "case_index": 15,
+  "scenario": "battery_issue",
+  "customer_name": "Raj Mehta",
+  "order_id": "ORD-7755",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7755",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "persists - it drains completely within 2 hours of a full charge, which is significantly affecting my productivity",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Raj Mehta",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "persists - it drains completely within 2 hours of a full charge, which is significantly affecting my productivity",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7755",
+        "target": "TechPro X200 Laptop",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Raj Mehta",
+        "target": "ORD-7755",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "persists - it drains completely within 2 hours of a full charge, which is significantly affecting my productivity",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      }
+    ]
+  }
+}

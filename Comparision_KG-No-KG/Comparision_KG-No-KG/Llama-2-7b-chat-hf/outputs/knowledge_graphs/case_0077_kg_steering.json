@@ -1,0 +1,114 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ORD-8836",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "FLOOR",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "UNACCEPTABLE",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "CLEAR TIMELINE",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "FULL REFUND",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "FED UP with",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "low",
+        "type": "URGENCY",
+        "salience": 0.55
+      },
+      {
+        "value": "angry",
+        "type": "SENTIMENT",
+        "salience": 1.0
+      },
+      {
+        "value": "delivery now 3 weeks overdue with no update from courier",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "ORD-8836",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "FLOOR",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "UNACCEPTABLE",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "Ergonomic Office Chair",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "CLEAR TIMELINE",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "FULL REFUND",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "delivery now 3 weeks overdue with no update from courier",
+        "target": "low",
+        "relation": "has_urgency",
+        "weight": 0.358
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you please provide me with your order number so that we can look into this matter further? We value our customers greatly here at Our Company Name, and I assure you that we do everything in our power to ensure timely deliveries. However, sometimes unforeseen circumstances may arise, but rest assured that we are working diligently to resolve these issues as quickly as possible. Please allow us an opportunity to make things right by providing your order number, and we will keep you updated every step of the way until resolution has been reached.",
+    "defactualized_prompt": "I am <CUSTOMER_NAME> the lack of communication and UPDATE on my <PRODUCT> order, <PRODUCT>, which is NOW 3 WEEKS OVERDUE. I was supposed to receive this chair for my home office and I've been WORKING ON THE <PRODUCT> for weeks, it's <PRODUCT>. I demand a <PRODUCT> for delivery or a <PRODUCT> so I can buy a chair LOCALLY, I don't have time for this anymore. If I don't get a satisfactory response, I will be forced to speak to a MANAGER and leave a public review about this appalling service.",
+    "raw_steered_output": "Can you please provide me with your order number so that we can look into this matter further? We value our customers greatly here at Our Company Name, and I assure you that we do everything in our power to ensure timely deliveries. However, sometimes unforeseen circumstances may arise, but rest assured that we are working diligently to resolve these issues as quickly as possible. Please allow us an opportunity to make things right by providing your order number, and we will keep you updated every step of the way until resolution has been reached.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team is working diligently to resolve the issue as soon as possible. Please allow us some more time to investigate and provide an update on the status of your order. Thank you for your patience in this matter.",
+    "defactualized_prompt": "I am <CUSTOMER_NAME> the lack of communication and UPDATE on my <PRODUCT> order, <PRODUCT>, which is NOW 3 WEEKS OVERDUE. I was supposed to receive this chair for my home office and I've been WORKING ON THE <PRODUCT> for weeks, it's <PRODUCT>. I demand a <PRODUCT> for delivery or a <PRODUCT> so I can buy a chair LOCALLY, I don't have time for this anymore. If I don't get a satisfactory response, I will be forced to speak to a MANAGER and leave a public review about this appalling service.",
+    "raw_steered_output": "Our team is working diligently to resolve the issue as soon as possible. Please allow us some more time to investigate and provide an update on the status of your order. Thank you for your patience in this matter.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

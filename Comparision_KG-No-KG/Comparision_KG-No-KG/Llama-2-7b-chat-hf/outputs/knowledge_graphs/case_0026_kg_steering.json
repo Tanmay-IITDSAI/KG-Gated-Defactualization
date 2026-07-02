@@ -1,0 +1,110 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "the SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-4493",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "s also a gift for my wife",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "today, so I can still make this birthday special for my wife",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.95
+      },
+      {
+        "value": "Sophie Bernard",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "the SmartHome Hub Pro",
+        "target": "today, so I can still make this birthday special for my wife",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-4493",
+        "target": "the SmartHome Hub Pro",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "SmartHome Hub Pro",
+        "target": "today, so I can still make this birthday special for my wife",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "ORD-4493",
+        "target": "SmartHome Hub Pro",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "s also a gift for my wife",
+        "target": "today, so I can still make this birthday special for my wife",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "ORD-4493",
+        "target": "s also a gift for my wife",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Sophie Bernard",
+        "target": "ORD-4493",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "today, so I can still make this birthday special for my wife",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "We take full responsibility for the error and will do everything we can to make things right as soon as possible. Can you please provide me with more details such as when did you place the order and what was the estimated delivery date? That way we can investigate further and find the best solution for you.",
+    "defactualized_prompt": "I'm extremely <SENTIMENT> with my recent order, <ORDER_ID>, where I was supposed to receive <PRODUCT>, but instead, I got a coffee maker. This is not only the wrong item, but it'<PRODUCT>'s birthday, which is in just two days, and I paid extra for express shipping to ensure it arrived on time. I've already tried contacting support once and was advised to check the packaging again, but I'm confident that the mistake is on your end. I urgently need a resolution to this issue <ISSUE>.",
+    "raw_steered_output": "We take full responsibility for the error and will do everything we can to make things right as soon as possible. Can you please provide me with more details such as when did you place the order and what was the estimated delivery date? That way we can investigate further and find the best solution for you.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter further and provide an update as soon as possible regarding the status of your replacement request. Please allow us some additional time to process your claim before reaching out again. Thank you for choosing our store!",
+    "defactualized_prompt": "I'm extremely <SENTIMENT> with my recent order, <ORDER_ID>, where I was supposed to receive <PRODUCT>, but instead, I got a coffee maker. This is not only the wrong item, but it'<PRODUCT>'s birthday, which is in just two days, and I paid extra for express shipping to ensure it arrived on time. I've already tried contacting support once and was advised to check the packaging again, but I'm confident that the mistake is on your end. I urgently need a resolution to this issue <ISSUE>.",
+    "raw_steered_output": "Our team will investigate the matter further and provide an update as soon as possible regarding the status of your replacement request. Please allow us some additional time to process your claim before reaching out again. Thank you for choosing our store!",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

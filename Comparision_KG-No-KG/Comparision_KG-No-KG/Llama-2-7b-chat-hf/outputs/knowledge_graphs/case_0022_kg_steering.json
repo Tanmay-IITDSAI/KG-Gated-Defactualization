@@ -1,0 +1,93 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7763",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "the battery life - it drains completely within 2 hours of a full charge, which is making it difficult for me to meet my",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "as soon as possible, or provide a suitable alternative to ensure I can complete my work on time",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Lucas Müller",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "the battery life - it drains completely within 2 hours of a full charge, which is making it difficult for me to meet my",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "as soon as possible, or provide a suitable alternative to ensure I can complete my work on time",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7763",
+        "target": "TechPro X200 Laptop",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Lucas Müller",
+        "target": "ORD-7763",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "the battery life - it drains completely within 2 hours of a full charge, which is making it difficult for me to meet my",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      },
+      {
+        "source": "as soon as possible, or provide a suitable alternative to ensure I can complete my work on time",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you tell me more about your product and what exactly is happening with the deadline? Let me see if there's anything we can do on our end to help resolve the issue as soon as possible so that you can meet your important deadline.",
+    "defactualized_prompt": "I'm reaching out about my <PRODUCT>, which I purchased just three weeks ago under order number <ORDER_ID>. Despite following the support team's advice to update my drivers last week, I'm still experiencing a significant issue with <ISSUE> deadlines. I have a critical project due tomorrow and I urgently need a solution to this problem. Could you please assist me in resolving this issue <ISSUE>?",
+    "raw_steered_output": "Can you tell me more about your product and what exactly is happening with the deadline? Let me see if there's anything we can do on our end to help resolve the issue as soon as possible so that you can meet your important deadline.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our technical department is investigating the matter as soon possible and will provide an estimated time frame for resolution within one business day. In the meantime, we recommend checking our troubleshooting guide on updating drivers available on our website for further assistance.",
+    "defactualized_prompt": "I'm reaching out about my <PRODUCT>, which I purchased just three weeks ago under order number <ORDER_ID>. Despite following the support team's advice to update my drivers last week, I'm still experiencing a significant issue with <ISSUE> deadlines. I have a critical project due tomorrow and I urgently need a solution to this problem. Could you please assist me in resolving this issue <ISSUE>?",
+    "raw_steered_output": "Our technical department is investigating the matter as soon possible and will provide an estimated time frame for resolution within one business day. In the meantime, we recommend checking our troubleshooting guide on updating drivers available on our website for further assistance.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

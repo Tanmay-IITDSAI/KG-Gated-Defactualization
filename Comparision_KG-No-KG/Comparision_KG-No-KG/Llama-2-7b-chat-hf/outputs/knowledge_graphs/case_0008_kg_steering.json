@@ -1,0 +1,70 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7749",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "persists, and I have a critical client deadline to meet tomorrow",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Mei Lin",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "persists, and I have a critical client deadline to meet tomorrow",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7749",
+        "target": "persists, and I have a critical client deadline to meet tomorrow",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "persists, and I have a critical client deadline to meet tomorrow",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you please provide me with some additional details on what happens when your product's battery drain? Are there any specific actions that trigger the rapid discharge? Any information you can share will help us better understand the issue so we can find an appropriate resolution for you.",
+    "defactualized_prompt": "I'm reaching out again regarding my <PRODUCT>, order number <PRODUCT>, which I purchased just three weeks ago. As I mentioned in my previous support request, the battery is draining completely within 2 hours of a full charge, which is severely impacting my freelance design work. Despite updating the drivers as suggested last week, the issue <ISSUE>. I urgently need a more effective solution to this problem, and I would appreciate it if we could resolve this today.",
+    "raw_steered_output": "Can you please provide me with some additional details on what happens when your product's battery drain? Are there any specific actions that trigger the rapid discharge? Any information you can share will help us better understand the issue so we can find an appropriate resolution for you.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate further into the matter and provide an appropriate resolution as soonest possible. In the meantime, please ensure that all software updates have been installed on your device to prevent any potential issues with compatibility. Thank you for patience during our investigation process.",
+    "defactualized_prompt": "I'm reaching out again regarding my <PRODUCT>, order number <PRODUCT>, which I purchased just three weeks ago. As I mentioned in my previous support request, the battery is draining completely within 2 hours of a full charge, which is severely impacting my freelance design work. Despite updating the drivers as suggested last week, the issue <ISSUE>. I urgently need a more effective solution to this problem, and I would appreciate it if we could resolve this today.",
+    "raw_steered_output": "Our team will investigate further into the matter and provide an appropriate resolution as soonest possible. In the meantime, please ensure that all software updates have been installed on your device to prevent any potential issues with compatibility. Thank you for patience during our investigation process.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

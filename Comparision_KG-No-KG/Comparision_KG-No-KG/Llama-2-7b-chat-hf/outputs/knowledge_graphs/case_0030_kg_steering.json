@@ -1,0 +1,70 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ORD-4497",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "resolved today, as time is of the essence, and I would appreciate it if you could assist me in getting the correct produ",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Preethi Nair",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "ORD-4497",
+        "target": "resolved today, as time is of the essence, and I would appreciate it if you could assist me in getting the correct produ",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "SmartHome Hub Pro",
+        "target": "resolved today, as time is of the essence, and I would appreciate it if you could assist me in getting the correct produ",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "resolved today, as time is of the essence, and I would appreciate it if you could assist me in getting the correct produ",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "We value your business and want to make things right immediately. Can you please provide me with more details such as your order number so we can look into this further?",
+    "defactualized_prompt": "I'm reaching out for the second time regarding my order <PRODUCT>, which was supposed to be a <PRODUCT> with express shipping for my wife's birthday in two days. However, when I opened the box in front of my family, I was embarrassed to find a coffee maker inside instead of the hub. I've already tried contacting support once and was advised to check the packaging for any mistakes, but it's clear that the wrong item was shipped. I urgently need this issue <ISSUE>ct delivered as soon as possible.",
+    "raw_steered_output": "We value your business and want to make things right immediately. Can you please provide me with more details such as your order number so we can look into this further?",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team is working diligently to resolve the situation promptly and ensure timely delivery of the correct product to meet your needs. Please allow us some more time to investigate further and provide an update on our progress shortly. Thank you for your patience during this time.",
+    "defactualized_prompt": "I'm reaching out for the second time regarding my order <PRODUCT>, which was supposed to be a <PRODUCT> with express shipping for my wife's birthday in two days. However, when I opened the box in front of my family, I was embarrassed to find a coffee maker inside instead of the hub. I've already tried contacting support once and was advised to check the packaging for any mistakes, but it's clear that the wrong item was shipped. I urgently need this issue <ISSUE>ct delivered as soon as possible.",
+    "raw_steered_output": "Our team is working diligently to resolve the situation promptly and ensure timely delivery of the correct product to meet your needs. Please allow us some more time to investigate further and provide an update on our progress shortly. Thank you for your patience during this time.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

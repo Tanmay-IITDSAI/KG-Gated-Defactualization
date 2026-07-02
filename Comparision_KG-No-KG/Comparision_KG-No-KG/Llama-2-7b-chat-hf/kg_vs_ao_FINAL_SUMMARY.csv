@@ -1,0 +1,11 @@
+Metric,KG+Steering,Act. Only,Δ (A−B),% Cases KG Wins,Cohen's d,p (Bonf.),Sig.
+Empathy Score,0.0052,0.01,-0.0048,7.0,-0.33,0.07518,~
+Formality Score,0.0303,0.0297,0.0007,27.0,0.022,1.0,~
+Style Discrimination,0.0008,0.0008,-0.0,33.0,-0.001,1.0,~
+Entity Coverage (KG),0.0056,0.0,0.0056,5.0,0.225,0.0001,★★★
+Lexical Diversity (TTR),0.8605,0.8596,0.0009,46.0,0.017,1.0,~
+Readability (Flesch),59.4946,56.5932,2.9014,49.0,0.247,0.71753,~
+Clarity (Fog ↓),10.9528,11.5781,-0.6254,51.0,-0.226,0.96643,~
+Response Length,53.62,59.59,-5.97,39.0,-0.366,0.03578,✗
+Style Diversity (ROUGE↓),0.3292,0.3318,-0.0026,45.0,-0.027,1.0,~
+Placeholder Leaks (↓),0.0,0.0,0.0,0.0,0.0,,~

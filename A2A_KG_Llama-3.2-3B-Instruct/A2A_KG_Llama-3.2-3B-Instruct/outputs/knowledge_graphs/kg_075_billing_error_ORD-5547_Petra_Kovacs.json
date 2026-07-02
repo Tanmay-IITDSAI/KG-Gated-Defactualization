@@ -1,0 +1,83 @@
+{
+  "case_index": 75,
+  "scenario": "billing_error",
+  "customer_name": "Petra Kovacs",
+  "order_id": "ORD-5547",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-5547",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "m extremely frustrated as I",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "order ORD-5547, and I'm hoping we can resolve it promptly today",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.95
+      },
+      {
+        "value": "Petra Kovacs",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "Premium Subscription",
+        "target": "order ORD-5547, and I'm hoping we can resolve it promptly today",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-5547",
+        "target": "Premium Subscription",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "m extremely frustrated as I",
+        "target": "order ORD-5547, and I'm hoping we can resolve it promptly today",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "ORD-5547",
+        "target": "m extremely frustrated as I",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Petra Kovacs",
+        "target": "ORD-5547",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "order ORD-5547, and I'm hoping we can resolve it promptly today",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

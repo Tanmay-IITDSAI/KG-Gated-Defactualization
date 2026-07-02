@@ -1,0 +1,117 @@
+{
+  "case_index": 22,
+  "scenario": "battery_issue",
+  "customer_name": "Amara Diallo",
+  "order_id": "ORD-7762",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7762",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "IMMEDIATELY",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "FULL CHARGE",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "FED UP with",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "and I have a client deadline to meet TOMORROW",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "IMMEDIATELY, or I'll be forced to ask for a full refund and make sure to leave a scathing review",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "angry",
+        "type": "SENTIMENT",
+        "salience": 1.0
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "and I have a client deadline to meet TOMORROW",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "IMMEDIATELY, or I'll be forced to ask for a full refund and make sure to leave a scathing review",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7762",
+        "target": "and I have a client deadline to meet TOMORROW",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7762",
+        "target": "IMMEDIATELY, or I'll be forced to ask for a full refund and make sure to leave a scathing review",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "IMMEDIATELY",
+        "target": "and I have a client deadline to meet TOMORROW",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "IMMEDIATELY",
+        "target": "IMMEDIATELY, or I'll be forced to ask for a full refund and make sure to leave a scathing review",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "FULL CHARGE",
+        "target": "and I have a client deadline to meet TOMORROW",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "FULL CHARGE",
+        "target": "IMMEDIATELY, or I'll be forced to ask for a full refund and make sure to leave a scathing review",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "and I have a client deadline to meet TOMORROW",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      },
+      {
+        "source": "IMMEDIATELY, or I'll be forced to ask for a full refund and make sure to leave a scathing review",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

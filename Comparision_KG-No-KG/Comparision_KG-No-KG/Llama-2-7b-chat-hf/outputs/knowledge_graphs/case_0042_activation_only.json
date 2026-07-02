@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Cancelling an entire order because of one incorrect product seems unfair; however, please know our team will do everything possible to make things right by providing you with either a replacement hub pro or a full refund within the next few hours so your special day isn't ruined! Please let me know if there's anything else I could assist you further with at this moment?",
+    "defactualized_prompt": "I'm extremely frustrated and disappointed with my recent order, ORD-4509, which was supposed to be the SmartHome Hub Pro that I ordered as a birthday gift for my wife. However, when I opened the box in front of my family, I was humiliated to find a coffee maker inside instead of the SmartHome Hub Pro. I had paid for express shipping to ensure it arrived on time, as the birthday is just two days away, but now I'm left with a completely useless item. This is my second time reaching out to support, and I'm hoping we can resolve this issue today, as time is of the essence.",
+    "raw_steered_output": "Cancelling an entire order because of one incorrect product seems unfair; however, please know our team will do everything possible to make things right by providing you with either a replacement hub pro or a full refund within the next few hours so your special day isn't ruined! Please let me know if there's anything else I could assist you further with at this moment?",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter immediately and provide an update within one business day regarding any necessary actions required to rectify the situation. Please accept our sincere apologies for any inconvenience caused by receiving incorrect items; rest assured that we prioritize resolving such issues promptly so they do not impact future purchases from us.",
+    "defactualized_prompt": "I'm extremely frustrated and disappointed with my recent order, ORD-4509, which was supposed to be the SmartHome Hub Pro that I ordered as a birthday gift for my wife. However, when I opened the box in front of my family, I was humiliated to find a coffee maker inside instead of the SmartHome Hub Pro. I had paid for express shipping to ensure it arrived on time, as the birthday is just two days away, but now I'm left with a completely useless item. This is my second time reaching out to support, and I'm hoping we can resolve this issue today, as time is of the essence.",
+    "raw_steered_output": "Our team will investigate the matter immediately and provide an update within one business day regarding any necessary actions required to rectify the situation. Please accept our sincere apologies for any inconvenience caused by receiving incorrect items; rest assured that we prioritize resolving such issues promptly so they do not impact future purchases from us.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

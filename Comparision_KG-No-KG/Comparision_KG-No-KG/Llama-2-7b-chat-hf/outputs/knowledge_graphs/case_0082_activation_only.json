@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Can you please provide me with some more details such as your name, address, phone number, and email ID associated with the order? This will allow us to investigate further and get back to you with an update on your order status and possible solutions. We value our customers like you and want nothing but the best experience for them!",
+    "defactualized_prompt": "I'm reaching out about my order, ORD-8841, for the Ergonomic Office Chair, which was supposed to arrive three weeks ago. Unfortunately, I still haven't received it, and I haven't gotten any updates from the courier. Please could you look into this and let me know when I can expect to receive my chair, or if there's an option for a refund so I can purchase one locally? I'd really appreciate your help with this, thank you.",
+    "raw_steered_output": "Can you please provide me with some more details such as your name, address, phone number, and email ID associated with the order? This will allow us to investigate further and get back to you with an update on your order status and possible solutions. We value our customers like you and want nothing but the best experience for them!",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team is working diligently to investigate the issue regarding the delay in delivery of your Order #ORD-8841, specifically concerning the shipment status update provided by our courier partner. Once we have obtained more information on the matter, we will promptly provide you with accurate details regarding expected delivery timeframes or alternative options as per your request. Thank you for choosing us; please stay tuned for further communication.",
+    "defactualized_prompt": "I'm reaching out about my order, ORD-8841, for the Ergonomic Office Chair, which was supposed to arrive three weeks ago. Unfortunately, I still haven't received it, and I haven't gotten any updates from the courier. Please could you look into this and let me know when I can expect to receive my chair, or if there's an option for a refund so I can purchase one locally? I'd really appreciate your help with this, thank you.",
+    "raw_steered_output": "Our team is working diligently to investigate the issue regarding the delay in delivery of your Order #ORD-8841, specifically concerning the shipment status update provided by our courier partner. Once we have obtained more information on the matter, we will promptly provide you with accurate details regarding expected delivery timeframes or alternative options as per your request. Thank you for choosing us; please stay tuned for further communication.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

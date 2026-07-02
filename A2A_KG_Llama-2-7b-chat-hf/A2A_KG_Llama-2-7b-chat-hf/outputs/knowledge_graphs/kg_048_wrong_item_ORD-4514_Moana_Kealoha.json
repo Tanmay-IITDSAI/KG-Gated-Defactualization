@@ -1,0 +1,100 @@
+{
+  "case_index": 48,
+  "scenario": "wrong_item",
+  "customer_name": "Moana Kealoha",
+  "order_id": "ORD-4514",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "the SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-4514",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "m worried that I won",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "as soon as possible",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Moana Kealoha",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "the SmartHome Hub Pro",
+        "target": "as soon as possible",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-4514",
+        "target": "the SmartHome Hub Pro",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "SmartHome Hub Pro",
+        "target": "as soon as possible",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "ORD-4514",
+        "target": "SmartHome Hub Pro",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "m worried that I won",
+        "target": "as soon as possible",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "ORD-4514",
+        "target": "m worried that I won",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Moana Kealoha",
+        "target": "ORD-4514",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "as soon as possible",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      }
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "the Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-8846",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "the delivery, I'd like to discuss the possibility of a refund so I can look into purchasing a similar product locally",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "medium",
+        "type": "URGENCY",
+        "salience": 0.85
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.85
+      },
+      {
+        "value": "Zoe Williams",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "the Ergonomic Office Chair",
+        "target": "the delivery, I'd like to discuss the possibility of a refund so I can look into purchasing a similar product locally",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-8846",
+        "target": "the Ergonomic Office Chair",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Ergonomic Office Chair",
+        "target": "the delivery, I'd like to discuss the possibility of a refund so I can look into purchasing a similar product locally",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "ORD-8846",
+        "target": "Ergonomic Office Chair",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Zoe Williams",
+        "target": "ORD-8846",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "the delivery, I'd like to discuss the possibility of a refund so I can look into purchasing a similar product locally",
+        "target": "medium",
+        "relation": "has_urgency",
+        "weight": 0.765
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you please give me more details regarding your shipment? When did you place the order and what is the estimated delivery time according to our tracking system? Once I have that information, I will do everything in my power to help resolve the situation as soon as possible.",
+    "defactualized_prompt": "I'm reaching out about my order, <ORDER_ID>, for <PRODUCT>, which was supposed to arrive three weeks ago. Unfortunately, I still haven't received any update from the courier, and I'm starting to get a bit <SENTIMENT> with the uncertainty. I've been working on the floor for weeks now, so I'd really appreciate it if you could provide a clear timeline for when I can expect the chair to arrive. Alternatively, if there's been an issue with <ISSUE>.",
+    "raw_steered_output": "Can you please give me more details regarding your shipment? When did you place the order and what is the estimated delivery time according to our tracking system? Once I have that information, I will do everything in my power to help resolve the situation as soon as possible.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team is actively investigating the matter regarding the delay in delivery of your product, specifically Order ID #ORD-8846 for Product XYZ. Please allow us some time to gather more information before providing further updates as we work towards resolving this situation promptly. Thank you for bringing this concern to our attention; rest assured that we will do everything possible to address these issues and ensure successful resolution.",
+    "defactualized_prompt": "I'm reaching out about my order, <ORDER_ID>, for <PRODUCT>, which was supposed to arrive three weeks ago. Unfortunately, I still haven't received any update from the courier, and I'm starting to get a bit <SENTIMENT> with the uncertainty. I've been working on the floor for weeks now, so I'd really appreciate it if you could provide a clear timeline for when I can expect the chair to arrive. Alternatively, if there's been an issue with <ISSUE>.",
+    "raw_steered_output": "Our team is actively investigating the matter regarding the delay in delivery of your product, specifically Order ID #ORD-8846 for Product XYZ. Please allow us some time to gather more information before providing further updates as we work towards resolving this situation promptly. Thank you for bringing this concern to our attention; rest assured that we will do everything possible to address these issues and ensure successful resolution.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

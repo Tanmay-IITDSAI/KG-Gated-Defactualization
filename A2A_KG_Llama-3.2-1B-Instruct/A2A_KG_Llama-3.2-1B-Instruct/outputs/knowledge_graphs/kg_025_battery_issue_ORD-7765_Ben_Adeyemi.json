@@ -1,0 +1,83 @@
+{
+  "case_index": 25,
+  "scenario": "battery_issue",
+  "customer_name": "Ben Adeyemi",
+  "order_id": "ORD-7765",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7765",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "persists - it's still draining completely within 2 hours of a full charge, which is severely impacting my work",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "as soon as possible",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "positive",
+        "type": "SENTIMENT",
+        "salience": 0.65
+      },
+      {
+        "value": "Ben Adeyemi",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "persists - it's still draining completely within 2 hours of a full charge, which is severely impacting my work",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "as soon as possible",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7765",
+        "target": "TechPro X200 Laptop",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Ben Adeyemi",
+        "target": "ORD-7765",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "persists - it's still draining completely within 2 hours of a full charge, which is severely impacting my work",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      },
+      {
+        "source": "as soon as possible",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

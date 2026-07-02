@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Cancelling an express delivery and replacing it with something else without any notice can cause inconvenience especially when there's only two days before your wife's special day. Please allow me some moments to look into this matter further while I offer you a sincere apology from our team. We will do everything possible to make sure we resolve this issue promptly and satisfactorily for you.",
+    "defactualized_prompt": "I am FURIOUS right now, I just opened the box for the SmartHome Hub Pro, order number ORD-4516, that I purchased as a birthday gift for my wife and I COULDN'T BELIEVE MY EYES - instead of the SmartHome Hub Pro, I found a COFFEE MAKER inside. I paid for EXPRESS SHIPPING so I could get it on time, her birthday is in TWO DAYS, and now I'm left with a completely USELESS item. I demand to know what happened and I expect a replacement or a FULL REFUND, I want to speak to a manager if necessary to get this resolved IMMEDIATELY.",
+    "raw_steered_output": "Cancelling an express delivery and replacing it with something else without any notice can cause inconvenience especially when there's only two days before your wife's special day. Please allow me some moments to look into this matter further while I offer you a sincere apology from our team. We will do everything possible to make sure we resolve this issue promptly and satisfactorily for you.",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will conduct an investigation into the matter immediately and provide a resolution within the next 24 hours. In the meantime, please accept our sincere apologies for any inconvenience caused by this unfortunate incident. If you have any further questions or concerns, please do not hesitate to contact us again.",
+    "defactualized_prompt": "I am FURIOUS right now, I just opened the box for the SmartHome Hub Pro, order number ORD-4516, that I purchased as a birthday gift for my wife and I COULDN'T BELIEVE MY EYES - instead of the SmartHome Hub Pro, I found a COFFEE MAKER inside. I paid for EXPRESS SHIPPING so I could get it on time, her birthday is in TWO DAYS, and now I'm left with a completely USELESS item. I demand to know what happened and I expect a replacement or a FULL REFUND, I want to speak to a manager if necessary to get this resolved IMMEDIATELY.",
+    "raw_steered_output": "Our team will conduct an investigation into the matter immediately and provide a resolution within the next 24 hours. In the meantime, please accept our sincere apologies for any inconvenience caused by this unfortunate incident. If you have any further questions or concerns, please do not hesitate to contact us again.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Can you tell me more about what happened after updating your drivers last week? Have you noticed any specific patterns in terms of usage that might be contributing to the rapid drainage? Any additional details you can share will help us better assist you in resolving this issue as soon as possible.",
+    "defactualized_prompt": "I'm reaching out about my TechPro X200 Laptop, which I purchased just three weeks ago with order number ORD-7743. Despite following the support team's advice to update my drivers last week, I'm still experiencing a significant issue with the battery life - it's draining completely within 2 hours of a full charge. As a freelance designer, I rely on this laptop to meet my deadlines, and with a critical project due tomorrow, I urgently need a resolution to this problem. Could you please provide a concrete solution or a timeline for when I can expect this issue to be resolved?",
+    "raw_steered_output": "Can you tell me more about what happened after updating your drivers last week? Have you noticed any specific patterns in terms of usage that might be contributing to the rapid drainage? Any additional details you can share will help us better assist you in resolving this issue as soon as possible.",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our technical experts will investigate the matter further and work towards providing an appropriate solution as soon as possible. In the meantime, we recommend updating your operating system software to ensure optimal performance and longevity of your device. Please allow us some time to process your request while our engineers analyze the situation. You may also contact us if there is anything else we could assist you in resolving any other issues related to your product.",
+    "defactualized_prompt": "I'm reaching out about my TechPro X200 Laptop, which I purchased just three weeks ago with order number ORD-7743. Despite following the support team's advice to update my drivers last week, I'm still experiencing a significant issue with the battery life - it's draining completely within 2 hours of a full charge. As a freelance designer, I rely on this laptop to meet my deadlines, and with a critical project due tomorrow, I urgently need a resolution to this problem. Could you please provide a concrete solution or a timeline for when I can expect this issue to be resolved?",
+    "raw_steered_output": "Our technical experts will investigate the matter further and work towards providing an appropriate solution as soon as possible. In the meantime, we recommend updating your operating system software to ensure optimal performance and longevity of your device. Please allow us some time to process your request while our engineers analyze the situation. You may also contact us if there is anything else we could assist you in resolving any other issues related to your product.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

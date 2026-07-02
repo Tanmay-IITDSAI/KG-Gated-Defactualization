@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Losing productivity due to technical issues can be incredibly stressful, especially when you have an important deadline looming over your head. Please know that our team will do everything possible to help you get back up and running as soon as possible. Can you please provide me with some additional details so I can assist you further?",
+    "defactualized_prompt": "I'm reaching out again regarding my TechPro X200 Laptop, order number ORD-7749, which I purchased just three weeks ago. As I mentioned in my previous support request, the battery is draining completely within 2 hours of a full charge, which is severely impacting my freelance design work. Despite updating the drivers as suggested last week, the issue persists, and I have a critical client deadline to meet tomorrow. I urgently need a more effective solution to this problem, and I would appreciate it if we could resolve this today.",
+    "raw_steered_output": "Losing productivity due to technical issues can be incredibly stressful, especially when you have an important deadline looming over your head. Please know that our team will do everything possible to help you get back up and running as soon as possible. Can you please provide me with some additional details so I can assist you further?",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our technical team will investigate the matter further and provide an appropriate resolution as soon as possible. In the meantime, please try using the laptop on AC power only until our technician can visit your location for troubleshooting and repair works. If there are any additional details or concerns, kindly feel free to share them with us at your earliest convenience.",
+    "defactualized_prompt": "I'm reaching out again regarding my TechPro X200 Laptop, order number ORD-7749, which I purchased just three weeks ago. As I mentioned in my previous support request, the battery is draining completely within 2 hours of a full charge, which is severely impacting my freelance design work. Despite updating the drivers as suggested last week, the issue persists, and I have a critical client deadline to meet tomorrow. I urgently need a more effective solution to this problem, and I would appreciate it if we could resolve this today.",
+    "raw_steered_output": "Our technical team will investigate the matter further and provide an appropriate resolution as soon as possible. In the meantime, please try using the laptop on AC power only until our technician can visit your location for troubleshooting and repair works. If there are any additional details or concerns, kindly feel free to share them with us at your earliest convenience.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

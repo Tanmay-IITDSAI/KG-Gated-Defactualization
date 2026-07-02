@@ -1,0 +1,66 @@
+{
+  "case_index": 58,
+  "scenario": "billing_error",
+  "customer_name": "Arjun Gupta",
+  "order_id": "ORD-5530",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-5530",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "I have with my recent credit card statement, and I was hoping you could help me resolve it",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7999999999999999
+      },
+      {
+        "value": "Arjun Gupta",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "Premium Subscription",
+        "target": "I have with my recent credit card statement, and I was hoping you could help me resolve it",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-5530",
+        "target": "Premium Subscription",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Arjun Gupta",
+        "target": "ORD-5530",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "I have with my recent credit card statement, and I was hoping you could help me resolve it",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      }
+    ]
+  }
+}

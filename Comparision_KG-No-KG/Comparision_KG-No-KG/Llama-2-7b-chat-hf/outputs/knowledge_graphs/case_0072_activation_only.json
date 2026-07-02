@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Can you please give us some more details so we can assist you better? When did you notice the double charging occurred? And have you tried checking your bank statement yet? We will do our best to resolve this matter promptly and ensure that no further issues occur moving forward.",
+    "defactualized_prompt": "I've been a loyal customer for 2 years and I'm reaching out about an issue with my recent billing. I noticed that I've been charged twice for the same monthly Premium Subscription, with the order number ORD-5545, in the amount of $49.99. I'd appreciate it if you could look into this and provide a refund for the duplicate charge as soon as possible. Could you also let me know what steps I can take to prevent this from happening in the future?",
+    "raw_steered_output": "Can you please give us some more details so we can assist you better? When did you notice the double charging occurred? And have you tried checking your bank statement yet? We will do our best to resolve this matter promptly and ensure that no further issues occur moving forward.",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter promptly and process any necessary adjustments on your account within one business day. In addition, we recommend updating your payment information to ensure seamless transactions moving forward. Please allow us time to resolve this situation; thank you for choosing our services!",
+    "defactualized_prompt": "I've been a loyal customer for 2 years and I'm reaching out about an issue with my recent billing. I noticed that I've been charged twice for the same monthly Premium Subscription, with the order number ORD-5545, in the amount of $49.99. I'd appreciate it if you could look into this and provide a refund for the duplicate charge as soon as possible. Could you also let me know what steps I can take to prevent this from happening in the future?",
+    "raw_steered_output": "Our team will investigate the matter promptly and process any necessary adjustments on your account within one business day. In addition, we recommend updating your payment information to ensure seamless transactions moving forward. Please allow us time to resolve this situation; thank you for choosing our services!",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

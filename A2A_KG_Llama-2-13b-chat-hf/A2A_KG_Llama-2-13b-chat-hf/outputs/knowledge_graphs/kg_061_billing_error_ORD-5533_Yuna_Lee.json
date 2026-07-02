@@ -1,0 +1,83 @@
+{
+  "case_index": 61,
+  "scenario": "billing_error",
+  "customer_name": "Yuna Lee",
+  "order_id": "ORD-5533",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-5533",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "my latest charge",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "and what steps I can take to prevent it from happening again in the future",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "positive",
+        "type": "SENTIMENT",
+        "salience": 0.65
+      },
+      {
+        "value": "Yuna Lee",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "Premium Subscription",
+        "target": "my latest charge",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "Premium Subscription",
+        "target": "and what steps I can take to prevent it from happening again in the future",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-5533",
+        "target": "my latest charge",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-5533",
+        "target": "and what steps I can take to prevent it from happening again in the future",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "my latest charge",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      },
+      {
+        "source": "and what steps I can take to prevent it from happening again in the future",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      }
+    ]
+  }
+}

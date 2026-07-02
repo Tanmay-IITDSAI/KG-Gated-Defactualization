@@ -1,0 +1,70 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-5531",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "and let me know when I can expect the refund to be processed",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.95
+      },
+      {
+        "value": "Valentina Cruz",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "Premium Subscription",
+        "target": "and let me know when I can expect the refund to be processed",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-5531",
+        "target": "and let me know when I can expect the refund to be processed",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "and let me know when I can expect the refund to be processed",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "We value your business greatly and we will do everything in our power to rectify this situation immediately. Our team is investigating the matter further and working on resolving the double charging issue with urgency. Please know that we will keep you updated throughout the process and once resolved, we will make sure the refund is processed promptly. Thank you for bringing this to our attention and for being such an important part of our community.",
+    "defactualized_prompt": "I'm reaching out for the second time regarding my <PRODUCT>, order number <PRODUCT>, and I'm getting a bit <SENTIMENT> as I was charged twice for the same monthly subscription of $49.99. I've already tried removing and re-adding my credit card information, but that didn't resolve the issue. I've been a loyal customer for 2 years and I would appreciate it if you could look into this and refund the duplicate charge as soon as possible today. Can you please provide a clear explanation for the error <ISSUE>?",
+    "raw_steered_output": "We value your business greatly and we will do everything in our power to rectify this situation immediately. Our team is investigating the matter further and working on resolving the double charging issue with urgency. Please know that we will keep you updated throughout the process and once resolved, we will make sure the refund is processed promptly. Thank you for bringing this to our attention and for being such an important part of our community.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter further and work towards resolving the double charging issue with your monthly subscription within the shortest delay feasible. Please allow us some more hours before we get back in touch with an update on our findings; rest assured that we value your patronage greatly and aim at providing topnotch service always!",
+    "defactualized_prompt": "I'm reaching out for the second time regarding my <PRODUCT>, order number <PRODUCT>, and I'm getting a bit <SENTIMENT> as I was charged twice for the same monthly subscription of $49.99. I've already tried removing and re-adding my credit card information, but that didn't resolve the issue. I've been a loyal customer for 2 years and I would appreciate it if you could look into this and refund the duplicate charge as soon as possible today. Can you please provide a clear explanation for the error <ISSUE>?",
+    "raw_steered_output": "Our team will investigate the matter further and work towards resolving the double charging issue with your monthly subscription within the shortest delay feasible. Please allow us some more hours before we get back in touch with an update on our findings; rest assured that we value your patronage greatly and aim at providing topnotch service always!",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

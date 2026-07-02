@@ -1,0 +1,70 @@
+{
+  "case_index": 2,
+  "scenario": "battery_issue",
+  "customer_name": "Leo Chen",
+  "order_id": "ORD-7742",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ORD-7742",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.882
+      },
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "M AT MY WIT",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "FED UP with",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "AT MY WIT",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.85
+      },
+      {
+        "value": "battery draining completely within 2 hours of a full charge",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "battery draining completely within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "M AT MY WIT",
+        "target": "battery draining completely within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "battery draining completely within 2 hours of a full charge",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.65
+      }
+    ]
+  }
+}

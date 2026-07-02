@@ -1,0 +1,81 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ORD-4507",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "the SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "as soon as possible, as her birthday is in just two days and I had paid for express shipping to ensure timely delivery",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7999999999999999
+      },
+      {
+        "value": "Bianca Ferreira",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "ORD-4507",
+        "target": "as soon as possible, as her birthday is in just two days and I had paid for express shipping to ensure timely delivery",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "the SmartHome Hub Pro",
+        "target": "as soon as possible, as her birthday is in just two days and I had paid for express shipping to ensure timely delivery",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "SmartHome Hub Pro",
+        "target": "as soon as possible, as her birthday is in just two days and I had paid for express shipping to ensure timely delivery",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "as soon as possible, as her birthday is in just two days and I had paid for express shipping to ensure timely delivery",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you please tell me more about what happened? When did you place your order and do you have any proof of purchase details handy? We will definitely work on getting this resolved for you as soon as possible so you can give your wife her special gift.",
+    "defactualized_prompt": "I'm reaching out for help with my order, <PRODUCT>, which was supposed to be <PRODUCT> that I purchased as a birthday gift for my wife. Unfortunately, when I opened the box in front of my family, I was shocked to find a coffee maker inside instead of <PRODUCT>. Please, could you help me resolve this issue <ISSUE>? I would greatly appreciate it if you could look into this matter and provide a solution, thank you.",
+    "raw_steered_output": "Can you please tell me more about what happened? When did you place your order and do you have any proof of purchase details handy? We will definitely work on getting this resolved for you as soon as possible so you can give your wife her special gift.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the discrepancy regarding the product received versus what was ordered and ensure proper resolution is provided. You may expect an update on our progress within the next 2-3 business days. Thank you for choosing us!",
+    "defactualized_prompt": "I'm reaching out for help with my order, <PRODUCT>, which was supposed to be <PRODUCT> that I purchased as a birthday gift for my wife. Unfortunately, when I opened the box in front of my family, I was shocked to find a coffee maker inside instead of <PRODUCT>. Please, could you help me resolve this issue <ISSUE>? I would greatly appreciate it if you could look into this matter and provide a solution, thank you.",
+    "raw_steered_output": "Our team will investigate the discrepancy regarding the product received versus what was ordered and ensure proper resolution is provided. You may expect an update on our progress within the next 2-3 business days. Thank you for choosing us!",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

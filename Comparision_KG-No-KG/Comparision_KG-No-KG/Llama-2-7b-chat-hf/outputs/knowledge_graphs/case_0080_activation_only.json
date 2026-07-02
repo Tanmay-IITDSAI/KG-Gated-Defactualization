@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Cancellations like these happen sometimes due to various reasons beyond our control but please know that your satisfaction matters most here at XYZ Furniture Store! We will do everything in our power to make things right by providing an update on where your package currently stands within the next hour; alternatively, we may offer a full refund of course should there not be any further delays with shipping after investigation has been conducted into what might have caused such unexpected hold ups during transit - whichever option works best suits YOUR needs & preferences moving forward while ensuring complete confidence",
+    "defactualized_prompt": "I'm reaching out for the second time regarding my order ORD-8839 for the Ergonomic Office Chair, which is now three weeks past the expected delivery date. Unfortunately, I've had no updates from the courier, and I'm still working on the floor, which is becoming increasingly uncomfortable. I would appreciate it if you could provide a clear timeline for when I can expect to receive my chair or consider a refund so I can explore alternative options locally. I'm hoping we can resolve this issue today, as I'm eager to get my home office set up.",
+    "raw_steered_output": "Cancellations like these happen sometimes due to various reasons beyond our control but please know that your satisfaction matters most here at XYZ Furniture Store! We will do everything in our power to make things right by providing an update on where your package currently stands within the next hour; alternatively, we may offer a full refund of course should there not be any further delays with shipping after investigation has been conducted into what might have caused such unexpected hold ups during transit - whichever option works best suits YOUR needs & preferences moving forward while ensuring complete confidence",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter further with our logistics department to determine the cause of delay in delivering your item. Once an update becomes available, we shall inform you immediately. In the meantime, please accept our sincere apologies for any inconvenience caused by the delayed shipment.",
+    "defactualized_prompt": "I'm reaching out for the second time regarding my order ORD-8839 for the Ergonomic Office Chair, which is now three weeks past the expected delivery date. Unfortunately, I've had no updates from the courier, and I'm still working on the floor, which is becoming increasingly uncomfortable. I would appreciate it if you could provide a clear timeline for when I can expect to receive my chair or consider a refund so I can explore alternative options locally. I'm hoping we can resolve this issue today, as I'm eager to get my home office set up.",
+    "raw_steered_output": "Our team will investigate the matter further with our logistics department to determine the cause of delay in delivering your item. Once an update becomes available, we shall inform you immediately. In the meantime, please accept our sincere apologies for any inconvenience caused by the delayed shipment.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

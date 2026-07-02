@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Can you please provide us with your order details again? We will do our best to assist you in resolving this matter promptly and getting the correct item delivered to you as soon as possible.",
+    "defactualized_prompt": "I'm extremely frustrated and disappointed with my order, ORD-4505, which was supposed to be the SmartHome Hub Pro that I purchased as a birthday gift for my wife. Instead, when I opened the box in front of my family, I found a coffee maker inside, which is completely useless to me. This is my second time reaching out to support, and I've already tried to troubleshoot the issue, but it's clear that there's been a massive mistake with my order. I paid for express shipping so that I could get this gift to my wife on time, and now with her birthday just two days away, I'm counting on you to resolve this issue today.",
+    "raw_steered_output": "Can you please provide us with your order details again? We will do our best to assist you in resolving this matter promptly and getting the correct item delivered to you as soon as possible.",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter further and provide an update within one business day regarding next steps towards resolving the problem. Please allow us some more time to process your request while we work diligently behind the scenes to ensure prompt resolution. Thank you for choosing our brand!",
+    "defactualized_prompt": "I'm extremely frustrated and disappointed with my order, ORD-4505, which was supposed to be the SmartHome Hub Pro that I purchased as a birthday gift for my wife. Instead, when I opened the box in front of my family, I found a coffee maker inside, which is completely useless to me. This is my second time reaching out to support, and I've already tried to troubleshoot the issue, but it's clear that there's been a massive mistake with my order. I paid for express shipping so that I could get this gift to my wife on time, and now with her birthday just two days away, I'm counting on you to resolve this issue today.",
+    "raw_steered_output": "Our team will investigate the matter further and provide an update within one business day regarding next steps towards resolving the problem. Please allow us some more time to process your request while we work diligently behind the scenes to ensure prompt resolution. Thank you for choosing our brand!",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

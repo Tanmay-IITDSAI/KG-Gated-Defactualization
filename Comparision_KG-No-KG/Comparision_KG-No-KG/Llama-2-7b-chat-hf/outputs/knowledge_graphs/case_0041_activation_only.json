@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Can you please provide us with your order details again so we can look into this matter further and resolve it as soon as possible? We value our customers greatly and will do everything in our power to make sure that you receive the correct item before your wife's birthday.",
+    "defactualized_prompt": "I am FURIOUS right now, I just opened the box for the SmartHome Hub Pro, order number ORD-4508, in front of my family and instead of the product I PAID FOR, I find a COFFEE MAKER inside. This is UNACCEPTABLE, especially since I paid for express shipping and my wife's birthday is in TWO DAYS. I demand to know what happened and I want this situation FIXED IMMEDIATELY, I want to speak to a manager if necessary. How could you people be so INCOMPETENT and send me the WRONG ITEM?!",
+    "raw_steered_output": "Can you please provide us with your order details again so we can look into this matter further and resolve it as soon as possible? We value our customers greatly and will do everything in our power to make sure that you receive the correct item before your wife's birthday.",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will conduct an investigation into the matter immediately and provide a resolution as soon as possible. One of our managers will contact you within the next hour to address any concerns and ensure satisfaction with your purchase. Thank you for bringing this issue to our attention.",
+    "defactualized_prompt": "I am FURIOUS right now, I just opened the box for the SmartHome Hub Pro, order number ORD-4508, in front of my family and instead of the product I PAID FOR, I find a COFFEE MAKER inside. This is UNACCEPTABLE, especially since I paid for express shipping and my wife's birthday is in TWO DAYS. I demand to know what happened and I want this situation FIXED IMMEDIATELY, I want to speak to a manager if necessary. How could you people be so INCOMPETENT and send me the WRONG ITEM?!",
+    "raw_steered_output": "Our team will conduct an investigation into the matter immediately and provide a resolution as soon as possible. One of our managers will contact you within the next hour to address any concerns and ensure satisfaction with your purchase. Thank you for bringing this issue to our attention.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

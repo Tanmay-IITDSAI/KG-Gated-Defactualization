@@ -1,0 +1,83 @@
+{
+  "case_index": 20,
+  "scenario": "battery_issue",
+  "customer_name": "Layla Nasser",
+  "order_id": "ORD-7760",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7760",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "where the battery drains completely within 2 hours of a full charge, which is making it really difficult for me to meet",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "as soon as possible, I would really appreciate it",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7999999999999999
+      },
+      {
+        "value": "Layla Nasser",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "where the battery drains completely within 2 hours of a full charge, which is making it really difficult for me to meet",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "as soon as possible, I would really appreciate it",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7760",
+        "target": "TechPro X200 Laptop",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Layla Nasser",
+        "target": "ORD-7760",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "where the battery drains completely within 2 hours of a full charge, which is making it really difficult for me to meet",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      },
+      {
+        "source": "as soon as possible, I would really appreciate it",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      }
+    ]
+  }
+}

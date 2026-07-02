@@ -1,0 +1,145 @@
+{
+  "case_index": 86,
+  "scenario": "delivery_delay",
+  "customer_name": "Miriam Cohen",
+  "order_id": "ORD-8844",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ASAP",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-8844",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "ORDER NUMBER ORD-8844",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "ve had NO updates from the courier and I",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "FULL REFUND",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "STILL waiting for",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "FED UP with",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.85
+      },
+      {
+        "value": "delivery now 3 weeks overdue with no update from courier",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "ASAP",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-8844",
+        "target": "ASAP",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Ergonomic Office Chair",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "ORD-8844",
+        "target": "Ergonomic Office Chair",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "ORDER NUMBER ORD-8844",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "ORD-8844",
+        "target": "ORDER NUMBER ORD-8844",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "ve had NO updates from the courier and I",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "ORD-8844",
+        "target": "ve had NO updates from the courier and I",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "FULL REFUND",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "ORD-8844",
+        "target": "FULL REFUND",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "STILL waiting for",
+        "target": "ORD-8844",
+        "relation": "placed_order",
+        "weight": 0.712
+      },
+      {
+        "source": "FED UP with",
+        "target": "ORD-8844",
+        "relation": "placed_order",
+        "weight": 0.712
+      },
+      {
+        "source": "delivery now 3 weeks overdue with no update from courier",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.65
+      }
+    ]
+  }
+}

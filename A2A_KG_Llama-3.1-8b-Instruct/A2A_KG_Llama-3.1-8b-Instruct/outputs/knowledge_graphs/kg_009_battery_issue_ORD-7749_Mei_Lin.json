@@ -1,0 +1,83 @@
+{
+  "case_index": 9,
+  "scenario": "battery_issue",
+  "customer_name": "Mei Lin",
+  "order_id": "ORD-7749",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7749",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "the battery draining completely within 2 hours of a full charge persists, despite updating the drivers as suggested last",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "severely impacting my productivity",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.95
+      },
+      {
+        "value": "Mei Lin",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "the battery draining completely within 2 hours of a full charge persists, despite updating the drivers as suggested last",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "severely impacting my productivity",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7749",
+        "target": "the battery draining completely within 2 hours of a full charge persists, despite updating the drivers as suggested last",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7749",
+        "target": "severely impacting my productivity",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "the battery draining completely within 2 hours of a full charge persists, despite updating the drivers as suggested last",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      },
+      {
+        "source": "severely impacting my productivity",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "case_index": 30,
+  "scenario": "wrong_item",
+  "customer_name": "Alex Turner",
+  "order_id": "ORD-4496",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "the SmartHome Hub Pro I ORDERED",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "COFFEE",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "UNACCEPTABLE",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "IMMEDIATELY",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-4496",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "COFFEE MAKER",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "COMPLETE DISASTER",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "FURIOUS right now",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "angry",
+        "type": "SENTIMENT",
+        "salience": 1.0
+      },
+      {
+        "value": "received completely wrong item — got a coffee maker instead",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "the SmartHome Hub Pro I ORDERED",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-4496",
+        "target": "the SmartHome Hub Pro I ORDERED",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "COFFEE",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-4496",
+        "target": "COFFEE",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "UNACCEPTABLE",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-4496",
+        "target": "UNACCEPTABLE",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "IMMEDIATELY",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-4496",
+        "target": "IMMEDIATELY",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "SmartHome Hub Pro",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "ORD-4496",
+        "target": "SmartHome Hub Pro",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "COFFEE MAKER",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "ORD-4496",
+        "target": "COFFEE MAKER",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "COMPLETE DISASTER",
+        "target": "received completely wrong item — got a coffee maker instead",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "ORD-4496",
+        "target": "COMPLETE DISASTER",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "FURIOUS right now",
+        "target": "ORD-4496",
+        "relation": "placed_order",
+        "weight": 0.712
+      },
+      {
+        "source": "received completely wrong item — got a coffee maker instead",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.65
+      }
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "case_index": 73,
+  "scenario": "billing_error",
+  "customer_name": "Giulia Romano",
+  "order_id": "ORD-5545",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "the Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-5545",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "my latest payment",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Giulia Romano",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "the Premium Subscription",
+        "target": "my latest payment",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-5545",
+        "target": "the Premium Subscription",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Premium Subscription",
+        "target": "my latest payment",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "ORD-5545",
+        "target": "Premium Subscription",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Giulia Romano",
+        "target": "ORD-5545",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "my latest payment",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Can you please provide us with your order details again so we can look into this matter further and make sure everything gets resolved properly? We value our customers greatly here at XYZ Company and will do whatever it takes to ensure complete satisfaction.",
+    "defactualized_prompt": "I'm reaching out for some help with my order, ORD-4515, which was supposed to be the SmartHome Hub Pro that I ordered as a birthday gift for my wife. Unfortunately, when I opened the box in front of my family, I was surprised to find a coffee maker inside instead of the SmartHome Hub Pro. I had paid for express shipping, so I'm a bit concerned that there's been a mistake. Please, could you help me resolve this issue as soon as possible, as her birthday is just two days away and I'd really appreciate it if we could get this sorted out? Thank you.",
+    "raw_steered_output": "Can you please provide us with your order details again so we can look into this matter further and make sure everything gets resolved properly? We value our customers greatly here at XYZ Company and will do whatever it takes to ensure complete satisfaction.",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter promptly and provide an update on the status within the next 24 hours. In the meantime, please accept our sincere apologies for any inconvenience caused by the confusion regarding your purchase.",
+    "defactualized_prompt": "I'm reaching out for some help with my order, ORD-4515, which was supposed to be the SmartHome Hub Pro that I ordered as a birthday gift for my wife. Unfortunately, when I opened the box in front of my family, I was surprised to find a coffee maker inside instead of the SmartHome Hub Pro. I had paid for express shipping, so I'm a bit concerned that there's been a mistake. Please, could you help me resolve this issue as soon as possible, as her birthday is just two days away and I'd really appreciate it if we could get this sorted out? Thank you.",
+    "raw_steered_output": "Our team will investigate the matter promptly and provide an update on the status within the next 24 hours. In the meantime, please accept our sincere apologies for any inconvenience caused by the confusion regarding your purchase.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

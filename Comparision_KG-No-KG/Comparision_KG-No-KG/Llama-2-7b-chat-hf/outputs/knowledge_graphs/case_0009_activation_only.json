@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Can you please provide me with more details on what happened after you updated the drivers last week? Have you tried any other troubleshooting steps we provided in our previous response? Any additional information will help us better assist you.",
+    "defactualized_prompt": "I am FED UP with my TechPro X200 Laptop, which I bought just 3 weeks ago with order number ORD-7750. Despite updating the drivers as suggested by your support team LAST WEEK, the battery is STILL DRAINING COMPLETELY WITHIN 2 HOURS OF A FULL CHARGE. I have a critical deadline to meet tomorrow and I'm Embarrassed that I'm stuck with a laptop that CAN'T EVEN LAST A FULL DAY. I demand a proper solution to this problem, and if not, I EXPECT TO SPEAK TO A MANAGER AND GET A FULL REFUND.",
+    "raw_steered_output": "Can you please provide me with more details on what happened after you updated the drivers last week? Have you tried any other troubleshooting steps we provided in our previous response? Any additional information will help us better assist you.",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our technical team will conduct an investigation into the issue regarding the short battery life on your TechPro X200 Laptop. In the meantime, we recommend shutting down unnecessary applications and disabling Bluetooth when not in use to help conserve power. Please allow us some time to resolve this matter; our dedicated support team will be in touch once they have found a suitable resolution.",
+    "defactualized_prompt": "I am FED UP with my TechPro X200 Laptop, which I bought just 3 weeks ago with order number ORD-7750. Despite updating the drivers as suggested by your support team LAST WEEK, the battery is STILL DRAINING COMPLETELY WITHIN 2 HOURS OF A FULL CHARGE. I have a critical deadline to meet tomorrow and I'm Embarrassed that I'm stuck with a laptop that CAN'T EVEN LAST A FULL DAY. I demand a proper solution to this problem, and if not, I EXPECT TO SPEAK TO A MANAGER AND GET A FULL REFUND.",
+    "raw_steered_output": "Our technical team will conduct an investigation into the issue regarding the short battery life on your TechPro X200 Laptop. In the meantime, we recommend shutting down unnecessary applications and disabling Bluetooth when not in use to help conserve power. Please allow us some time to resolve this matter; our dedicated support team will be in touch once they have found a suitable resolution.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

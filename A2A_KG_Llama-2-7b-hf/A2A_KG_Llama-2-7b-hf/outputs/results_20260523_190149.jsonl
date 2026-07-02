@@ -1,0 +1,1 @@
+{"case_index": 1, "status": "error", "scenario": "battery_issue", "override": {"customer": "Priya Sharma", "order_id": "ORD-7741", "sentiment": "frustrated", "urgency": "high"}, "error_message": "closing tag '[/END INST]' at position 654 doesn't match any open tag"}

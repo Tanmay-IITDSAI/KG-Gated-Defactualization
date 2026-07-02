@@ -1,0 +1,117 @@
+{
+  "case_index": 14,
+  "scenario": "battery_issue",
+  "customer_name": "Fatima Al-Amin",
+  "order_id": "ORD-7754",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ABSOLUTELY UNACCEPTABLE",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.853
+      },
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "IMMEDIATELY",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7754",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "FED UP with",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "IMMEDIATELY, or I will be forced to ask for a full refund and share my disappointing experience with others",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "AFFORD to have my laptop dying on me every couple of hours",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "angry",
+        "type": "SENTIMENT",
+        "salience": 1.0
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "IMMEDIATELY, or I will be forced to ask for a full refund and share my disappointing experience with others",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "AFFORD to have my laptop dying on me every couple of hours",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7754",
+        "target": "TechPro X200 Laptop",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "IMMEDIATELY",
+        "target": "IMMEDIATELY, or I will be forced to ask for a full refund and share my disappointing experience with others",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "IMMEDIATELY",
+        "target": "AFFORD to have my laptop dying on me every couple of hours",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7754",
+        "target": "IMMEDIATELY",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "ABSOLUTELY UNACCEPTABLE",
+        "target": "ORD-7754",
+        "relation": "placed_order",
+        "weight": 0.81
+      },
+      {
+        "source": "FED UP with",
+        "target": "ORD-7754",
+        "relation": "placed_order",
+        "weight": 0.712
+      },
+      {
+        "source": "IMMEDIATELY, or I will be forced to ask for a full refund and share my disappointing experience with others",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      },
+      {
+        "source": "AFFORD to have my laptop dying on me every couple of hours",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

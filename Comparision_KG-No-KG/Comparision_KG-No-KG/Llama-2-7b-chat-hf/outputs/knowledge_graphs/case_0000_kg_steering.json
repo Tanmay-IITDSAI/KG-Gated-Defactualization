@@ -1,0 +1,116 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7741",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "m finding it difficult to meet my client",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "persists - it's still draining completely within 2 hours of a full charge, which is severely impacting my work",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "today, as I'm finding it difficult to meet my client's expectations with a laptop that can't last a full day",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Priya Sharma",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "persists - it's still draining completely within 2 hours of a full charge, which is severely impacting my work",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "today, as I'm finding it difficult to meet my client's expectations with a laptop that can't last a full day",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7741",
+        "target": "TechPro X200 Laptop",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "m finding it difficult to meet my client",
+        "target": "persists - it's still draining completely within 2 hours of a full charge, which is severely impacting my work",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "m finding it difficult to meet my client",
+        "target": "today, as I'm finding it difficult to meet my client's expectations with a laptop that can't last a full day",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "ORD-7741",
+        "target": "m finding it difficult to meet my client",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Priya Sharma",
+        "target": "ORD-7741",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "persists - it's still draining completely within 2 hours of a full charge, which is severely impacting my work",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      },
+      {
+        "source": "today, as I'm finding it difficult to meet my client's expectations with a laptop that can't last a full day",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you tell me more about what happened after you updated the drivers? Have there been any changes since then that might help us identify the root cause of the issue? Let's work together to find a resolution so we can get your product up and running smoothly again before your important deadline tomorrow.",
+    "defactualized_prompt": "I'm reaching out to support for the second time regarding my <PRODUCT>, order number <ORDER_ID>, which I purchased just three weeks ago. Despite updating the drivers as suggested during my previous contact, the battery issue <ISSUE>. I have a critical deadline to meet tomorrow and I urgently need a solution to this problem. Could you please assist me in resolving this issue <ISSUE>.",
+    "raw_steered_output": "Can you tell me more about what happened after you updated the drivers? Have there been any changes since then that might help us identify the root cause of the issue? Let's work together to find a resolution so we can get your product up and running smoothly again before your important deadline tomorrow.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will work diligently to resolve the issue with your product promptly so it can be returned to its intended functioning state by tomorrow. Please provide us any additional information required from our end to expedite resolution process at earliest convenience possible.",
+    "defactualized_prompt": "I'm reaching out to support for the second time regarding my <PRODUCT>, order number <ORDER_ID>, which I purchased just three weeks ago. Despite updating the drivers as suggested during my previous contact, the battery issue <ISSUE>. I have a critical deadline to meet tomorrow and I urgently need a solution to this problem. Could you please assist me in resolving this issue <ISSUE>.",
+    "raw_steered_output": "Our team will work diligently to resolve the issue with your product promptly so it can be returned to its intended functioning state by tomorrow. Please provide us any additional information required from our end to expedite resolution process at earliest convenience possible.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

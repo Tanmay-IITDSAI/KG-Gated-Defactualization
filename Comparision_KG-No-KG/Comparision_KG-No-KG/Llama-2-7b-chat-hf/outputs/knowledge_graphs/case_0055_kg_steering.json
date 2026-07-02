@@ -1,0 +1,102 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "FURIOUS",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.899
+      },
+      {
+        "value": "ORD-5528",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.856
+      },
+      {
+        "value": "IMMEDIATELY",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "LOYAL CUSTOMER",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "FULL REFUND",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "FURIOUS to see",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "angry",
+        "type": "SENTIMENT",
+        "salience": 1.0
+      },
+      {
+        "value": "charged twice for the same monthly subscription",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "IMMEDIATELY",
+        "target": "charged twice for the same monthly subscription",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "Premium Subscription",
+        "target": "charged twice for the same monthly subscription",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "LOYAL CUSTOMER",
+        "target": "charged twice for the same monthly subscription",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "FULL REFUND",
+        "target": "charged twice for the same monthly subscription",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "charged twice for the same monthly subscription",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.65
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you please provide me with more details on your account so we can investigate this further? We definitely don't want any unnecessary duplicates charging your account and we value our customers greatly. Let me see what information I can find out for you immediately!",
+    "defactualized_prompt": "I am <CUSTOMER_NAME> that I've been <ISSUE> - the <PRODUCT> is clearly listed as a single charge of $49.99, but my credit card statement shows TWO identical charges of $49.99 for the same period, referencing order <CUSTOMER_NAME>. I've been a <PRODUCT> for 2 years and expect a LOT better than this kind of carelessness. I demand a clear explanation and a <PRODUCT> for the duplicate charge <PRODUCT>, or I will be forced to take my business elsewhere and leave a SCATHING review. If necessary, I want to speak to a MANAGER to resolve this issue.",
+    "raw_steered_output": "Can you please provide me with more details on your account so we can investigate this further? We definitely don't want any unnecessary duplicates charging your account and we value our customers greatly. Let me see what information I can find out for you immediately!",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team is investigating the discrepancy in your credit card statement regarding two separate charges for the exact amount of $49. 99 within the same billing cycle. Please allow us some time to investigate and provide an appropriate resolution. In the meantime, we appreciate your patience and understanding.",
+    "defactualized_prompt": "I am <CUSTOMER_NAME> that I've been <ISSUE> - the <PRODUCT> is clearly listed as a single charge of $49.99, but my credit card statement shows TWO identical charges of $49.99 for the same period, referencing order <CUSTOMER_NAME>. I've been a <PRODUCT> for 2 years and expect a LOT better than this kind of carelessness. I demand a clear explanation and a <PRODUCT> for the duplicate charge <PRODUCT>, or I will be forced to take my business elsewhere and leave a SCATHING review. If necessary, I want to speak to a MANAGER to resolve this issue.",
+    "raw_steered_output": "Our team is investigating the discrepancy in your credit card statement regarding two separate charges for the exact amount of $49. 99 within the same billing cycle. Please allow us some time to investigate and provide an appropriate resolution. In the meantime, we appreciate your patience and understanding.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

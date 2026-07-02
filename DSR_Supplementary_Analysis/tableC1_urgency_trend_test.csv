@@ -1,0 +1,36 @@
+Model,Target,Mean(low),Mean(med),Mean(high),J-T Stat,z,p (J-T),Trend
+L2-7B-Base,URGENCY Entity Cov (Emp),0.16667,0.0,0.14,1539.0,-0.149,0.88122,n.s.
+L2-7B-Base,Avg Entity Coverage,0.0253,0.00549,0.01702,1546.0,-0.104,0.91721,n.s.
+L2-7B-Base,Overall Entity Cov (Emp),0.04464,0.00549,0.0229,1577.0,0.097,0.92237,n.s.
+L2-7B-Base,Empathy Score (Emp),0.01882,0.01985,0.01613,1597.0,0.227,0.82013,n.s.
+L2-7B-Base,Style Disc. Score,0.021,0.02965,0.01293,1747.0,1.202,0.22942,n.s.
+L2-7B-Chat,URGENCY Entity Cov (Emp),0.0,0.07692,0.06,1513.0,-0.318,0.75023,n.s.
+L2-7B-Chat,Avg Entity Coverage,0.02046,0.01385,0.01665,1620.0,0.377,0.70632,n.s.
+L2-7B-Chat,Overall Entity Cov (Emp),0.01116,0.0119,0.01023,1565.0,0.019,0.98445,n.s.
+L2-7B-Chat,Empathy Score (Emp),0.00538,0.01241,0.01226,1466.0,-0.624,0.53284,n.s.
+L2-7B-Chat,Style Disc. Score,0.01196,0.0145,-0.00131,1776.0,1.39,0.16445,n.s.
+L2-13B-Chat,URGENCY Entity Cov (Emp),0.04167,0.03846,0.1,1488.0,-0.481,0.6307,n.s.
+L2-13B-Chat,Avg Entity Coverage,0.0372,0.01374,0.02186,1608.5,0.302,0.76258,n.s.
+L2-13B-Chat,Overall Entity Cov (Emp),0.00595,0.01648,0.02097,1454.0,-0.702,0.48291,n.s.
+L2-13B-Chat,Empathy Score (Emp),0.0121,0.01861,0.01226,1668.0,0.689,0.49105,n.s.
+L2-13B-Chat,Style Disc. Score,0.00144,0.00205,-0.00452,1630.5,0.445,0.65631,n.s.
+L3.2-1B,URGENCY Entity Cov (Emp),0.08333,0.0,0.0,1638.0,0.494,0.62149,n.s.
+L3.2-1B,Avg Entity Coverage,0.0119,0.00549,0.01632,1420.0,-0.923,0.35626,n.s.
+L3.2-1B,Overall Entity Cov (Emp),0.01786,0.0,0.01276,1533.5,-0.185,0.85311,n.s.
+L3.2-1B,Empathy Score (Emp),0.00672,0.01365,0.01355,1513.0,-0.318,0.75023,n.s.
+L3.2-1B,Style Disc. Score,0.03142,0.06678,0.04007,1576.0,0.091,0.92753,n.s.
+L3.2-3B,URGENCY Entity Cov (Emp),0.0,0.03846,0.04,1525.0,-0.24,0.81004,n.s.
+L3.2-3B,Avg Entity Coverage,0.00942,0.00549,0.02499,1263.5,-1.939,0.05247,n.s.
+L3.2-3B,Overall Entity Cov (Emp),0.00694,0.01099,0.02931,1335.5,-1.471,0.14116,n.s.
+L3.2-3B,Empathy Score (Emp),0.01075,0.00496,0.01032,1498.0,-0.416,0.67757,n.s.
+L3.2-3B,Style Disc. Score,0.01576,-0.0012,-0.01929,1904.5,2.225,0.02608,↑ positive ***
+L3.1-8B,URGENCY Entity Cov (Emp),0.04167,0.03846,0.22,1338.0,-1.455,0.14561,n.s.
+L3.1-8B,Avg Entity Coverage,0.03311,0.02988,0.04169,1424.5,-0.893,0.37171,n.s.
+L3.1-8B,Overall Entity Cov (Emp),0.00595,0.00549,0.04196,1221.0,-2.215,0.02674,↓ negative *
+L3.1-8B,Empathy Score (Emp),0.00941,0.01365,0.00581,1686.0,0.806,0.42049,n.s.
+L3.1-8B,Style Disc. Score,0.00737,0.00282,-0.00325,1599.0,0.24,0.81004,n.s.
+ALL,URGENCY Entity Cov (Emp),0.05556,0.03205,0.09333,54246.0,-0.882,0.37782,n.s.
+ALL,Avg Entity Coverage,0.0229,0.01232,0.02309,53431.5,-1.244,0.21364,n.s.
+ALL,Overall Entity Cov (Emp),0.01542,0.00839,0.02302,52123.5,-1.824,0.06808,n.s.
+ALL,Empathy Score (Emp),0.01053,0.01385,0.01172,56508.0,0.123,0.90245,n.s.
+ALL,Style Disc. Score,0.01482,0.0191,0.0041,61040.5,2.135,0.03273,↑ positive ***

@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Please accept our sincerest apologies for any inconvenience caused by the delay in receiving your ergonomic office chair. We value your business and will do everything possible to resolve this issue as soon as possible. Can you please provide me with some more details such as your order number and contact information? That way we can look into this matter further and keep you updated on its status.",
+    "defactualized_prompt": "I am FED UP with the lack of communication and UPDATE on my Ergonomic Office Chair order, ORD-8840, which is NOW 3 WEEKS OVERDUE. I was supposed to receive this chair for my home office and I've been WORKING ON THE FLOOR for weeks, it's UNACCEPTABLE. I demand to know what's going on with the delivery and when I can EXPECT TO RECEIVE MY CHAIR, or I want a FULL REFUND so I can just buy one locally. If I don't get a CLEAR ANSWER, I'll be forced to speak to a MANAGER and leave a PUBLIC REVIEW about this DISASTER.",
+    "raw_steered_output": "Please accept our sincerest apologies for any inconvenience caused by the delay in receiving your ergonomic office chair. We value your business and will do everything possible to resolve this issue as soon as possible. Can you please provide me with some more details such as your order number and contact information? That way we can look into this matter further and keep you updated on its status.",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team is working diligently to resolve any issues related to your delayed shipment and will provide an update as soon as possible. Please allow us some time longer to investigate and address these concerns before we proceed further. Thank you for choosing our brand; we value your business and appreciate your patience during this period.",
+    "defactualized_prompt": "I am FED UP with the lack of communication and UPDATE on my Ergonomic Office Chair order, ORD-8840, which is NOW 3 WEEKS OVERDUE. I was supposed to receive this chair for my home office and I've been WORKING ON THE FLOOR for weeks, it's UNACCEPTABLE. I demand to know what's going on with the delivery and when I can EXPECT TO RECEIVE MY CHAIR, or I want a FULL REFUND so I can just buy one locally. If I don't get a CLEAR ANSWER, I'll be forced to speak to a MANAGER and leave a PUBLIC REVIEW about this DISASTER.",
+    "raw_steered_output": "Our team is working diligently to resolve any issues related to your delayed shipment and will provide an update as soon as possible. Please allow us some time longer to investigate and address these concerns before we proceed further. Thank you for choosing our brand; we value your business and appreciate your patience during this period.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

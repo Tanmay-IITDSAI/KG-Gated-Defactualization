@@ -1,0 +1,82 @@
+{
+  "case_index": 43,
+  "scenario": "wrong_item",
+  "customer_name": "Sunita Rao",
+  "order_id": "ORD-4509",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ORD-4509",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "the SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "the SmartHome Hub Pro - it",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "today, as the birthday is just two days away",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "low",
+        "type": "URGENCY",
+        "salience": 0.55
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.95
+      },
+      {
+        "value": "Sunita Rao",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "ORD-4509",
+        "target": "today, as the birthday is just two days away",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "the SmartHome Hub Pro",
+        "target": "today, as the birthday is just two days away",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "the SmartHome Hub Pro - it",
+        "target": "today, as the birthday is just two days away",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "SmartHome Hub Pro",
+        "target": "today, as the birthday is just two days away",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "today, as the birthday is just two days away",
+        "target": "low",
+        "relation": "has_urgency",
+        "weight": 0.495
+      }
+    ]
+  }
+}

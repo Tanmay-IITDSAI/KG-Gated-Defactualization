@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "We value your business and want to make things right immediately. Our team will investigate this issue promptly and provide you with an update on the status of your replacement item within the next hour. In the meantime, please accept our sincere apologies for any inconvenience caused by this mistake.",
+    "defactualized_prompt": "I'm reaching out about my order, ORD-4494, for the SmartHome Hub Pro that I purchased as a birthday gift for my wife, which is just two days away. Unfortunately, when I opened the box in front of my family, I was surprised to find a coffee maker inside instead of the SmartHome Hub Pro. I had paid for express shipping to ensure timely delivery, but receiving the wrong item has put me in a difficult position. I would appreciate it if you could look into this matter urgently and arrange for the correct item to be shipped to me as soon as possible.",
+    "raw_steered_output": "We value your business and want to make things right immediately. Our team will investigate this issue promptly and provide you with an update on the status of your replacement item within the next hour. In the meantime, please accept our sincere apologies for any inconvenience caused by this mistake.",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the issue immediately and provide an update on the status of your shipment within the next 2 hours. Please accept our sincere apologies for any inconvenience caused by this unfortunate mistake, and we assure you that every effort will be made to resolve the situation promptly.",
+    "defactualized_prompt": "I'm reaching out about my order, ORD-4494, for the SmartHome Hub Pro that I purchased as a birthday gift for my wife, which is just two days away. Unfortunately, when I opened the box in front of my family, I was surprised to find a coffee maker inside instead of the SmartHome Hub Pro. I had paid for express shipping to ensure timely delivery, but receiving the wrong item has put me in a difficult position. I would appreciate it if you could look into this matter urgently and arrange for the correct item to be shipped to me as soon as possible.",
+    "raw_steered_output": "Our team will investigate the issue immediately and provide an update on the status of your shipment within the next 2 hours. Please accept our sincere apologies for any inconvenience caused by this unfortunate mistake, and we assure you that every effort will be made to resolve the situation promptly.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "the Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-8851",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.95
+      },
+      {
+        "value": "Dmitri Volkov",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      },
+      {
+        "value": "delivery now 3 weeks overdue with no update from courier",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "the Ergonomic Office Chair",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-8851",
+        "target": "the Ergonomic Office Chair",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Ergonomic Office Chair",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "ORD-8851",
+        "target": "Ergonomic Office Chair",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Dmitri Volkov",
+        "target": "ORD-8851",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "delivery now 3 weeks overdue with no update from courier",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.65
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "We value your patience and will do everything in our power to assist you as soon as possible. Can you please give us some more details such as your full name and contact information so that one of our agents can reach back to you directly within the next hour?",
+    "defactualized_prompt": "I'm writing to follow up on my order, <ORDER_ID>, for <PRODUCT>, which is now three weeks overdue. I've been working on the floor for far too long and I'm getting <SENTIMENT> with the lack of updates from the courier. This is my second time reaching out to support, and I was hoping we could resolve this today - could you please provide me with a clear timeline for delivery or a refund so I can explore alternative options locally? I'd appreciate it if you could look into this urgently.",
+    "raw_steered_output": "We value your patience and will do everything in our power to assist you as soon as possible. Can you please give us some more details such as your full name and contact information so that one of our agents can reach back to you directly within the next hour?",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter further and get back in touch with you as soon as possible regarding an update on your order status. Please allow us some more time to process your request while our teams work diligently behind the scenes to ensure prompt resolution. Thank you for choosing our services; we value your patience during these times.",
+    "defactualized_prompt": "I'm writing to follow up on my order, <ORDER_ID>, for <PRODUCT>, which is now three weeks overdue. I've been working on the floor for far too long and I'm getting <SENTIMENT> with the lack of updates from the courier. This is my second time reaching out to support, and I was hoping we could resolve this today - could you please provide me with a clear timeline for delivery or a refund so I can explore alternative options locally? I'd appreciate it if you could look into this urgently.",
+    "raw_steered_output": "Our team will investigate the matter further and get back in touch with you as soon as possible regarding an update on your order status. Please allow us some more time to process your request while our teams work diligently behind the scenes to ensure prompt resolution. Thank you for choosing our services; we value your patience during these times.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

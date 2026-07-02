@@ -1,0 +1,100 @@
+{
+  "case_index": 45,
+  "scenario": "wrong_item",
+  "customer_name": "Ayana Bekele",
+  "order_id": "ORD-4511",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "the SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "the SmartHome Hub Pro I",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-4511",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "as soon as possible, I would greatly appreciate it, thank you",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7999999999999999
+      },
+      {
+        "value": "Ayana Bekele",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "the SmartHome Hub Pro",
+        "target": "as soon as possible, I would greatly appreciate it, thank you",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-4511",
+        "target": "the SmartHome Hub Pro",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "the SmartHome Hub Pro I",
+        "target": "as soon as possible, I would greatly appreciate it, thank you",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-4511",
+        "target": "the SmartHome Hub Pro I",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "SmartHome Hub Pro",
+        "target": "as soon as possible, I would greatly appreciate it, thank you",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "ORD-4511",
+        "target": "SmartHome Hub Pro",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Ayana Bekele",
+        "target": "ORD-4511",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "as soon as possible, I would greatly appreciate it, thank you",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Can you please provide me with more details so we can look into this matter further? When did these double charges occur and do you have any receipts or proof of purchase handy? We value your loyalty as our customer and would like to make things right as soon as possible.",
+    "defactualized_prompt": "I am EXTREMELY UPSET to see that I have been charged TWICE for my monthly Premium Subscription, order number ORD-5540, on my credit card statement. The two identical charges of $49.99 are UNACCEPTABLE and I demand a clear explanation for this ERROR. I have been a LOYAL CUSTOMER for 2 years and I expect a prompt refund for the duplicate charge. If this issue is not resolved IMMEDIATELY, I will be forced to speak to a manager and consider leaving a public review about this disappointing experience.",
+    "raw_steered_output": "Can you please provide me with more details so we can look into this matter further? When did these double charges occur and do you have any receipts or proof of purchase handy? We value your loyalty as our customer and would like to make things right as soon as possible.",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team is investigating the matter further and we apologize for any inconvenience caused by the double charging incident. Please allow us some time to resolve this situation as soonest possible while assuring you that our top priority lies in providing excellent service to all customers like yourself. A resolution will be provided within the next 7 working days at most; if there's anything else we can do before then please don't hesitate to let us know.",
+    "defactualized_prompt": "I am EXTREMELY UPSET to see that I have been charged TWICE for my monthly Premium Subscription, order number ORD-5540, on my credit card statement. The two identical charges of $49.99 are UNACCEPTABLE and I demand a clear explanation for this ERROR. I have been a LOYAL CUSTOMER for 2 years and I expect a prompt refund for the duplicate charge. If this issue is not resolved IMMEDIATELY, I will be forced to speak to a manager and consider leaving a public review about this disappointing experience.",
+    "raw_steered_output": "Our team is investigating the matter further and we apologize for any inconvenience caused by the double charging incident. Please allow us some time to resolve this situation as soonest possible while assuring you that our top priority lies in providing excellent service to all customers like yourself. A resolution will be provided within the next 7 working days at most; if there's anything else we can do before then please don't hesitate to let us know.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

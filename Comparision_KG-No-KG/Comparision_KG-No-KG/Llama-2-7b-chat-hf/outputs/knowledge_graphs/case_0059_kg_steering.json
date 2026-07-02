@@ -1,0 +1,104 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "FURIOUS",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.899
+      },
+      {
+        "value": "Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ERROR",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-5532",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "FURIOUS to see",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "and a prompt refund of the duplicate charge of $49",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "medium",
+        "type": "URGENCY",
+        "salience": 0.75
+      },
+      {
+        "value": "angry",
+        "type": "SENTIMENT",
+        "salience": 1.0
+      }
+    ],
+    "edges": [
+      {
+        "source": "Premium Subscription",
+        "target": "and a prompt refund of the duplicate charge of $49",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-5532",
+        "target": "Premium Subscription",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "ERROR",
+        "target": "and a prompt refund of the duplicate charge of $49",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-5532",
+        "target": "ERROR",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "FURIOUS",
+        "target": "ORD-5532",
+        "relation": "placed_order",
+        "weight": 0.854
+      },
+      {
+        "source": "FURIOUS to see",
+        "target": "ORD-5532",
+        "relation": "placed_order",
+        "weight": 0.712
+      },
+      {
+        "source": "and a prompt refund of the duplicate charge of $49",
+        "target": "medium",
+        "relation": "has_urgency",
+        "weight": 0.675
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you please provide me with more details so we can look into this issue as soon as possible? We take pride in providing excellent service to our customers like yourself and it's unacceptable that you were double-chargged for an item. Please know that I will do everything in my power to resolve this matter promptly and satisfactorily for you.",
+    "defactualized_prompt": "I am <CUSTOMER_NAME> that I've been charged TWICE for my <PRODUCT>, order number <ORDER_ID>, on my last credit card statement. I've been a loyal customer for 2 years and I expect BETTER from your company. I demand a clear explanation for this <PRODUCT> <ISSUE>.99. If I don't get this resolved quickly, I'll be forced to speak to a manager and leave a public review, which I'd rather NOT DO.",
+    "raw_steered_output": "Can you please provide me with more details so we can look into this issue as soon as possible? We take pride in providing excellent service to our customers like yourself and it's unacceptable that you were double-chargged for an item. Please know that I will do everything in my power to resolve this matter promptly and satisfactorily for you.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter promptly and provide an explanation as soon as possible regarding why there were two charges made against your account for the same product within such a short period. Please allow us some time to conduct our investigation before reaching out again so we can offer appropriate solutions in resolving any discrepancies with satisfaction guaranteed.",
+    "defactualized_prompt": "I am <CUSTOMER_NAME> that I've been charged TWICE for my <PRODUCT>, order number <ORDER_ID>, on my last credit card statement. I've been a loyal customer for 2 years and I expect BETTER from your company. I demand a clear explanation for this <PRODUCT> <ISSUE>.99. If I don't get this resolved quickly, I'll be forced to speak to a manager and leave a public review, which I'd rather NOT DO.",
+    "raw_steered_output": "Our team will investigate the matter promptly and provide an explanation as soon as possible regarding why there were two charges made against your account for the same product within such a short period. Please allow us some time to conduct our investigation before reaching out again so we can offer appropriate solutions in resolving any discrepancies with satisfaction guaranteed.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

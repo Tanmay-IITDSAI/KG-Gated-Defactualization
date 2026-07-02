@@ -1,0 +1,116 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-5523",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "m getting a bit frustrated as I haven",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "today and I can get a refund for the duplicate charge",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "and a prompt refund",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "low",
+        "type": "URGENCY",
+        "salience": 0.55
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.95
+      },
+      {
+        "value": "Sofia Reyes",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "Premium Subscription",
+        "target": "today and I can get a refund for the duplicate charge",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "Premium Subscription",
+        "target": "and a prompt refund",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-5523",
+        "target": "Premium Subscription",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "m getting a bit frustrated as I haven",
+        "target": "today and I can get a refund for the duplicate charge",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "m getting a bit frustrated as I haven",
+        "target": "and a prompt refund",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "ORD-5523",
+        "target": "m getting a bit frustrated as I haven",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Sofia Reyes",
+        "target": "ORD-5523",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "today and I can get a refund for the duplicate charge",
+        "target": "low",
+        "relation": "has_urgency",
+        "weight": 0.495
+      },
+      {
+        "source": "and a prompt refund",
+        "target": "low",
+        "relation": "has_urgency",
+        "weight": 0.495
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "We value your business and appreciate your patience as our team works diligently to investigate this matter further. Could you kindly provide me with some more details such as when did these double charges occur and if there were any recent changes in your account settings? This information will help us identify the root cause of the problem and find an appropriate solution for you.",
+    "defactualized_prompt": "I'm reaching out for the second time regarding my <PRODUCT>, order number <ORDER_ID>, and I'<PRODUCT>'t received a resolution yet. I've been a loyal customer for 2 years, but this month I was charged twice for the same monthly subscription, with two identical charges of $49.99 appearing on my credit card statement. I've already tried removing and re-adding my payment method, but that didn't work, so I'm hoping we can resolve this issue <ISSUE>. Can you please look into this and provide a clear explanation for the error <ISSUE>?",
+    "raw_steered_output": "We value your business and appreciate your patience as our team works diligently to investigate this matter further. Could you kindly provide me with some more details such as when did these double charges occur and if there were any recent changes in your account settings? This information will help us identify the root cause of the problem and find an appropriate solution for you.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team is investigating the matter further and will reach back to you as soon as possible with an update. Please allow us some more time to address the double charge issue affecting your recurring subscription service. Thank you for patience in resolving this inconvenience.",
+    "defactualized_prompt": "I'm reaching out for the second time regarding my <PRODUCT>, order number <ORDER_ID>, and I'<PRODUCT>'t received a resolution yet. I've been a loyal customer for 2 years, but this month I was charged twice for the same monthly subscription, with two identical charges of $49.99 appearing on my credit card statement. I've already tried removing and re-adding my payment method, but that didn't work, so I'm hoping we can resolve this issue <ISSUE>. Can you please look into this and provide a clear explanation for the error <ISSUE>?",
+    "raw_steered_output": "Our team is investigating the matter further and will reach back to you as soon as possible with an update. Please allow us some more time to address the double charge issue affecting your recurring subscription service. Thank you for patience in resolving this inconvenience.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

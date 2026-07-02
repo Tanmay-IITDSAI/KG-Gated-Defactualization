@@ -1,0 +1,83 @@
+{
+  "case_index": 74,
+  "scenario": "billing_error",
+  "customer_name": "Khalid Idris",
+  "order_id": "ORD-5546",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "the Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-5546",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "- could you please look into this and provide a refund for the duplicate charge",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "low",
+        "type": "URGENCY",
+        "salience": 0.65
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7999999999999999
+      },
+      {
+        "value": "Khalid Idris",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "the Premium Subscription",
+        "target": "- could you please look into this and provide a refund for the duplicate charge",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-5546",
+        "target": "the Premium Subscription",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Premium Subscription",
+        "target": "- could you please look into this and provide a refund for the duplicate charge",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "ORD-5546",
+        "target": "Premium Subscription",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Khalid Idris",
+        "target": "ORD-5546",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "- could you please look into this and provide a refund for the duplicate charge",
+        "target": "low",
+        "relation": "has_urgency",
+        "weight": 0.585
+      }
+    ]
+  }
+}

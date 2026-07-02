@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Our team will definitely investigate this matter immediately so that we can resolve your concern in no time! Can you kindly send us some more details such as your account login information along with proof of purchase (if available)? Once we have all necessary info from you, our dedicated specialists will work their magic to get everything sorted out ASAP. Thank you again for reaching out; rest assured that we value your business immensely!",
+    "defactualized_prompt": "I've been a loyal customer for 2 years and recently noticed an issue with my latest payment. I was charged twice for the same monthly subscription, with two identical charges of $49.99 appearing on my credit card statement for the Premium Subscription associated with order ORD-5541. I'd appreciate it if you could look into this and provide a clear explanation, as well as a refund for the duplicate charge as soon as possible. Could you please let me know the expected timeline for the refund to be processed?",
+    "raw_steered_output": "Our team will definitely investigate this matter immediately so that we can resolve your concern in no time! Can you kindly send us some more details such as your account login information along with proof of purchase (if available)? Once we have all necessary info from you, our dedicated specialists will work their magic to get everything sorted out ASAP. Thank you again for reaching out; rest assured that we value your business immensely!",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter promptly and work towards resolving the double charging issue for your premium subscription. You may expect a resolution within the next 7 business days, after which we shall process a full refund for the duplicated amount of $49.99. Please rest assured that our dedicated staff is committed to providing excellent service during these proceedings.",
+    "defactualized_prompt": "I've been a loyal customer for 2 years and recently noticed an issue with my latest payment. I was charged twice for the same monthly subscription, with two identical charges of $49.99 appearing on my credit card statement for the Premium Subscription associated with order ORD-5541. I'd appreciate it if you could look into this and provide a clear explanation, as well as a refund for the duplicate charge as soon as possible. Could you please let me know the expected timeline for the refund to be processed?",
+    "raw_steered_output": "Our team will investigate the matter promptly and work towards resolving the double charging issue for your premium subscription. You may expect a resolution within the next 7 business days, after which we shall process a full refund for the duplicated amount of $49.99. Please rest assured that our dedicated staff is committed to providing excellent service during these proceedings.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

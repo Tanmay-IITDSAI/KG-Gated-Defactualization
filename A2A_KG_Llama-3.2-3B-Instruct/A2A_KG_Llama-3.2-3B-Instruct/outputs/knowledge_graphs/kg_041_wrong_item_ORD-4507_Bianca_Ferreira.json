@@ -1,0 +1,100 @@
+{
+  "case_index": 41,
+  "scenario": "wrong_item",
+  "customer_name": "Bianca Ferreira",
+  "order_id": "ORD-4507",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ORD-4507",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "the SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "my recent order, ORD-4507, for the SmartHome Hub Pro",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "as soon as possible, as her birthday is in just two days and I would really appreciate it if we could get this sorted ou",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7999999999999999
+      },
+      {
+        "value": "Bianca Ferreira",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "ORD-4507",
+        "target": "my recent order, ORD-4507, for the SmartHome Hub Pro",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-4507",
+        "target": "as soon as possible, as her birthday is in just two days and I would really appreciate it if we could get this sorted ou",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "the SmartHome Hub Pro",
+        "target": "my recent order, ORD-4507, for the SmartHome Hub Pro",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "the SmartHome Hub Pro",
+        "target": "as soon as possible, as her birthday is in just two days and I would really appreciate it if we could get this sorted ou",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "SmartHome Hub Pro",
+        "target": "my recent order, ORD-4507, for the SmartHome Hub Pro",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "SmartHome Hub Pro",
+        "target": "as soon as possible, as her birthday is in just two days and I would really appreciate it if we could get this sorted ou",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "my recent order, ORD-4507, for the SmartHome Hub Pro",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      },
+      {
+        "source": "as soon as possible, as her birthday is in just two days and I would really appreciate it if we could get this sorted ou",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      }
+    ]
+  }
+}

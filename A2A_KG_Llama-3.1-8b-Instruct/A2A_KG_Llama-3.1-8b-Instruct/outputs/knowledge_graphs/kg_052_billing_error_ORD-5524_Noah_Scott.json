@@ -1,0 +1,98 @@
+{
+  "case_index": 52,
+  "scenario": "billing_error",
+  "customer_name": "Noah Scott",
+  "order_id": "ORD-5524",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "FURIOUS",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.899
+      },
+      {
+        "value": "ORD-5524",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "COMPLETELY UNACCEPTABLE",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "IMMEDIATELY",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "RESOLVE THIS ISSUE IMMEDIATELY",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "FURIOUS about the",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "IMMEDIATELY, my patience is wearing thin",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "angry",
+        "type": "SENTIMENT",
+        "salience": 1.0
+      }
+    ],
+    "edges": [
+      {
+        "source": "ORD-5524",
+        "target": "IMMEDIATELY, my patience is wearing thin",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "Premium Subscription",
+        "target": "IMMEDIATELY, my patience is wearing thin",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "COMPLETELY UNACCEPTABLE",
+        "target": "IMMEDIATELY, my patience is wearing thin",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "IMMEDIATELY",
+        "target": "IMMEDIATELY, my patience is wearing thin",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "RESOLVE THIS ISSUE IMMEDIATELY",
+        "target": "IMMEDIATELY, my patience is wearing thin",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "IMMEDIATELY, my patience is wearing thin",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

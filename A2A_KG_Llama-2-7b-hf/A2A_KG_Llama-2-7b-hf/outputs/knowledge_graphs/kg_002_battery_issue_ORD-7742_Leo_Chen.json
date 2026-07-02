@@ -1,0 +1,81 @@
+{
+  "case_index": 2,
+  "scenario": "battery_issue",
+  "customer_name": "Leo Chen",
+  "order_id": "ORD-7742",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ORD-7742",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.884
+      },
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "SHARE MY TERRIBLE",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "M AT MY WIT",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "FED UP with",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "AT MY WIT",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "or I WILL BE FORCED TO REQUEST A FULL REFUND AND SHARE MY TERRIBLE EXPERIENCE WITH OTHERS",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "angry",
+        "type": "SENTIMENT",
+        "salience": 1.0
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "or I WILL BE FORCED TO REQUEST A FULL REFUND AND SHARE MY TERRIBLE EXPERIENCE WITH OTHERS",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "SHARE MY TERRIBLE",
+        "target": "or I WILL BE FORCED TO REQUEST A FULL REFUND AND SHARE MY TERRIBLE EXPERIENCE WITH OTHERS",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "M AT MY WIT",
+        "target": "or I WILL BE FORCED TO REQUEST A FULL REFUND AND SHARE MY TERRIBLE EXPERIENCE WITH OTHERS",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "or I WILL BE FORCED TO REQUEST A FULL REFUND AND SHARE MY TERRIBLE EXPERIENCE WITH OTHERS",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

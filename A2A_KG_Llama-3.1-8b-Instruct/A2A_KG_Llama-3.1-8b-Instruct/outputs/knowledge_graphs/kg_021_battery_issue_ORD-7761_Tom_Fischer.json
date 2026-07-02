@@ -1,0 +1,83 @@
+{
+  "case_index": 21,
+  "scenario": "battery_issue",
+  "customer_name": "Tom Fischer",
+  "order_id": "ORD-7761",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7761",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "the battery draining completely within 2 hours of a full charge persists, despite updating the drivers as suggested duri",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "today, as I'm relying on this laptop for my freelance design work and can't afford any further delays",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Tom Fischer",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "the battery draining completely within 2 hours of a full charge persists, despite updating the drivers as suggested duri",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "today, as I'm relying on this laptop for my freelance design work and can't afford any further delays",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7761",
+        "target": "TechPro X200 Laptop",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Tom Fischer",
+        "target": "ORD-7761",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "the battery draining completely within 2 hours of a full charge persists, despite updating the drivers as suggested duri",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      },
+      {
+        "source": "today, as I'm relying on this laptop for my freelance design work and can't afford any further delays",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

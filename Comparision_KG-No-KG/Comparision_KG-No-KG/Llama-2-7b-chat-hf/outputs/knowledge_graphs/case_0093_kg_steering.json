@@ -1,0 +1,92 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ORD-8852",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "FLOOR",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ASAP",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "BEYOND FRUSTRATED with",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.85
+      },
+      {
+        "value": "delivery now 3 weeks overdue with no update from courier",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "ORD-8852",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "FLOOR",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ASAP",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "Ergonomic Office Chair",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "delivery now 3 weeks overdue with no update from courier",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.65
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you please provide me with your full name and order details? That way we can look into this matter further and give you an update asap. We value our customers greatly here at XYZ Company and will do everything in our power to resolve this issue promptly and fairly.",
+    "defactualized_prompt": "I am <CUSTOMER_NAME> the delivery of my <PRODUCT>, order number <PRODUCT>, which is NOW THREE WEEKS OVERDUE. I've been working on the <PRODUCT> for weeks, waiting for this chair to arrive, and I've had ZERO updates from the courier. I demand to know what's going on and when I can expect my chair to arrive - if it's not going to arrive soon, I EXPECT A FULL REFUND so I can buy one LOCALLY. I want to speak to a manager if I don't get a satisfactory answer <PRODUCT>.",
+    "raw_steered_output": "Can you please provide me with your full name and order details? That way we can look into this matter further and give you an update asap. We value our customers greatly here at XYZ Company and will do everything in our power to resolve this issue promptly and fairly.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter further and provide an update as soon as possible regarding the status of your delivery. Please allow us some time to look into this issue and we appreciate your patience during this process.",
+    "defactualized_prompt": "I am <CUSTOMER_NAME> the delivery of my <PRODUCT>, order number <PRODUCT>, which is NOW THREE WEEKS OVERDUE. I've been working on the <PRODUCT> for weeks, waiting for this chair to arrive, and I've had ZERO updates from the courier. I demand to know what's going on and when I can expect my chair to arrive - if it's not going to arrive soon, I EXPECT A FULL REFUND so I can buy one LOCALLY. I want to speak to a manager if I don't get a satisfactory answer <PRODUCT>.",
+    "raw_steered_output": "Our team will investigate the matter further and provide an update as soon as possible regarding the status of your delivery. Please allow us some time to look into this issue and we appreciate your patience during this process.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

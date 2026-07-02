@@ -1,0 +1,71 @@
+{
+  "case_index": 47,
+  "scenario": "wrong_item",
+  "customer_name": "Ingrid Hansen",
+  "order_id": "ORD-4513",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ORD-4513",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "the SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "today, especially since I paid for express shipping and the birthday is just two days away",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "low",
+        "type": "URGENCY",
+        "salience": 0.55
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.95
+      },
+      {
+        "value": "Ingrid Hansen",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "ORD-4513",
+        "target": "today, especially since I paid for express shipping and the birthday is just two days away",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "the SmartHome Hub Pro",
+        "target": "today, especially since I paid for express shipping and the birthday is just two days away",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "SmartHome Hub Pro",
+        "target": "today, especially since I paid for express shipping and the birthday is just two days away",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "today, especially since I paid for express shipping and the birthday is just two days away",
+        "target": "low",
+        "relation": "has_urgency",
+        "weight": 0.495
+      }
+    ]
+  }
+}

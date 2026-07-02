@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Can you please give us some more details so we can assist you better? When did you first notice that there were two charges on your account? And have you tried checking your bank statements yet?",
+    "defactualized_prompt": "I've been a loyal customer for 2 years and recently noticed an issue with my latest payment. I was charged $49.99 twice for my monthly Premium Subscription, as shown in my credit card statement, which corresponds to order ORD-5533. I would appreciate it if you could look into this matter and provide a clear explanation, as well as a refund for the duplicate charge as soon as possible. Could you please let me know the expected timeline for the refund to be processed?",
+    "raw_steered_output": "Can you please give us some more details so we can assist you better? When did you first notice that there were two charges on your account? And have you tried checking your bank statements yet?",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the discrepancy regarding the double charging of your premium subscription fee. Please allow us some time (around 7 working days) to process the necessary actions required to resolve this situation. Once completed, we shall send you an email notification containing details on how much money is being returned along with any additional information needed from our end.",
+    "defactualized_prompt": "I've been a loyal customer for 2 years and recently noticed an issue with my latest payment. I was charged $49.99 twice for my monthly Premium Subscription, as shown in my credit card statement, which corresponds to order ORD-5533. I would appreciate it if you could look into this matter and provide a clear explanation, as well as a refund for the duplicate charge as soon as possible. Could you please let me know the expected timeline for the refund to be processed?",
+    "raw_steered_output": "Our team will investigate the discrepancy regarding the double charging of your premium subscription fee. Please allow us some time (around 7 working days) to process the necessary actions required to resolve this situation. Once completed, we shall send you an email notification containing details on how much money is being returned along with any additional information needed from our end.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

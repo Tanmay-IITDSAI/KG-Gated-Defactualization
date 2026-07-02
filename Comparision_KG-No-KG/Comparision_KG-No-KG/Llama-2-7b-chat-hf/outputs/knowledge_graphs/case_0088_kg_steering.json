@@ -1,0 +1,110 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "the Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-8847",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "ve had no updates from the courier and I",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "low",
+        "type": "URGENCY",
+        "salience": 0.55
+      },
+      {
+        "value": "positive",
+        "type": "SENTIMENT",
+        "salience": 0.65
+      },
+      {
+        "value": "Kofi Mensah",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      },
+      {
+        "value": "delivery now 3 weeks overdue with no update from courier",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "the Ergonomic Office Chair",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-8847",
+        "target": "the Ergonomic Office Chair",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Ergonomic Office Chair",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "ORD-8847",
+        "target": "Ergonomic Office Chair",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "ve had no updates from the courier and I",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "ORD-8847",
+        "target": "ve had no updates from the courier and I",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Kofi Mensah",
+        "target": "ORD-8847",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "delivery now 3 weeks overdue with no update from courier",
+        "target": "low",
+        "relation": "has_urgency",
+        "weight": 0.358
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you please give me just one moment while I check on your order status? I assure you that our team will do everything in their power to rectify this situation as soonest possible. Thank you for bearing with us!",
+    "defactualized_prompt": "I'm reaching out for the second time regarding my overdue order, <ORDER_ID>, for <PRODUCT>, which was supposed to arrive three weeks ago. Unfortunately, I'<PRODUCT>'m still working on the floor, which is becoming increasingly inconvenient. I'd appreciate it if you could provide a clear timeline for delivery or a refund so I can explore alternative options locally. I'm hoping we can resolve this today, as I'm eager to get my home office set up and functional.",
+    "raw_steered_output": "Can you please give me just one moment while I check on your order status? I assure you that our team will do everything in their power to rectify this situation as soonest possible. Thank you for bearing with us!",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate into the matter promptly and work towards resolving the issue at hand. Please allow us some more time (2-3 business days) while our agents verify the status of your order with the warehouse staff before providing an update on its current location and estimated delivery date. Thank you for bearing with us during these proceedings; please feel free to reach back should any further assistance be required in meantime.",
+    "defactualized_prompt": "I'm reaching out for the second time regarding my overdue order, <ORDER_ID>, for <PRODUCT>, which was supposed to arrive three weeks ago. Unfortunately, I'<PRODUCT>'m still working on the floor, which is becoming increasingly inconvenient. I'd appreciate it if you could provide a clear timeline for delivery or a refund so I can explore alternative options locally. I'm hoping we can resolve this today, as I'm eager to get my home office set up and functional.",
+    "raw_steered_output": "Our team will investigate into the matter promptly and work towards resolving the issue at hand. Please allow us some more time (2-3 business days) while our agents verify the status of your order with the warehouse staff before providing an update on its current location and estimated delivery date. Thank you for bearing with us during these proceedings; please feel free to reach back should any further assistance be required in meantime.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

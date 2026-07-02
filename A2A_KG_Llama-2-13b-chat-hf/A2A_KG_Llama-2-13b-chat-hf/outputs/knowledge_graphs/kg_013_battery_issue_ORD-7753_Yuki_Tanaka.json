@@ -1,0 +1,100 @@
+{
+  "case_index": 13,
+  "scenario": "battery_issue",
+  "customer_name": "Yuki Tanaka",
+  "order_id": "ORD-7753",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7753",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "I previously reported hasn't been resolved",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "persists - my battery is still draining completely within 2 hours of a full charge",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "today, as I've already wasted valuable time trying to troubleshoot it myself",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.95
+      },
+      {
+        "value": "Yuki Tanaka",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "I previously reported hasn't been resolved",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "persists - my battery is still draining completely within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "today, as I've already wasted valuable time trying to troubleshoot it myself",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7753",
+        "target": "TechPro X200 Laptop",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Yuki Tanaka",
+        "target": "ORD-7753",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "I previously reported hasn't been resolved",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      },
+      {
+        "source": "persists - my battery is still draining completely within 2 hours of a full charge",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      },
+      {
+        "source": "today, as I've already wasted valuable time trying to troubleshoot it myself",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

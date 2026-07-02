@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Can you tell me more about when did you first notice that your laptop was having issues with its battery life? And has there been any changes on how you used it since then? Any additional information will help us better understand what might be causing this issue so we can work together towards fixing it ASAP!",
+    "defactualized_prompt": "I'm reaching out to support for the second time regarding my TechPro X200 Laptop, order number ORD-7757, which I purchased just three weeks ago. Despite updating the drivers as suggested during my previous support call, the battery issue persists - it's still draining completely within 2 hours of a full charge. I have a critical deadline to meet for a client tomorrow and I urgently need this resolved today. Could you please assist me in finding a more permanent solution to this problem?",
+    "raw_steered_output": "Can you tell me more about when did you first notice that your laptop was having issues with its battery life? And has there been any changes on how you used it since then? Any additional information will help us better understand what might be causing this issue so we can work together towards fixing it ASAP!",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our technical team will investigate the matter further and provide an update on possible solutions by close of business today. In the meantime, we recommend disabling power management features such as \"Turbo Boost\" and \"Battery Saver\" until our technicians can conduct their analysis. Please let us know if there is anything else we may do to help resolve this situation promptly.",
+    "defactualized_prompt": "I'm reaching out to support for the second time regarding my TechPro X200 Laptop, order number ORD-7757, which I purchased just three weeks ago. Despite updating the drivers as suggested during my previous support call, the battery issue persists - it's still draining completely within 2 hours of a full charge. I have a critical deadline to meet for a client tomorrow and I urgently need this resolved today. Could you please assist me in finding a more permanent solution to this problem?",
+    "raw_steered_output": "Our technical team will investigate the matter further and provide an update on possible solutions by close of business today. In the meantime, we recommend disabling power management features such as \"Turbo Boost\" and \"Battery Saver\" until our technicians can conduct their analysis. Please let us know if there is anything else we may do to help resolve this situation promptly.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

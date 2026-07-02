@@ -1,0 +1,71 @@
+{
+  "case_index": 39,
+  "scenario": "wrong_item",
+  "customer_name": "Naomi Clarke",
+  "order_id": "ORD-4505",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ORD-4505",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "s clear there",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "my order - I urgently need this resolved today so I can get the correct gift to my wife on her birthday",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.95
+      },
+      {
+        "value": "Naomi Clarke",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "ORD-4505",
+        "target": "my order - I urgently need this resolved today so I can get the correct gift to my wife on her birthday",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "SmartHome Hub Pro",
+        "target": "my order - I urgently need this resolved today so I can get the correct gift to my wife on her birthday",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "s clear there",
+        "target": "my order - I urgently need this resolved today so I can get the correct gift to my wife on her birthday",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "my order - I urgently need this resolved today so I can get the correct gift to my wife on her birthday",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

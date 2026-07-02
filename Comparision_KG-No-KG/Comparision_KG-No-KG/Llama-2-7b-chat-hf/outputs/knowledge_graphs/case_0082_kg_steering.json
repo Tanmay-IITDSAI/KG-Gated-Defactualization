@@ -1,0 +1,93 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "the Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-8841",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "medium",
+        "type": "URGENCY",
+        "salience": 0.75
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7999999999999999
+      },
+      {
+        "value": "Amara Coulibaly",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      },
+      {
+        "value": "delivery now 3 weeks overdue with no update from courier",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "the Ergonomic Office Chair",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.552
+      },
+      {
+        "source": "ORD-8841",
+        "target": "the Ergonomic Office Chair",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Ergonomic Office Chair",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "ORD-8841",
+        "target": "Ergonomic Office Chair",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Amara Coulibaly",
+        "target": "ORD-8841",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "delivery now 3 weeks overdue with no update from courier",
+        "target": "medium",
+        "relation": "has_urgency",
+        "weight": 0.488
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you please provide us with some more details such as your full name, address, phone number, and email ID associated with the order so we can investigate further on what might have caused the delay in delivery of your product ? Once we get that information ,we will do our best to resolve this issue at the earliest possible .",
+    "defactualized_prompt": "I'm reaching out about my order, <ORDER_ID>, for <PRODUCT>, which was supposed to arrive three weeks ago. Unfortunately, I still haven't received it, and I haven't gotten any updates from the courier. Please could you look into this and let me know when I can expect to receive my chair, or if there's an option for a refund so I can purchase one locally? I'd really appreciate your help with this, thank you.",
+    "raw_steered_output": "Can you please provide us with some more details such as your full name, address, phone number, and email ID associated with the order so we can investigate further on what might have caused the delay in delivery of your product ? Once we get that information ,we will do our best to resolve this issue at the earliest possible .",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team is working diligently to investigate the issue regarding the delay in delivery of your product. Once we have obtained more information from our logistics department, we will provide you with an update on the status of your shipment and potential options available to resolve the matter. Thank you for your patience as we work towards resolving this situation.",
+    "defactualized_prompt": "I'm reaching out about my order, <ORDER_ID>, for <PRODUCT>, which was supposed to arrive three weeks ago. Unfortunately, I still haven't received it, and I haven't gotten any updates from the courier. Please could you look into this and let me know when I can expect to receive my chair, or if there's an option for a refund so I can purchase one locally? I'd really appreciate your help with this, thank you.",
+    "raw_steered_output": "Our team is working diligently to investigate the issue regarding the delay in delivery of your product. Once we have obtained more information from our logistics department, we will provide you with an update on the status of your shipment and potential options available to resolve the matter. Thank you for your patience as we work towards resolving this situation.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

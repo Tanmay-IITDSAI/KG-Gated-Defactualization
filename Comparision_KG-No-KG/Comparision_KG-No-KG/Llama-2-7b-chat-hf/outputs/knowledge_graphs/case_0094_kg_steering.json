@@ -1,0 +1,93 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "the Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-8853",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "the shipment",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "low",
+        "type": "URGENCY",
+        "salience": 0.65
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7999999999999999
+      },
+      {
+        "value": "Joshua Abara",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "the Ergonomic Office Chair",
+        "target": "the shipment",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-8853",
+        "target": "the Ergonomic Office Chair",
+        "relation": "about_product",
+        "weight": 0.807
+      },
+      {
+        "source": "Ergonomic Office Chair",
+        "target": "the shipment",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "ORD-8853",
+        "target": "Ergonomic Office Chair",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Joshua Abara",
+        "target": "ORD-8853",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "the shipment",
+        "target": "low",
+        "relation": "has_urgency",
+        "weight": 0.585
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you tell me more about what happened after your order was supposedly shipped? Any details you can share will definitely help us locate the status of your package as soon as possible. We value our customers like family here at XYZ Company, and we want nothing but the best experience for them; therefore, rest assured that someone from our team is going to get back in touch with you very shortly regarding this matter.",
+    "defactualized_prompt": "I'm reaching out for some help with my order, <ORDER_ID>, which was supposed to be delivered a few weeks ago. I ordered <PRODUCT> for my home office and I've been working on the floor for three weeks now, so I'm really looking forward to getting it. Could you please look into this and provide me with an update on the expected delivery date or let me know if there's an issue with <ISSUE>? I'd greatly appreciate it if you could help me resolve this, thank you.",
+    "raw_steered_output": "Can you tell me more about what happened after your order was supposedly shipped? Any details you can share will definitely help us locate the status of your package as soon as possible. We value our customers like family here at XYZ Company, and we want nothing but the best experience for them; therefore, rest assured that someone from our team is going to get back in touch with you very shortly regarding this matter.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team is currently investigating the matter regarding the delay in delivering your product (Order ID). Please allow us time to investigate further as we work towards providing you with accurate information about when you can expect its arrival at your location. Thank you for choosing our company!",
+    "defactualized_prompt": "I'm reaching out for some help with my order, <ORDER_ID>, which was supposed to be delivered a few weeks ago. I ordered <PRODUCT> for my home office and I've been working on the floor for three weeks now, so I'm really looking forward to getting it. Could you please look into this and provide me with an update on the expected delivery date or let me know if there's an issue with <ISSUE>? I'd greatly appreciate it if you could help me resolve this, thank you.",
+    "raw_steered_output": "Our team is currently investigating the matter regarding the delay in delivering your product (Order ID). Please allow us time to investigate further as we work towards providing you with accurate information about when you can expect its arrival at your location. Thank you for choosing our company!",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

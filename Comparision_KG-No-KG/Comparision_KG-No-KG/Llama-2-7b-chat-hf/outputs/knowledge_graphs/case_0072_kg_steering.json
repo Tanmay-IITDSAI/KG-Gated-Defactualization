@@ -1,0 +1,70 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "Premium Subscription",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-5545",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "my recent billing",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "positive",
+        "type": "SENTIMENT",
+        "salience": 0.65
+      },
+      {
+        "value": "Giulia Romano",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "Premium Subscription",
+        "target": "my recent billing",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-5545",
+        "target": "my recent billing",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "my recent billing",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you please give us some more details so we can assist you better, like when did these charges occur and have there any changes made recently on your account? We will definitely get back to you once our team investigates this matter further and provides a resolution.",
+    "defactualized_prompt": "I've been a loyal customer for 2 years and I'm reaching out about an issue with <ISSUE>. I noticed that I've been charged twice for the same monthly <PRODUCT>, with the order number <PRODUCT>, in the amount of $49.99. I'd appreciate it if you could look into this and provide a refund for the duplicate charge as soon as possible. Could you also let me know what steps I can take to prevent this from happening in the future?",
+    "raw_steered_output": "Can you please give us some more details so we can assist you better, like when did these charges occur and have there any changes made recently on your account? We will definitely get back to you once our team investigates this matter further and provides a resolution.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter further, including checking on any potential errors related to billing records and verifying whether there were any issues during processing payments associated with your account. Once our investigation is complete, we aim to resolve these discrepancies by providing a timely resolution regarding the double charging incident involving product #105786. Please allow us some time (up to five business days) before expecting any updates; rest assured that once resolved, all necessary actions have taken place so no additional charges occur moving forward!",
+    "defactualized_prompt": "I've been a loyal customer for 2 years and I'm reaching out about an issue with <ISSUE>. I noticed that I've been charged twice for the same monthly <PRODUCT>, with the order number <PRODUCT>, in the amount of $49.99. I'd appreciate it if you could look into this and provide a refund for the duplicate charge as soon as possible. Could you also let me know what steps I can take to prevent this from happening in the future?",
+    "raw_steered_output": "Our team will investigate the matter further, including checking on any potential errors related to billing records and verifying whether there were any issues during processing payments associated with your account. Once our investigation is complete, we aim to resolve these discrepancies by providing a timely resolution regarding the double charging incident involving product #105786. Please allow us some time (up to five business days) before expecting any updates; rest assured that once resolved, all necessary actions have taken place so no additional charges occur moving forward!",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

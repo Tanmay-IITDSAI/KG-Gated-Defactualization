@@ -1,0 +1,83 @@
+{
+  "case_index": 11,
+  "scenario": "battery_issue",
+  "customer_name": "Nina Johansson",
+  "order_id": "ORD-7751",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "ORD-7751",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "the battery life - it's draining completely within 2 hours of a full charge",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "as soon as possible, or provide a suitable alternative if the laptop needs to be repaired or replaced",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 0.9
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      },
+      {
+        "value": "Nina Johansson",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "the battery life - it's draining completely within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "as soon as possible, or provide a suitable alternative if the laptop needs to be repaired or replaced",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7751",
+        "target": "the battery life - it's draining completely within 2 hours of a full charge",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "ORD-7751",
+        "target": "as soon as possible, or provide a suitable alternative if the laptop needs to be repaired or replaced",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "the battery life - it's draining completely within 2 hours of a full charge",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      },
+      {
+        "source": "as soon as possible, or provide a suitable alternative if the laptop needs to be repaired or replaced",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.81
+      }
+    ]
+  }
+}

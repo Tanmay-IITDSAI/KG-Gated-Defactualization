@@ -1,0 +1,70 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ORD-8834",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.894
+      },
+      {
+        "value": "the Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "the delivery, I'd also like to discuss the possibility of a refund so I can explore local purchasing options",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "low",
+        "type": "URGENCY",
+        "salience": 0.55
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7
+      }
+    ],
+    "edges": [
+      {
+        "source": "the Ergonomic Office Chair",
+        "target": "the delivery, I'd also like to discuss the possibility of a refund so I can explore local purchasing options",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "Ergonomic Office Chair",
+        "target": "the delivery, I'd also like to discuss the possibility of a refund so I can explore local purchasing options",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "the delivery, I'd also like to discuss the possibility of a refund so I can explore local purchasing options",
+        "target": "low",
+        "relation": "has_urgency",
+        "weight": 0.495
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you please give us some more details on your order number and where you placed it so we can investigate further and get back to you as soon as possible regarding the status of your shipment? We value our customers like you greatly and will do everything in our power to make sure that you have a positive experience here at Our Company!",
+    "defactualized_prompt": "I'm reaching out about my order, <CUSTOMER_NAME>, for <PRODUCT>, which is now three weeks past the expected delivery date. I haven't received any updates from the courier, and I'm still working from the floor, so I'd appreciate it if you could look into this and provide a clear timeline for when I can expect to receive my chair. If there's an issue with <ISSUE>. Could you please let me know the next steps to resolve this?",
+    "raw_steered_output": "Can you please give us some more details on your order number and where you placed it so we can investigate further and get back to you as soon as possible regarding the status of your shipment? We value our customers like you greatly and will do everything in our power to make sure that you have a positive experience here at Our Company!",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter further and work towards providing you with a resolution as soon as possible. Please allow us some time to gather more information and update you on our findings within the next 24-48 hours. Thank you for your patience in this regard.",
+    "defactualized_prompt": "I'm reaching out about my order, <CUSTOMER_NAME>, for <PRODUCT>, which is now three weeks past the expected delivery date. I haven't received any updates from the courier, and I'm still working from the floor, so I'd appreciate it if you could look into this and provide a clear timeline for when I can expect to receive my chair. If there's an issue with <ISSUE>. Could you please let me know the next steps to resolve this?",
+    "raw_steered_output": "Our team will investigate the matter further and work towards providing you with a resolution as soon as possible. Please allow us some time to gather more information and update you on our findings within the next 24-48 hours. Thank you for your patience in this regard.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

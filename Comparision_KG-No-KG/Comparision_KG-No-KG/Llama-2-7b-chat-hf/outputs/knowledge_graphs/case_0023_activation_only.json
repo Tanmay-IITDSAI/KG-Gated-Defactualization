@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Can you please tell me more about when did you first notice that issue? And has there been any changes in usage patterns since then? Any information will really help us narrow down on what might be going wrong here so we can get back to you ASAP!",
+    "defactualized_prompt": "I'm reaching out for help with my TechPro X200 Laptop, which I purchased just three weeks ago with order number ORD-7764. Unfortunately, I'm still experiencing issues with the battery life, despite updating the drivers as suggested by your support team last week. The battery is draining completely within 2 hours of a full charge, which is causing me a lot of trouble as I have a urgent deadline to meet tomorrow for my freelance design work. Please, could you kindly look into this and provide a solution as soon as possible, I would greatly appreciate it.",
+    "raw_steered_output": "Can you please tell me more about when did you first notice that issue? And has there been any changes in usage patterns since then? Any information will really help us narrow down on what might be going wrong here so we can get back to you ASAP!",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our technical experts will investigate the issue regarding the short battery life on your TechPro X200 laptop. As part of our investigation process, we may need additional information from you in due course; please be assured that we shall keep you updated throughout the resolution process. In the meantime, if there is anything else we can assist you with, do not hesitate to contact us again at any time conveniently.",
+    "defactualized_prompt": "I'm reaching out for help with my TechPro X200 Laptop, which I purchased just three weeks ago with order number ORD-7764. Unfortunately, I'm still experiencing issues with the battery life, despite updating the drivers as suggested by your support team last week. The battery is draining completely within 2 hours of a full charge, which is causing me a lot of trouble as I have a urgent deadline to meet tomorrow for my freelance design work. Please, could you kindly look into this and provide a solution as soon as possible, I would greatly appreciate it.",
+    "raw_steered_output": "Our technical experts will investigate the issue regarding the short battery life on your TechPro X200 laptop. As part of our investigation process, we may need additional information from you in due course; please be assured that we shall keep you updated throughout the resolution process. In the meantime, if there is anything else we can assist you with, do not hesitate to contact us again at any time conveniently.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "case_index": 2,
+  "scenario": "battery_issue",
+  "customer_name": "Leo Chen",
+  "order_id": "ORD-7742",
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ORD-7742",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.882
+      },
+      {
+        "value": "TechPro X200 Laptop",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "FED UP with",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.75
+      },
+      {
+        "value": "or I will be forced to ask for a full refund and share my DISAPPOINTING experience with others",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "WORK WITH A LAPTOP THAT CAN'T EVEN LAST A FEW HOURS",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "high",
+        "type": "URGENCY",
+        "salience": 1.0
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.85
+      }
+    ],
+    "edges": [
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "or I will be forced to ask for a full refund and share my DISAPPOINTING experience with others",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "TechPro X200 Laptop",
+        "target": "WORK WITH A LAPTOP THAT CAN'T EVEN LAST A FEW HOURS",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "or I will be forced to ask for a full refund and share my DISAPPOINTING experience with others",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      },
+      {
+        "source": "WORK WITH A LAPTOP THAT CAN'T EVEN LAST A FEW HOURS",
+        "target": "high",
+        "relation": "has_urgency",
+        "weight": 0.9
+      }
+    ]
+  }
+}

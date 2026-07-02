@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "Cancellations like these happen sometimes due to unforeseen circumstances with our shipping partners; however, please know that your satisfaction matters most to us at XYZ Furniture Store! We will do everything in our power to ensure prompt resolution of this issue by providing an updated estimated delivery date or offering a full refund within one business day upon receiving confirmation from our logistics team. Please let me assist you further in resolving this matter quickly and efficiently while prioritizing your needs above all else during regular hours Monday through Friday (9 AM -5 PM CST).",
+    "defactualized_prompt": "I'm reaching out for the second time regarding my overdue order, ORD-8847, for the Ergonomic Office Chair, which was supposed to arrive three weeks ago. Unfortunately, I've had no updates from the courier and I'm still working on the floor, which is becoming increasingly inconvenient. I'd appreciate it if you could provide a clear timeline for delivery or a refund so I can explore alternative options locally. I'm hoping we can resolve this today, as I'm eager to get my home office set up and functional.",
+    "raw_steered_output": "Cancellations like these happen sometimes due to unforeseen circumstances with our shipping partners; however, please know that your satisfaction matters most to us at XYZ Furniture Store! We will do everything in our power to ensure prompt resolution of this issue by providing an updated estimated delivery date or offering a full refund within one business day upon receiving confirmation from our logistics team. Please let me assist you further in resolving this matter quickly and efficiently while prioritizing your needs above all else during regular hours Monday through Friday (9 AM -5 PM CST).",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter further and work towards providing an update on the status of your order within the next 24 hours. In the meantime, please accept our sincere apologies for any inconvenience caused by the delay in delivery.",
+    "defactualized_prompt": "I'm reaching out for the second time regarding my overdue order, ORD-8847, for the Ergonomic Office Chair, which was supposed to arrive three weeks ago. Unfortunately, I've had no updates from the courier and I'm still working on the floor, which is becoming increasingly inconvenient. I'd appreciate it if you could provide a clear timeline for delivery or a refund so I can explore alternative options locally. I'm hoping we can resolve this today, as I'm eager to get my home office set up and functional.",
+    "raw_steered_output": "Our team will investigate the matter further and work towards providing an update on the status of your order within the next 24 hours. In the meantime, please accept our sincere apologies for any inconvenience caused by the delay in delivery.",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}

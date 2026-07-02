@@ -1,0 +1,76 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ORD-8837",
+        "type": "ORDER_ID",
+        "salience": 0.95
+      },
+      {
+        "value": "Ergonomic Office Chair",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "low",
+        "type": "URGENCY",
+        "salience": 0.65
+      },
+      {
+        "value": "polite",
+        "type": "SENTIMENT",
+        "salience": 0.7999999999999999
+      },
+      {
+        "value": "Olga Morozova",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      },
+      {
+        "value": "delivery now 3 weeks overdue with no update from courier",
+        "type": "ISSUE",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "Ergonomic Office Chair",
+        "target": "delivery now 3 weeks overdue with no update from courier",
+        "relation": "has_issue",
+        "weight": 0.52
+      },
+      {
+        "source": "ORD-8837",
+        "target": "Ergonomic Office Chair",
+        "relation": "about_product",
+        "weight": 0.76
+      },
+      {
+        "source": "Olga Morozova",
+        "target": "ORD-8837",
+        "relation": "placed_order",
+        "weight": 0.617
+      },
+      {
+        "source": "delivery now 3 weeks overdue with no update from courier",
+        "target": "low",
+        "relation": "has_urgency",
+        "weight": 0.423
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "Can you please provide me with more details such as your full name, address, phone number, and email associated with the order so that we may investigate further on what might have caused the delay in delivering your package? Once I get all of these information, I will personally escalate it to our shipping team immediately and keep you updated throughout the process.",
+    "defactualized_prompt": "I'm reaching out for some help with my order, <ORDER_ID>, which was supposed to be delivered three weeks ago. I'm still waiting for my <PRODUCT> to arrive and unfortunately, I haven't received any updates from the courier. Please could you look into this for me and let me know if there's a revised delivery date or if I can expect a refund so I can make alternative arrangements? I'd really appreciate your help with this, thank you.",
+    "raw_steered_output": "Can you please provide me with more details such as your full name, address, phone number, and email associated with the order so that we may investigate further on what might have caused the delay in delivering your package? Once I get all of these information, I will personally escalate it to our shipping team immediately and keep you updated throughout the process.",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team is working diligently to investigate the issue regarding the delay in delivery of your package (Order ID). Once we have obtained more information from our shipping carrier, we will provide an update on when you may anticipate receiving your product(s) as soon as possible. Thank you for choosing us!",
+    "defactualized_prompt": "I'm reaching out for some help with my order, <ORDER_ID>, which was supposed to be delivered three weeks ago. I'm still waiting for my <PRODUCT> to arrive and unfortunately, I haven't received any updates from the courier. Please could you look into this for me and let me know if there's a revised delivery date or if I can expect a refund so I can make alternative arrangements? I'd really appreciate your help with this, thank you.",
+    "raw_steered_output": "Our team is working diligently to investigate the issue regarding the delay in delivery of your package (Order ID). Once we have obtained more information from our shipping carrier, we will provide an update on when you may anticipate receiving your product(s) as soon as possible. Thank you for choosing us!",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "value": "ORD-4509",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "the SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.85
+      },
+      {
+        "value": "SmartHome Hub Pro",
+        "type": "PRODUCT",
+        "salience": 0.8
+      },
+      {
+        "value": "today, as time is of the essence",
+        "type": "ISSUE",
+        "salience": 0.9
+      },
+      {
+        "value": "low",
+        "type": "URGENCY",
+        "salience": 0.55
+      },
+      {
+        "value": "frustrated",
+        "type": "SENTIMENT",
+        "salience": 0.95
+      },
+      {
+        "value": "Sunita Rao",
+        "type": "CUSTOMER_NAME",
+        "salience": 0.65
+      }
+    ],
+    "edges": [
+      {
+        "source": "ORD-4509",
+        "target": "today, as time is of the essence",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "the SmartHome Hub Pro",
+        "target": "today, as time is of the essence",
+        "relation": "has_issue",
+        "weight": 0.765
+      },
+      {
+        "source": "SmartHome Hub Pro",
+        "target": "today, as time is of the essence",
+        "relation": "has_issue",
+        "weight": 0.72
+      },
+      {
+        "source": "today, as time is of the essence",
+        "target": "low",
+        "relation": "has_urgency",
+        "weight": 0.495
+      }
+    ]
+  },
+  "empathetic_output": {
+    "support_response": "It sounds like an incredibly thoughtful gesture from your end went wrong due to some unfortunate mistake by our team. Please know that we value your business greatly and will do everything possible to make things right again. Can you please provide me more details regarding what happened so that I could assist further?",
+    "defactualized_prompt": "I'm extremely <SENTIMENT> and disappointed with my recent order, <PRODUCT>, which was supposed to be <PRODUCT> that I ordered as a birthday gift for my wife. However, when I opened the box in front of my family, I was humiliated to find a coffee maker inside instead of <PRODUCT>. I had paid for express shipping to ensure it arrived on time, as the birthday is just two days away, but now I'm left with a completely useless item. This is my second time reaching out to support, and I'm hoping we can resolve this issue <ISSUE>.",
+    "raw_steered_output": "It sounds like an incredibly thoughtful gesture from your end went wrong due to some unfortunate mistake by our team. Please know that we value your business greatly and will do everything possible to make things right again. Can you please provide me more details regarding what happened so that I could assist further?",
+    "target_style": "empathetic",
+    "steering_mode": "kg_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the matter further and provide an explanation regarding why there seems to have been confusion during processing. Please allow us some more time to look into this situation before getting back to you again soonest possible.",
+    "defactualized_prompt": "I'm extremely <SENTIMENT> and disappointed with my recent order, <PRODUCT>, which was supposed to be <PRODUCT> that I ordered as a birthday gift for my wife. However, when I opened the box in front of my family, I was humiliated to find a coffee maker inside instead of <PRODUCT>. I had paid for express shipping to ensure it arrived on time, as the birthday is just two days away, but now I'm left with a completely useless item. This is my second time reaching out to support, and I'm hoping we can resolve this issue <ISSUE>.",
+    "raw_steered_output": "Our team will investigate the matter further and provide an explanation regarding why there seems to have been confusion during processing. Please allow us some more time to look into this situation before getting back to you again soonest possible.",
+    "target_style": "formal",
+    "steering_mode": "kg_activation"
+  }
+}

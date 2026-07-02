@@ -1,0 +1,16 @@
+{
+  "empathetic_output": {
+    "support_response": "We value your business and want to make things right immediately. Our team will investigate this situation thoroughly and work on getting the correct item shipped to you within the next 24 hours. You should see an update on your tracking information by tomorrow morning at the latest. Please don't hesitate to reach back out if there's anything else we can do to assist you further.",
+    "defactualized_prompt": "I'm reaching out about my order ORD-4498 for the SmartHome Hub Pro, which I purchased as a birthday gift for my wife with express shipping since her birthday is in just two days. However, when I opened the box in front of my family, I was surprised and embarrassed to find a coffee maker inside instead of the SmartHome Hub Pro. I would appreciate it if you could look into this matter urgently and arrange for the correct item to be shipped to me as soon as possible. Could you please let me know the steps you will take to resolve this issue and provide a timeline for when I can expect to receive the correct product?",
+    "raw_steered_output": "We value your business and want to make things right immediately. Our team will investigate this situation thoroughly and work on getting the correct item shipped to you within the next 24 hours. You should see an update on your tracking information by tomorrow morning at the latest. Please don't hesitate to reach back out if there's anything else we can do to assist you further.",
+    "target_style": "empathetic",
+    "steering_mode": "standard_activation"
+  },
+  "formal_output": {
+    "support_response": "Our team will investigate the discrepancy regarding the contents of your package immediately. Please allow us some time (up to 2 business days) to locate the incorrect item and ship the right one to you at no additional cost. You should see delivery within 5 working days after we have processed your request. Thank you for choosing our brand!",
+    "defactualized_prompt": "I'm reaching out about my order ORD-4498 for the SmartHome Hub Pro, which I purchased as a birthday gift for my wife with express shipping since her birthday is in just two days. However, when I opened the box in front of my family, I was surprised and embarrassed to find a coffee maker inside instead of the SmartHome Hub Pro. I would appreciate it if you could look into this matter urgently and arrange for the correct item to be shipped to me as soon as possible. Could you please let me know the steps you will take to resolve this issue and provide a timeline for when I can expect to receive the correct product?",
+    "raw_steered_output": "Our team will investigate the discrepancy regarding the contents of your package immediately. Please allow us some time (up to 2 business days) to locate the incorrect item and ship the right one to you at no additional cost. You should see delivery within 5 working days after we have processed your request. Thank you for choosing our brand!",
+    "target_style": "formal",
+    "steering_mode": "standard_activation"
+  }
+}
