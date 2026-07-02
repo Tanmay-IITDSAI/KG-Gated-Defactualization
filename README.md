@@ -1,6 +1,6 @@
 # Knowledge-Graph-Gated Defactualization (DSR) for Style-Controllable and Fact-Preserving Generation in Agentic Conversational AI
 
-[![Paper](https://img.shields.io/badge/IEEE%20TKDE-Special%20Issue%20(Submitted)-blue)](paper/Knowledge-Graph-Gated_Defactualization_for_Style-Controllable_and_Fact-Preserving_Generation_in_Agentic_Conversational_AI.pdf)
+[![Paper](https://img.shields.io/badge/IEEE%20TKDE-Special%20Issue%20(Submitted)-blue)](#12-citation)
 [![License](https://img.shields.io/badge/license-MIT-green)](#13-license)
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](#5-requirements)
 [![Models](https://img.shields.io/badge/LLaMA-2%20%26%203-orange)](#6-models-evaluated)
@@ -89,47 +89,117 @@ DSR is complementary to, not a replacement for, knowledge-graph-augmented LLM me
 
 ## 3. Repository Structure
 
-> This release ships one fully populated model run (`A2A_KG_Llama-2-13b-chat-hf/`) as a worked, inspectable example of every artifact the pipeline produces. The remaining five `A2A_KG_<model>/` directories follow an **identical internal layout** and are populated by re-running `main.py` against each model per [Section 10](#10-running-the-pipeline).
+> **As of the latest push, this is what's actually on `main`** — six per-model run directories, a dedicated activation-only-vs-KG-gated comparison, a multi-model evaluation bundle, and a supplementary-analysis bundle for the extended ablations. Each `A2A_KG_<model>/` directory is self-contained and follows the same internal layout, populated by running `main.py` (or the model's `build_vectors*.ipynb`) per [Section 10](#10-running-the-pipeline). Note that every top-level model folder currently contains one nested subfolder of the same name (e.g. `A2A_KG_Llama-2-13b-chat-hf/A2A_KG_Llama-2-13b-chat-hf/…`) — a leftover of how the folders were uploaded; the paths below reflect the real, current layout rather than the flattened one.
 
 ```
 KG-Gated-Defactualization/
-├── README.md                                  ← this file
-├── LICENSE
-├── requirements.txt
-├── .env.example                                ← template for required environment variables
+├── README.md
 │
-├── A2A_KG_Llama-2-7b-base/                     ← per-model run directory (same layout as below)
+├── A2A_KG_Llama-2-7b-hf/                                    ← base (non-chat) LLaMA-2 7B run
+│   └── A2A_KG_Llama-2-7b-hf/
+│       ├── main.py
+│       ├── build_vectors.ipynb                              ← estimates & caches v_s per style — Eqs. 5–7
+│       ├── a2a_kg_pipeline_complete (1) spacy.ipynb
+│       ├── a2a_unified_steering_analysis.ipynb               ← layer-separability + alpha-sweep (Fig. 8, 9)
+│       ├── alpha_sweep.png / steering_layer_analysis.png     ← cached diagnostic figures
+│       ├── .style_cache/                                    ← cached, reusable steering vectors
+│       └── outputs/knowledge_graphs/*.json                  ← one typed KG per case (Fig. 2 artifacts)
+│
 ├── A2A_KG_Llama-2-7b-chat-hf/
-├── A2A_KG_Llama-2-13b-chat-hf/                  ← included worked example
-│   └── A2A_KG_Llama-2-13b-chat-hf/
-│       ├── main.py                              ← single-file pipeline (see Section 10 for module map)
-│       ├── build_vectors.ipynb                  ← estimates & caches v_s per (style, model) — Eqs. 5–7
-│       ├── a2a_kg_fixed_memory.ipynb            ← interactive single-case walkthrough (Fig. 1 example)
-│       ├── a2a_unified_steering_analysis.ipynb  ← layer-separability + alpha-sweep diagnostics (Fig. 8, 9)
-│       ├── alpha_sweep.png                      ← cached diagnostic figure
-│       ├── .style_cache/                        ← cached, reusable steering vectors (one per style)
-│       │   ├── style_vec_empathetic_pca.pkl
-│       │   └── style_vec_formal_pca.pkl
+│   └── A2A_KG_Llama-2-7b-chat-hf/
+│       ├── main_7b.py
+│       ├── build_vectors.ipynb
+│       ├── a2a_kg_7b_chat.ipynb                              ← interactive single-case walkthrough
+│       ├── a2a_unified_steering_analysis.ipynb
+│       ├── alpha_sweep.png / steering_layer_analysis.png
+│       ├── .style_cache/ , .style_cache_7b/
 │       └── outputs/
-│           ├── knowledge_graphs/                ← one typed KG per case (Stage 2–3 output, Fig. 2)
-│           │   ├── kg_001_battery_issue_ORD-7741_Priya_Sharma.json
-│           │   ├── kg_002_battery_issue_ORD-7742_Leo_Chen.json
-│           │   └── ...                          ← kg_NNN_<scenario>_<order_id>_<customer>.json
-│           └── results_<timestamp>.jsonl        ← per-case generation + metric records (batch mode)
 │
-├── A2A_KG_Llama-3.1-8B-Instruct/
+├── A2A_KG_Llama-2-13b-chat-hf/                               ← worked example referenced throughout this README
+│   └── A2A_KG_Llama-2-13b-chat-hf/
+│       ├── main.py
+│       ├── build_vectors.ipynb
+│       ├── a2a_kg_fixed_memory.ipynb                         ← the Fig. 1 example (Alex, order ORD-1234 delayed)
+│       ├── a2a_unified_steering_analysis.ipynb
+│       ├── alpha_sweep.png / steering_layer_analysis.png
+│       ├── .style_cache/
+│       └── outputs/knowledge_graphs/kg_001_*.json … kg_NNN_*.json, results_<timestamp>.jsonl
+│
+├── A2A_KG_Llama-3.1-8b-Instruct/
+│   └── A2A_KG_Llama-3.1-8b-Instruct/
+│       ├── main.py
+│       ├── build_vectors_llama31_fixed.ipynb
+│       ├── a2a_unified_steering_analysis.ipynb
+│       ├── alpha_sweep.png
+│       └── outputs/
+│
 ├── A2A_KG_Llama-3.2-1B-Instruct/
+│   └── A2A_KG_Llama-3.2-1B-Instruct/
+│       ├── main.py
+│       ├── A2A_pipeline_3.2-3B-Instruct.ipynb
+│       ├── a2a_unified_steering_analysis.ipynb
+│       ├── zombiekillRAM.ipynb                                ← memory-management / OOM workaround notebook
+│       ├── alpha_sweep.png
+│       └── outputs/
+│
 ├── A2A_KG_Llama-3.2-3B-Instruct/
+│   └── A2A_KG_Llama-3.2-3B-Instruct/
+│       ├── main.py
+│       ├── A2A_pipeline_3.2-3B-Instruct.ipynb
+│       └── outputs/knowledge_graphs/kg_001_*.json … kg_100_*.json, results_20260524_062711.jsonl
+│                                                               ← full 100-case run for this model (4 scenarios × 25)
 │
-├── ablation/                                    ← 100-case KG-gating ablation (Table III, §VI-D)
-│   ├── activation_only/                         ← AO baseline generations (no KG masking)
-│   └── kg_gated/                                ← full DSR generations, identical (L, α, v_s)
+├── Comparision_KG-No-KG/                                     ← head-to-head KG-gated vs. activation-only (AO) ablation
+│   └── Comparision_KG-No-KG/
+│       ├── outputs/knowledge_graphs/                         ← paired case_NNNN_activation_only.json / case_NNNN_kg_steering.json
+│       ├── results_<timestamp>.jsonl                         ← two runs (root level)
+│       └── Llama-2-7b-chat-hf/                                ← the 100-case ablation underlying Table III, §VI-D
+│           ├── main.py
+│           ├── a2a_kg_7b_chat_fixed.ipynb, A2A_KG_vs_AO_Evaluation (1).ipynb
+│           ├── kg_vs_ao_FINAL_SUMMARY.csv, kg_vs_ao_statistical_tests.csv
+│           ├── metrics_all_100_cases.csv, metrics_all_cases.csv
+│           ├── outputs/knowledge_graphs/                     ← case_0000…case_0099, paired activation_only / kg_steering
+│           └── eval_A_headtohead.png, eval_B_delta_distributions.png, eval_C_entity_coverage.png,
+│               eval_D_breakdown_{scenario,sentiment,urgency}.png
 │
-├── figures/                                     ← Fig. 1–9 source notebooks / exported assets
+├── Evaluation/  (+ Evaluation.zip, a duplicate archive of the same folder)
+│   └── Evaluation/
+│       ├── A2A_KG_MultiModel_Evaluation (1).ipynb            ← aggregates all six models into the study-wide tables
+│       ├── leaderboard_summary.csv, statistical_tests_all_models.csv
+│       ├── metrics_<model>.csv                                ← per-model metrics (L2-7B-Base/Chat, L2-13B-Chat, L3.1-8B, L3.2-1B/3B)
+│       ├── metrics_all_models_combined.csv
+│       ├── eval_1…eval_13_*.png                               ← Figs. 3–6 source charts (readability, style fidelity,
+│       │                                                          KG structure, radar, ablation breakdowns, Cohen's d heatmap)
+│       └── Tier1 Metrics/
+│           ├── main.py, a2a_unified_steering_analysis.ipynb
+│           └── alpha_sweep.png, steering_layer_analysis.png
 │
-└── paper/
-    └── Knowledge-Graph-Gated_Defactualization_for_Style-Controllable_and_Fact-Preserving_Generation_in_Agentic_Conversational_AI.pdf
+├── DSR_Supplementary_Analysis/                               ← extended ablations / reviewer-response material
+│   ├── DSR_Supplementary_Analysis.ipynb, DK_GenAI_Extended_Ablation.ipynb
+│   ├── DSR_Reviewer_Response_Notebook (1).ipynb
+│   ├── figA1_variance_decomposition, figB1_zero_inflation, figC1_urgency_trend,
+│   │   figD1_tone_scenario_interaction, figE1_generation_contrast, figF1_kg_efficiency_frontier,
+│   │   figG1_style_calibration_error, figH1_bounded_effects, figJ1_extended_ablation_dashboard,
+│   │   figS1_kg_structural_invariance, figS3_proxy_diagnostics, figS4_scenario_conditioning,
+│   │   figS5_bootstrap_entity_cov, figS6_cohens_d_heatmap_extended, figS8_readability_cdf,
+│   │   figS9_alpha_proxy_sweep                                ← each as matching .png / .pdf
+│   └── tableA1_variance_decomposition.csv, tableB1_entity_sparsity.csv, tableC1_urgency_trend_test.csv,
+│       tableD1_tone_scenario_interaction.csv, tableE1_generation_contrast.csv,
+│       tableG1_style_calibration_error.csv, tableH1_bounded_effects.csv, tex_table_variance.tex
+│
+├── kg/                                                        ← standalone KG-construction module + worked example graphs
+│   ├── kg.py                                                  ← Algorithm 1 reference implementation
+│   └── kg_001…003_battery_issue_*.json
+│
+├── figS10_scatter_matrix.png / .pdf                           ← top-level supplementary figure
+├── tableS1_pairwise_model_tests.csv
+├── tableS2_readability_separability.csv
+├── tableS3_correlation_analysis.csv
+├── tableS4_final_summary.csv / .png / .pdf
+└── kg_image.png                                                ← KG schematic used in Fig. 2 / README
 ```
+
+> **Not currently in the repo:** `LICENSE`, `requirements.txt`, `.env.example`, and a dedicated `figures/` or `paper/` folder are referenced elsewhere in this README (e.g. [§5](#5-requirements), [§13](#13-license)) as expected project scaffolding, but don't exist on `main` yet — add them alongside the next push so those links resolve. There's also no `.gitignore` yet, so build artifacts (`__pycache__/`, `.style_cache/`, and stray pip-install-generated files like `=1.26.0`) are currently tracked in git; see the note at the end of [§5](#5-requirements) for a suggested fix.
 
 ### `outputs/knowledge_graphs/*.json` schema
 
@@ -210,6 +280,16 @@ STEER_ALPHA=12.0                                   # steering strength α (per-m
 HF_TOKEN=hf_...                                    # required for gated LLaMA checkpoints
 STYLE_CACHE_DIR=.style_cache                       # optional override
 ```
+
+> **Never commit `.env` or hardcode `GROQ_API_KEY` / `HF_TOKEN` inside notebooks.** A previous push to this repo was blocked by GitHub's secret-scanning push protection for exactly this reason. Keep both keys in a local, untracked `.env` file and load them with `python-dotenv`. A minimal `.gitignore` is also recommended, since none exists on `main` yet:
+> ```
+> .env
+> __pycache__/
+> *.pyc
+> .style_cache/
+> .style_cache_7b/
+> =*            # stray files from an unquoted `pip install pkg>=x.y.z` in bash/zsh
+> ```
 
 ---
 
@@ -293,20 +373,20 @@ A well-steered, well-grounded generation should jointly satisfy `TCI > 0` and `H
 
 | Paper item | What it shows | Where to find / reproduce it |
 |---|---|---|
-| Fig. 1 | DSR architecture: PCA-based style-direction extraction (top) + end-to-end inference loop (bottom) | `figures/`, `build_vectors.ipynb`, `a2a_kg_fixed_memory.ipynb` |
-| Fig. 2 | Worked knowledge graphs for three support cases | `outputs/knowledge_graphs/kg_001_*.json`–`kg_003_*.json`, `figures/` |
-| Fig. 3 | SCE per model (style-execution consistency) | `a2a_unified_steering_analysis.ipynb` |
-| Fig. 4 | Entity coverage & placeholder leakage across all 600 cases | `outputs/results_<timestamp>.jsonl` aggregation scripts |
-| Fig. 5 | ANOVA partial-η² variance decomposition | `outputs/results_<timestamp>.jsonl` aggregation scripts |
-| Fig. 6 | Zero-inflation analysis, per entity type | `outputs/results_<timestamp>.jsonl` aggregation scripts |
-| Fig. 7 | Style/grounding metrics vs. model scale (LLaMA-2 vs. LLaMA-3) | cross-model aggregation over all six `A2A_KG_<model>/` directories |
-| Fig. 8 | Layer-wise separability (LLaMA-3.2-3B-Instruct) | `a2a_unified_steering_analysis.ipynb` |
-| Fig. 9 | Steering-strength (`α`) sweep, TCI vs. HSI (LLaMA-3.2-3B-Instruct) | `a2a_unified_steering_analysis.ipynb`, `alpha_sweep.png` |
-| Table I | Notation reference | `paper/` PDF, §III |
+| Fig. 1 | DSR architecture: PCA-based style-direction extraction (top) + end-to-end inference loop (bottom) | `kg_image.png`, any `build_vectors*.ipynb`, `A2A_KG_Llama-2-13b-chat-hf/.../a2a_kg_fixed_memory.ipynb` |
+| Fig. 2 | Worked knowledge graphs for three support cases | `kg/kg_001_*.json`–`kg_003_*.json`, `kg/kg.py` |
+| Fig. 3 | SCE per model (style-execution consistency) | `Evaluation/Evaluation/eval_3_style_fidelity.png`, any `a2a_unified_steering_analysis.ipynb` |
+| Fig. 4 | Entity coverage & placeholder leakage across all 600 cases | `Evaluation/Evaluation/eval_4_factual_grounding.png`, `Evaluation/Evaluation/metrics_all_models_combined.csv` |
+| Fig. 5 | ANOVA partial-η² variance decomposition | `DSR_Supplementary_Analysis/figA1_variance_decomposition.png`, `tableA1_variance_decomposition.csv` |
+| Fig. 6 | Zero-inflation analysis, per entity type | `DSR_Supplementary_Analysis/figB1_zero_inflation.png`, `tableB1_entity_sparsity.csv` |
+| Fig. 7 | Style/grounding metrics vs. model scale (LLaMA-2 vs. LLaMA-3) | `Evaluation/Evaluation/A2A_KG_MultiModel_Evaluation (1).ipynb`, `leaderboard_summary.csv` |
+| Fig. 8 | Layer-wise separability (LLaMA-3.2-3B-Instruct) | `A2A_KG_Llama-3.2-3B-Instruct/.../a2a_unified_steering_analysis.ipynb` |
+| Fig. 9 | Steering-strength (`α`) sweep, TCI vs. HSI (LLaMA-3.2-3B-Instruct) | same notebook as Fig. 8, plus `alpha_sweep.png` |
+| Table I | Notation reference | paper manuscript, §III (not currently hosted in this repo — see [§16 Contact](#16-contact)) |
 | Table II | KG structural statistics (per model) | reproduced in [§7.3](#73-structural-invariance-of-the-knowledge-graph) |
-| Table III | KG-gating ablation, LLaMA-2-7B-chat | `ablation/activation_only/`, `ablation/kg_gated/` |
-| Table IV | Per-model, per-tone style/grounding scores | full 600-case study, all six `A2A_KG_<model>/` directories |
-| Table V | Per-model style discrimination, entity coverage, SCE, readability effect sizes | reproduced in part in [§6](#6-models-evaluated) and [§7](#7-results) |
+| Table III | KG-gating ablation, LLaMA-2-7B-chat | `Comparision_KG-No-KG/Comparision_KG-No-KG/Llama-2-7b-chat-hf/` (`kg_vs_ao_FINAL_SUMMARY.csv`, `kg_vs_ao_statistical_tests.csv`) |
+| Table IV | Per-model, per-tone style/grounding scores | `Evaluation/Evaluation/metrics_<model>.csv` for all six models |
+| Table V | Per-model style discrimination, entity coverage, SCE, readability effect sizes | `Evaluation/Evaluation/statistical_tests_all_models.csv`, `tableS4_final_summary.csv` |
 
 ---
 
@@ -390,7 +470,7 @@ Related prior work (calendar-domain instantiation of the Defactualize–Steer–
 
 ## 13. License
 
-Released under the [MIT License](LICENSE).
+Intended to be released under the MIT License. **A `LICENSE` file has not yet been added to this repository** — add one at the repo root (GitHub: *Add file → Create new file → LICENSE*, choose the MIT template) so this section links correctly and the terms are legally binding.
 
 ## 14. Acknowledgments
 
@@ -398,7 +478,7 @@ MATRA Lab (Multimodal and Multilingual AI for Translational Research and Applica
 
 ## 15. Key References
 
-Just the load-bearing citations — the methods DSR directly builds on or benchmarks against. Numbered to match the paper's own bibliography. See the [full paper](paper/Knowledge-Graph-Gated_Defactualization_for_Style-Controllable_and_Fact-Preserving_Generation_in_Agentic_Conversational_AI.pdf) for the complete reference list.
+Just the load-bearing citations — the methods DSR directly builds on or benchmarks against. Numbered to match the paper's own bibliography. The manuscript PDF is not currently hosted in this repository (submitted, under review) — contact the authors ([§16](#16-contact)) for the complete reference list, or check back once an arXiv preprint or camera-ready PDF is added.
 
 1. N. Rimsky, N. Gabrieli, J. Schulz, M. Tong, E. Hubinger, A. Turner, "Steering Llama 2 via contrastive activation addition," *ACL 2024*, pp. 15504–15522.
 2. A. Zou et al., "Representation engineering: A top-down approach to AI transparency," *arXiv:2310.01405*, 2023.
